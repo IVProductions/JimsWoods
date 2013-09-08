@@ -1,4 +1,4 @@
-<!-- Declare a module -->
+ <!-- Declare a module -->
 var JimsWoods = angular.module('JimsWoods', []);
 
 <!--Routing-->
@@ -6,7 +6,11 @@ JimsWoods.config(function ($routeProvider){
     $routeProvider.when("/", {
         templateUrl:"app/partials/first.html",
         controller:"firstCtrl"
-    }).otherwise({
+    }).when("/ass",{
+            templateUrl:"app/partials/second.html",
+            controller:"firstCtrl"
+        }).otherwise({
         redirectTo:"/"
     })
 });
+
