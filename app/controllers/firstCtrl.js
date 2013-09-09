@@ -1,6 +1,9 @@
-function firstCtrl($scope, $location, $http){
-    $scope.checkSlot=function(slotNumber){                   //this function should check whether the slot is empty or
-        $location.path("main");                              //has a game saved to it, before it changes to the correct partial
+function firstCtrl($scope, $location, $http, stateService){
+    $scope.stateService=stateService;
+    $scope.checkSlot=function(slotNumber){                          //this function should check whether the slot is empty or
+        $scope.stateService.functions.setCurrentSlot(slotNumber);   //has a game saved to it, before it changes to the correct partial
+        alert($scope.stateService.functions.getCurrentSlot());
+        $location.path("main");
     }
     $scope.changeView=function(view){
         $location.path(view);

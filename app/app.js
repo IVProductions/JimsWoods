@@ -18,6 +18,12 @@ JimsWoods.config(function ($routeProvider){
     }).when("/animalDetails",{
             templateUrl:"app/partials/animalDetails.html",
             controller:"wikiCtrl"
+    }).when("/shop",{
+            templateUrl:"app/partials/shop.html",
+            controller:"firstCtrl"
+    }).when("/myAnimals",{
+            templateUrl:"app/partials/myAnimals.html",
+            controller:"firstCtrl"
     }).otherwise({
         redirectTo:"/"
     })

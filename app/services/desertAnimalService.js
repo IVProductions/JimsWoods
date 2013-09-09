@@ -3,17 +3,20 @@ JimsWoods.factory('desertAnimalFactory',function() {
         {
             "id": 1,
             "name": "Elephant",
-            "description": "blabla"
+            "description": "blabla",
+            "imageURL": "Content/img/elephant.png"
         },
         {
             "id": 2,
             "name": "Cheetah",
-            "description": "blabla"
+            "description": "blabla",
+            "imageURL": "Content/img/cheetah.png"
         },
         {
             "id": 3,
             "name": "Zebra",
-            "description": "blabla"
+            "description": "blabla",
+            "imageURL": "Content/img/zebra.png"
         }
     ]
     return {animals:animals};

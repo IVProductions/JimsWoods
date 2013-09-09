@@ -1,4 +1,5 @@
 JimsWoods.factory("stateService", function() {
+    var currentSlot;
     var currentAnimalFactory;
     var currentAnimal;
     var functions = {};
@@ -16,8 +17,15 @@ JimsWoods.factory("stateService", function() {
     functions.getCurrentAnimal = function() {
         return currentAnimal;
     }
+    functions.setCurrentSlot = function(slot) {
+        currentSlot = slot;
+    }
 
+    functions.getCurrentSlot = function() {
+        return currentSlot;
+    }
     return {
         functions: functions
     }
+
 })
