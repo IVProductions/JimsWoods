@@ -1,7 +1,4 @@
 <h2></h2>
-<ul>
-    <li ng-repeat="animal in animals">
-        {{animal.name}}
-        <p>{{animal.snippet}}</p>
-    </li>
-</ul>
+<div class="slotButton" ng-repeat="animal in animals">
+    <div ng-click="getAnimalDetails(animal)">{{animal.name}}</div>
+</div>

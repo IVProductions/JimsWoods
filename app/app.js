@@ -11,10 +11,13 @@ JimsWoods.config(function ($routeProvider){
             controller:"firstCtrl"
     }).when("/wiki",{
             templateUrl:"app/partials/wiki.html",
-            controller:"firstCtrl"
+            controller:"wikiCtrl"
     }).when("/animalList",{
             templateUrl:"app/partials/animalList.html",
-            controller:"firstCtrl"
+            controller:"wikiCtrl"
+    }).when("/animalDetails",{
+            templateUrl:"app/partials/animalDetails.html",
+            controller:"wikiCtrl"
     }).otherwise({
         redirectTo:"/"
     })
