@@ -2,19 +2,107 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/abi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/abi_eyes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/accessories.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/animwater.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/barrel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/bridges.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/buckets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/cabinets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/char_shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/chests.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/coin_gold.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/coin_shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/coin_silver.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/country.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/dialog.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/dirt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/dirt2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/doors.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/farming_fishing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/fence.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/fence_alt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/floor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/flowers_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/george.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/george_eyes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/grass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/grassalt_flowers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/hammer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/heart_empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/heart_full.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/heart_half.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/house.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/housey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/inside.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/jessica.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/jessica_eyes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/kitchen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/misc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/mountains.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/rachel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/rachel_eyes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/sandwater.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/signs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/snake.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/snow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/stairs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/stonepattern.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/town_buildings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/tree_stump.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/treetop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/trunk.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/victoria.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/victorian_house.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/whitey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/whitey_eyes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/img/windmill.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/animated_water.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Scripts/cm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Scripts/cp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/dirt2_corners.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/dirt2_edges.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/dirt2_patches.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/dirt_corners.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/dirt_edges.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/dirt_patches.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/earth.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/general_store.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/grass_corners.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/grass_edges.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/grass_patches.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/island.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rachels_house.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rachels_room.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/sand_corners.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/sand_edges.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/sand_patches.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/shed.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/tree.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/tree_forest.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/map/rules/tree_forest_shadow.tmx" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/area01.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/tiles/area01_level_tiles.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Scripts/canvasengine-1.2.7.all.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/img/wolftest.png" afterPath="$PROJECT_DIR$/Content/img/wolftest.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/game.html" afterPath="$PROJECT_DIR$/app/partials/game.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/gameCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378709493196" ignored="false" />
+    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378760695397" ignored="false" />
     <file path="/app.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378751860581" ignored="false" />
     <file path="/second.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378676069663" ignored="false" />
     <file path="/first.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378682143885" ignored="false" />
     <file path="/firstCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378706988142" ignored="false" />
     <file path="/mainMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378682523605" ignored="false" />
-    <file path="/index.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378757920843" ignored="false" />
+    <file path="/index.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769683386" ignored="false" />
     <file path="/mainMenu.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378751887301" ignored="false" />
     <file path="/slot.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378715444645" ignored="false" />
     <file path="/wiki.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378705928586" ignored="false" />
@@ -31,8 +119,11 @@
     <file path="$PROJECT_DIR$/../Diffia/Patient/app/partials/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378711139344" ignored="false" />
     <file path="/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378710695419" ignored="false" />
     <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378715584845" ignored="false" />
-    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378760612628" ignored="false" />
-    <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378758651212" ignored="false" />
+    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378770029034" ignored="false" />
+    <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378768666461" ignored="false" />
+    <file path="/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378767812234" ignored="false" />
+    <file path="$USER_HOME$/Dropbox/Jims Woods/Neverwell_Moor_v1.0.1/js/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769022115" ignored="false" />
+    <file path="/resources.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769754184" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,55 +143,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="slot.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/partials/slot.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="17" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mainMenu.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/partials/mainMenu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="202" selection-end="202" vertical-scroll-proportion="-3.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="28" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="62" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-10.458333">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wikiCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/wikiCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="20" selection-start="311" selection-end="360" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arcticAnimalService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/arcticAnimalService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="43" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+            <state line="31" column="3" selection-start="1184" selection-end="1253" vertical-scroll-proportion="-16.25">
               <folding />
             </state>
           </provider>
@@ -109,7 +155,7 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="-1.25">
+            <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -118,19 +164,35 @@
       <file leaf-file-name="gameCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="22" selection-start="563" selection-end="599" vertical-scroll-proportion="0.14285715">
+            <state line="33" column="38" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.20746888">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="melonJS-0.9.8.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
+      <file leaf-file-name="resources.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/game/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6027" column="19" selection-start="155338" selection-end="155345" vertical-scroll-proportion="23.346153">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="2" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cm.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Scripts/cm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="23" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cp.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Scripts/cp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,7 +200,7 @@
       <file leaf-file-name="firstCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/firstCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="17" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+            <state line="8" column="17" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,9 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/services/fableAnimalService.js" />
-        <option value="$PROJECT_DIR$/app/services/jungleAnimalService.js" />
-        <option value="$PROJECT_DIR$/app/services/seaAnimalService.js" />
         <option value="$PROJECT_DIR$/app/partials/shop.html" />
         <option value="$PROJECT_DIR$/app/partials/myAnimals.html" />
         <option value="$PROJECT_DIR$/app/partials/wiki.html" />
@@ -175,17 +234,20 @@
         <option value="$PROJECT_DIR$/Content/css/slotMenu.css" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/partials/mainMenu.html" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/game/game.js" />
+        <option value="$PROJECT_DIR$/Scripts/cm.js" />
         <option value="$PROJECT_DIR$/app/partials/game.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/game/resources.js" />
         <option value="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
+    <option name="x" value="2" />
     <option name="y" value="22" />
-    <option name="width" value="1420" />
-    <option name="height" value="850" />
+    <option name="width" value="1422" />
+    <option name="height" value="871" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -198,7 +260,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -270,24 +332,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JimsWoods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JimsWoods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -306,79 +350,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JimsWoods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JimsWoods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JimsWoods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JimsWoods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JimsWoods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JimsWoods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JimsWoods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JimsWoods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,12 +362,12 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Diffia" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/boilerplate-master" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -410,7 +382,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Content" />
       <recent name="$PROJECT_DIR$/Content/img" />
+      <recent name="$PROJECT_DIR$/Scripts" />
+      <recent name="$PROJECT_DIR$/Content/map" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Content/tiles" />
@@ -480,14 +455,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="22" width="1420" height="850" extended-state="0" />
+    <frame x="2" y="22" width="1422" height="871" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982105" sideWeight="0.698" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982105" sideWeight="0.960274" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.039726026" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16797712" sideWeight="0.6711052" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.029294275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -495,7 +471,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985073" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -562,41 +537,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/partials/wiki.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/animalList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="5" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="12" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/fableAnimalService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/shop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Content/css/slotMenu.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
@@ -613,7 +553,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/mainMenu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="202" selection-end="202" vertical-scroll-proportion="-3.75">
+        <state line="6" column="28" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -625,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/firstCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/arcticAnimalService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="43" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
@@ -639,39 +572,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6027" column="19" selection-start="155338" selection-end="155345" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/wikiCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="311" selection-end="360" vertical-scroll-proportion="0.0">
+        <state line="3" column="20" selection-start="311" selection-end="360" vertical-scroll-proportion="0.14018692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/game/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="8" selection-start="116" selection-end="156" vertical-scroll-proportion="0.12793177">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/cm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="23" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/cp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/firstCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="-1.25">
+        <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
+    <entry file="file://$PROJECT_DIR$/Content/map/rules/tree.tmx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6027" column="19" selection-start="155338" selection-end="155345" vertical-scroll-proportion="23.346153">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="62" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-10.458333">
+        <state line="31" column="3" selection-start="1184" selection-end="1253" vertical-scroll-proportion="-16.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/game/resources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="563" selection-end="599" vertical-scroll-proportion="0.14285715">
+        <state line="33" column="38" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.20746888">
           <folding />
         </state>
       </provider>

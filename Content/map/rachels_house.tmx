@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="12" height="10" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="background_color" value="black"/>
+ </properties>
+ <tileset firstgid="1" name="cabinets" tilewidth="32" tileheight="32">
+  <image source="../img/cabinets.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="79" name="inside" tilewidth="32" tileheight="32">
+  <image source="../img/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="179" name="stairs" tilewidth="32" tileheight="32">
+  <image source="../img/stairs.png" width="256" height="544"/>
+ </tileset>
+ <tileset firstgid="315" name="victoria" tilewidth="32" tileheight="32">
+  <image source="../img/victoria.png" width="352" height="160"/>
+ </tileset>
+ <tileset firstgid="370" name="accessories" tilewidth="32" tileheight="32">
+  <image source="../img/accessories.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="386" name="kitchen" tilewidth="32" tileheight="32">
+  <image source="../img/kitchen.png" width="64" height="128"/>
+ </tileset>
+ <layer name="floor" width="12" height="10">
+  <data encoding="base64">
+   UgAAAFAAAABQAAAAUAAAAFAAAABQAAAAUgAAAFAAAABQAAAAUAAAAFAAAABTAAAAeAAAAFoAAABaAAAAWgAAAFoAAABQAAAAUQAAAFoAAABaAAAAWgAAAFoAAAB5AAAAeAAAABsBAABaAAAAWgAAAFoAAABaAAAAWwAAAGQAAABkAAAAZAAAAGQAAAB5AAAAeAAAABUBAABkAAAAZAAAAGQAAABkAAAAZQAAAHcAAAB3AAAAdwAAAHcAAAB5AAAAeAAAAB0BAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB5AAAAeAAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB5AAAAeAAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB5AAAAeAAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB5AAAAeAAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB3AAAAdwAAAHcAAAB5AAAAggAAAG4AAAB1AAAAbgAAAG4AAABuAAAAbgAAAG4AAABuAAAAbgAAAG4AAACDAAAA
+  </data>
+ </layer>
+ <layer name="mass" width="12" height="10">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAJAEAACsBAAAsAQAAAAAAAAAAAACCAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAArAQAALAEAADMBAAA0AQAAAAAAAAMAAACEAQAABAAAAAAAAAAAAAAAAAAAAAAAAAAzAQAANAEAAAAAAAAAAAAAZwEAAA0AAACGAQAAEAAAACsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADsAAACIAQAAOgAAAEIAAAAAAAAAAAAAAAAAAABgAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXAQAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABKAQAASwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVAQAAVgEAAF4BAAAAAAAAAAAAAGwAAAAAAAAAdgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  </data>
+ </layer>
+ <layer name="cabinets" width="12" height="10">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACkAAAAAAAAAKQAAAIcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADUAAAAAAAAANAAAAIMBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  </data>
+ </layer>
+ <layer name="accessories" width="12" height="10">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHIBAAAAAAAAegEAAAAAAAAAAAAAAAAAAAAAAAB8AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0AQAAdQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AQAAeQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  </data>
+ </layer>
+ <objectgroup name="objects" width="12" height="10">
+  <object name="rachel" x="128" y="6" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;rachel&quot;},{&quot;name&quot;:&quot;eyes&quot;,&quot;class&quot;:&quot;game.BlinkingEyes&quot;,&quot;image&quot;:&quot;rachel_eyes&quot;,&quot;spritewidth&quot;:17,&quot;spriteheight&quot;:6,&quot;offsetx&quot;:6,&quot;offsety&quot;:18}]"/>
+    <property name="image" value="rachel"/>
+    <property name="spriteheight" value="36"/>
+    <property name="spritewidth" value="31"/>
+   </properties>
+  </object>
+  <object name="exit" x="180" y="5" width="24" height="24">
+   <properties>
+    <property name="dir" value="right"/>
+    <property name="fade" value="black"/>
+    <property name="location" value="240, 96"/>
+    <property name="to" value="rachels_room"/>
+   </properties>
+  </object>
+  <object name="exit" x="68" y="292" width="24" height="24">
+   <properties>
+    <property name="fade" value="black"/>
+    <property name="to" value="earth"/>
+   </properties>
+  </object>
+  <object name="jessica" x="299" y="137" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;jessica&quot;},{&quot;name&quot;:&quot;eyes&quot;,&quot;class&quot;:&quot;game.BlinkingEyes&quot;,&quot;image&quot;:&quot;jessica_eyes&quot;,&quot;spritewidth&quot;:17,&quot;spriteheight&quot;:6,&quot;offsetx&quot;:10,&quot;offsety&quot;:16}]"/>
+    <property name="image" value="jessica"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="37"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="overlayer" width="12" height="10">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMgEAADkBAAA2AQAAhQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0BAAA5AQAAOgEAACoBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  </data>
+ </layer>
+ <objectgroup name="collision" width="12" height="10">
+  <object x="32" y="288">
+   <polyline points="0,0 0,-224 16,-224 144,-288 176,-288 176,-256 160,-256 32,-192 32,-144 64,-144 64,-160 192,-160 192,-176 320,-176 320,-48 280,-48 280,-80 256,-80 256,-96 224,-96 224,-80 232,-80 232,-16 192,-16 192,0 64,0 64,32 32,32 32,0 0,0"/>
+  </object>
+ </objectgroup>
+</map>
