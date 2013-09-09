@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/partials/myAnimals.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/partials/shop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/animalDetails.html" afterPath="$PROJECT_DIR$/app/partials/animalDetails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/animalList.html" afterPath="$PROJECT_DIR$/app/partials/animalList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/arcticAnimalService.js" afterPath="$PROJECT_DIR$/app/services/arcticAnimalService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/desertAnimalService.js" afterPath="$PROJECT_DIR$/app/services/desertAnimalService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/fableAnimalService.js" afterPath="$PROJECT_DIR$/app/services/fableAnimalService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/firstCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/firstCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/jungleAnimalService.js" afterPath="$PROJECT_DIR$/app/services/jungleAnimalService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/mainMenu.html" afterPath="$PROJECT_DIR$/app/partials/mainMenu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/seaAnimalService.js" afterPath="$PROJECT_DIR$/app/services/seaAnimalService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/stateService.js" afterPath="$PROJECT_DIR$/app/services/stateService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/wiki.html" afterPath="$PROJECT_DIR$/app/partials/wiki.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/woodAnimalService.js" afterPath="$PROJECT_DIR$/app/services/woodAnimalService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="" />
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378675850587" ignored="false" />
