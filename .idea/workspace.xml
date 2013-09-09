@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/game.html" afterPath="$PROJECT_DIR$/app/partials/game.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/gameCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/mainMenu.html" afterPath="$PROJECT_DIR$/app/partials/mainMenu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/slot.html" afterPath="$PROJECT_DIR$/app/partials/slot.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/slotMenu.css" afterPath="$PROJECT_DIR$/Content/css/slotMenu.css" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,7 +14,7 @@
     <file path="/first.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378682143885" ignored="false" />
     <file path="/firstCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378706988142" ignored="false" />
     <file path="/mainMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378682523605" ignored="false" />
-    <file path="/index.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378751675445" ignored="false" />
+    <file path="/index.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378757920843" ignored="false" />
     <file path="/mainMenu.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378751887301" ignored="false" />
     <file path="/slot.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378715444645" ignored="false" />
     <file path="/wiki.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378705928586" ignored="false" />
@@ -33,8 +31,8 @@
     <file path="$PROJECT_DIR$/../Diffia/Patient/app/partials/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378711139344" ignored="false" />
     <file path="/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378710695419" ignored="false" />
     <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378715584845" ignored="false" />
-    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378756139524" ignored="false" />
-    <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378756087911" ignored="false" />
+    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378760612628" ignored="false" />
+    <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378758651212" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,15 +61,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slotMenu.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Content/css/slotMenu.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="mainMenu.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/mainMenu.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,7 +82,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="67" selection-start="994" selection-end="994" vertical-scroll-proportion="-11.708333">
+            <state line="26" column="62" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-10.458333">
               <folding />
             </state>
           </provider>
@@ -117,20 +106,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.07188498">
+            <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameCtrl.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="gameCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="23" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+            <state line="15" column="22" selection-start="563" selection-end="599" vertical-scroll-proportion="0.14285715">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="melonJS-0.9.8.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6027" column="19" selection-start="155338" selection-end="155345" vertical-scroll-proportion="23.346153">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -173,11 +173,11 @@
         <option value="$PROJECT_DIR$/app/controllers/firstCtrl.js" />
         <option value="$PROJECT_DIR$/app/partials/slot.html" />
         <option value="$PROJECT_DIR$/Content/css/slotMenu.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/partials/mainMenu.html" />
-        <option value="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/partials/game.html" />
+        <option value="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
       </list>
     </option>
   </component>
@@ -259,10 +259,6 @@
               <option name="myItemId" value="Content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -278,7 +274,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -415,6 +411,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Content/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Content/tiles" />
+      <recent name="$PROJECT_DIR$/Content/map" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.Unnamed">
@@ -562,13 +562,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/partials/myAnimals.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/wiki.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
@@ -611,20 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/wikiCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="311" selection-end="360" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="67" selection-start="994" selection-end="994" vertical-scroll-proportion="-11.708333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="28" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
@@ -660,16 +639,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/wikiCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+        <state line="3" column="20" selection-start="311" selection-end="360" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.07188498">
+        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6027" column="19" selection-start="155338" selection-end="155345" vertical-scroll-proportion="23.346153">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="62" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-10.458333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="22" selection-start="563" selection-end="599" vertical-scroll-proportion="0.14285715">
           <folding />
         </state>
       </provider>
