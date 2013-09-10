@@ -6,6 +6,9 @@ JimsWoods.factory('imageResourceFactory',function() {
         },
         {
             "name": "tiles"
+        },
+        {
+            "name" : "rachel"
         }
         /*
         {
