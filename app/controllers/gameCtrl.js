@@ -54,8 +54,8 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             me.loader.preload(resources);
         },
         "loaded" : function loaded() {
-            me.state.set(me.state.MENU, new game.TitleScreen());
-            me.state.set(me.state.PLAY, new game.PlayScreen());
+            me.state.set(me.state.MENU, new this.TitleScreen());
+            me.state.set(me.state.PLAY, new this.PlayScreen());
 
             // Start the game.
             me.state.change(me.state.PLAY);
@@ -63,7 +63,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
     };
 
     /* the in game stuff*/
-    game.PlayScreen = me.ScreenObject.extend({
+    $scope.game.PlayScreen = me.ScreenObject.extend({
 
         onResetEvent: function() {
             // stuff to reset on state change
@@ -81,7 +81,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
     });
 
-    game.TitleScreen = me.ScreenObject.extend({
+    $scope.game.TitleScreen = me.ScreenObject.extend({
         /**
          *  action to perform on state change
          */
