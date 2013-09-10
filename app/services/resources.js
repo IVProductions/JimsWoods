@@ -1,5 +1,6 @@
 JimsWoods.factory('imageResourceFactory',function() {
-    var image = [
+
+    var images = [
         {
             "name": "dialog"
         },
@@ -179,8 +180,9 @@ JimsWoods.factory('imageResourceFactory',function() {
     return {images:image};
 })
 
+
 JimsWoods.factory('mapResourceFactory',function() {
-    var map = [
+    var maps = [
         {
             "name": "island"
         },
@@ -201,7 +203,7 @@ JimsWoods.factory('mapResourceFactory',function() {
         }
 
     ]
-    return {maps:map};
+    return {maps:maps};
 })
 
 JimsWoods.factory('sfxResourceFactory',function() {

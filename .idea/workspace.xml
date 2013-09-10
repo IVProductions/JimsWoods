@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/game/resources.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/gameCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/resources.js" afterPath="$PROJECT_DIR$/app/services/resources.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378772449477" ignored="false" />
+    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378775308967" ignored="false" />
     <file path="/app.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378751860581" ignored="false" />
     <file path="/second.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378676069663" ignored="false" />
     <file path="/first.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378682143885" ignored="false" />
@@ -60,7 +60,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="3" selection-start="1184" selection-end="1253" vertical-scroll-proportion="-0.7083333">
+            <state line="31" column="3" selection-start="1184" selection-end="1253" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,7 +69,7 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="-0.625">
+            <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,7 +78,16 @@
       <file leaf-file-name="gameCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="46" selection-start="238" selection-end="238" vertical-scroll-proportion="0.12605043">
+            <state line="96" column="7" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.748954">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/game/game.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="8" selection-start="116" selection-end="156" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,7 +96,7 @@
       <file leaf-file-name="resources.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="34" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+            <state line="206" column="0" selection-start="3552" selection-end="3552" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -304,6 +313,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -312,12 +339,12 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/boilerplate-master" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -476,6 +503,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/controllers/firstCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="28" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
@@ -485,16 +519,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/mainMenu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="28" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/slot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
+        <state line="1" column="17" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.625" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/arcticAnimalService.js">
@@ -521,14 +551,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="3" selection-start="1184" selection-end="1253" vertical-scroll-proportion="-0.7083333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/resources.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="34" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+        <state line="31" column="3" selection-start="1184" selection-end="1253" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -556,21 +579,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="-0.625">
+        <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/game/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="116" selection-end="156" vertical-scroll-proportion="0.12605043">
+        <state line="4" column="8" selection-start="116" selection-end="156" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/resources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="206" column="0" selection-start="3552" selection-end="3552" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="46" selection-start="238" selection-end="238" vertical-scroll-proportion="0.12605043">
+        <state line="96" column="7" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.748954">
           <folding />
         </state>
       </provider>
