@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/game/resources.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/gameCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/resources.js" afterPath="$PROJECT_DIR$/app/services/resources.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378770694818" ignored="false" />
+    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378772364279" ignored="false" />
     <file path="/app.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378751860581" ignored="false" />
     <file path="/second.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378676069663" ignored="false" />
     <file path="/first.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378682143885" ignored="false" />
     <file path="/firstCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378706988142" ignored="false" />
     <file path="/mainMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378682523605" ignored="false" />
-    <file path="/index.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769683386" ignored="false" />
+    <file path="/index.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378772426009" ignored="false" />
     <file path="/mainMenu.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378751887301" ignored="false" />
     <file path="/slot.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378715444645" ignored="false" />
     <file path="/wiki.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378705928586" ignored="false" />
@@ -30,11 +33,11 @@
     <file path="$PROJECT_DIR$/../Diffia/Patient/app/partials/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378711139344" ignored="false" />
     <file path="/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378710695419" ignored="false" />
     <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378715584845" ignored="false" />
-    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378771183470" ignored="false" />
+    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378775163369" ignored="false" />
     <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378768666461" ignored="false" />
     <file path="/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378767812234" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Jims Woods/Neverwell_Moor_v1.0.1/js/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769022115" ignored="false" />
-    <file path="/resources.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769754184" ignored="false" />
+    <file path="/resources.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378772767217" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Jims Woods/Neverwell_Moor_v1.0.1/js/resources.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378770710213" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +61,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="3" selection-start="1184" selection-end="1253" vertical-scroll-proportion="0.0">
+            <state line="47" column="62" selection-start="2193" selection-end="2202" vertical-scroll-proportion="-21.083334">
               <folding />
             </state>
           </provider>
@@ -67,7 +70,7 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="0.0">
+            <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -76,16 +79,16 @@
       <file leaf-file-name="gameCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="14" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.5991441">
+            <state line="58" column="12" selection-start="2052" selection-end="2052" vertical-scroll-proportion="0.14219475">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="resources.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/game/resources.js">
+        <entry file="file://$PROJECT_DIR$/app/services/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
+            <state line="186" column="27" selection-start="3262" selection-end="3262" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -94,7 +97,7 @@
       <file leaf-file-name="cm.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/cm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="23" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
+            <state line="136" column="13" selection-start="3579" selection-end="3612" vertical-scroll-proportion="-12.269231">
               <folding />
             </state>
           </provider>
@@ -136,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/partials/shop.html" />
         <option value="$PROJECT_DIR$/app/partials/myAnimals.html" />
         <option value="$PROJECT_DIR$/app/partials/wiki.html" />
         <option value="$PROJECT_DIR$/app/partials/animalList.html" />
@@ -149,8 +151,9 @@
         <option value="$PROJECT_DIR$/app/game/game.js" />
         <option value="$PROJECT_DIR$/Scripts/cm.js" />
         <option value="$PROJECT_DIR$/app/partials/game.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/game/resources.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/services/resources.js" />
         <option value="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
       </list>
     </option>
@@ -244,7 +247,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,12 +313,12 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/boilerplate-master" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/boilerplate-master" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -372,9 +411,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982105" sideWeight="0.698" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16797712" sideWeight="0.97070575" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.029294275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16797712" sideWeight="0.97203726" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.027962716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -382,7 +422,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -449,13 +488,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Content/css/slotMenu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="28" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
@@ -465,16 +497,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/mainMenu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="28" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/slot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
+        <state line="1" column="17" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.625" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/arcticAnimalService.js">
@@ -501,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/cm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="23" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/cp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -522,35 +543,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Content/map/rules/tree.tmx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/app/partials/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="3" selection-start="1184" selection-end="1253" vertical-scroll-proportion="0.0">
+        <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/game/resources.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
+        <state line="47" column="62" selection-start="2193" selection-end="2202" vertical-scroll-proportion="-21.083334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/resources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="27" selection-start="3262" selection-end="3262" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/cm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="13" selection-start="3579" selection-end="3612" vertical-scroll-proportion="-12.269231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="14" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.5991441">
+        <state line="58" column="12" selection-start="2052" selection-end="2052" vertical-scroll-proportion="0.14219475">
           <folding />
         </state>
       </provider>
