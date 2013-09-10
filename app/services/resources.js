@@ -2,8 +2,12 @@ JimsWoods.factory('imageResourceFactory',function() {
 
     var images = [
         {
-            "name": "dialog"
+            "name": "player"
         },
+        {
+            "name": "tiles"
+        }
+        /*
         {
             "name": "dialog"
         },
@@ -174,18 +178,19 @@ JimsWoods.factory('imageResourceFactory',function() {
         },
         {
             "name": "windmill"
-        }
+        } */
 
     ]
-    return {images:image};
+    return {images:images};
 })
 
 
 JimsWoods.factory('mapResourceFactory',function() {
     var maps = [
         {
-            "name": "island"
-        },
+            "name": "woods"
+        }
+        /*
         {
             "name": "earth"
         },
@@ -200,7 +205,7 @@ JimsWoods.factory('mapResourceFactory',function() {
         },
         {
             "name":  "shed"
-        }
+        } */
 
     ]
     return {maps:maps};

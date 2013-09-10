@@ -42,8 +42,8 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             }
 
             // Maps.
-            for(var i = 0; i<$scope.mapResources.length; i++){
-                value = $scope.mapResources[i].name;
+            for(var j = 0; j<$scope.mapResources.length; j++){
+                value = $scope.mapResources[j].name;
                 resources.push({
                     "name" : value,
                     "type"  : "tmx",
@@ -68,7 +68,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
         onResetEvent: function() {
             // stuff to reset on state change
             // load a level
-            me.levelDirector.loadLevel("island");
+            me.levelDirector.loadLevel("woods");
         },
 
         /* ---

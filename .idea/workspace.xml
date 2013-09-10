@@ -2,6 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/abi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/abi_eyes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/accessories.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/animwater.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/barrel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/bridges.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/buckets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/cabinets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/char_shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/chests.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/coin_gold.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/coin_shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/coin_silver.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/country.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/dialog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/dirt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/dirt2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/doors.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/farming_fishing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/fence.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/fence_alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/floor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/flowers_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/george.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/george_eyes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/grass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/grassalt_flowers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/hammer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/heart_empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/heart_full.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/heart_half.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/house.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/housey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/inside.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/jessica.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/jessica_eyes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/kitchen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/misc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/mountains.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/rachel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/rachel_eyes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/sandwater.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/signs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/snake.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/snow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/stairs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/stonepattern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/town_buildings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/tree_stump.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/treetop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/trunk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/victoria.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/victorian_house.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/whitey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/whitey_eyes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/windmill.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/earth.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/general_store.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/island.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rachels_house.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rachels_room.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/animated_water.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/dirt2_corners.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/dirt2_edges.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/dirt2_patches.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/dirt_corners.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/dirt_edges.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/dirt_patches.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/grass_corners.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/grass_edges.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/grass_patches.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/sand_corners.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/sand_edges.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/sand_patches.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/tree.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/tree_forest.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/rules/tree_forest_shadow.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/map/shed.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Scripts/cm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Scripts/cp.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/gameCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/resources.js" afterPath="$PROJECT_DIR$/app/services/resources.js" />
@@ -9,7 +92,7 @@
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378775308967" ignored="false" />
+    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378784448885" ignored="false" />
     <file path="/app.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378751860581" ignored="false" />
     <file path="/second.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378676069663" ignored="false" />
     <file path="/first.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378682143885" ignored="false" />
@@ -32,11 +115,11 @@
     <file path="$USER_HOME$/Diffia/Patient/app/partials/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378711139344" ignored="false" />
     <file path="/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378710695419" ignored="false" />
     <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378715584845" ignored="false" />
-    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378771183470" ignored="false" />
+    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378784886007" ignored="false" />
     <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378768666461" ignored="false" />
     <file path="/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378767812234" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Jims Woods/Neverwell_Moor_v1.0.1/js/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769022115" ignored="false" />
-    <file path="/resources.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769754184" ignored="false" />
+    <file path="/resources.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378784831997" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Jims Woods/Neverwell_Moor_v1.0.1/js/resources.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378770710213" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +143,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="3" selection-start="1184" selection-end="1253" vertical-scroll-proportion="0.0">
+            <state line="26" column="0" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,7 +161,7 @@
       <file leaf-file-name="gameCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="7" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.748954">
+            <state line="61" column="0" selection-start="2128" selection-end="2128" vertical-scroll-proportion="0.84528834">
               <folding />
             </state>
           </provider>
@@ -96,25 +179,7 @@
       <file leaf-file-name="resources.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="206" column="0" selection-start="3552" selection-end="3552" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cm.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/cm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="23" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cp.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/cp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="7" column="27" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,8 +224,8 @@
         <option value="$PROJECT_DIR$/app/game/game.js" />
         <option value="$PROJECT_DIR$/Scripts/cm.js" />
         <option value="$PROJECT_DIR$/app/partials/game.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/game/resources.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/services/resources.js" />
         <option value="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
       </list>
@@ -170,7 +235,7 @@
     <option name="x" value="2" />
     <option name="y" value="22" />
     <option name="width" value="1422" />
-    <option name="height" value="624" />
+    <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -242,6 +307,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -348,8 +431,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Content" />
       <recent name="$PROJECT_DIR$/Content/img" />
+      <recent name="$PROJECT_DIR$/Content" />
       <recent name="$PROJECT_DIR$/Scripts" />
       <recent name="$PROJECT_DIR$/Content/map" />
     </key>
@@ -421,14 +504,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="22" width="1422" height="624" extended-state="0" />
+    <frame x="2" y="22" width="1422" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982105" sideWeight="0.698" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16797712" sideWeight="0.97070575" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.028355388" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16797712" sideWeight="0.97751325" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.022486772" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -503,6 +586,27 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/game/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="8" selection-start="116" selection-end="156" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/resources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="37" selection-start="3314" selection-end="3314" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/firstCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/firstCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="17" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
@@ -544,42 +648,16 @@
         <state line="3" column="20" selection-start="311" selection-end="360" vertical-scroll-proportion="0.14018692" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Content/map/rules/tree.tmx">
+    <entry file="file://$PROJECT_DIR$/app/partials/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="3" selection-start="1184" selection-end="1253" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/cm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="23" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/cp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/firstCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="23" selection-start="31" selection-end="39" vertical-scroll-proportion="0.0">
+        <state line="26" column="0" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -593,14 +671,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/resources.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="0" selection-start="3552" selection-end="3552" vertical-scroll-proportion="0.0">
+        <state line="7" column="27" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/firstCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="7" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.748954">
+        <state line="61" column="0" selection-start="2128" selection-end="2128" vertical-scroll-proportion="0.84528834">
           <folding />
         </state>
       </provider>
