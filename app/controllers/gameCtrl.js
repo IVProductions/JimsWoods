@@ -43,12 +43,16 @@ function gameCtrl($scope, stateService){
                     "src"   : "Content/map/" + value + ".tmx"
                 })
             });
-
             // Load the resources.
             me.loader.preload(resources);
         },
-        "loaded" : function loaded() {
+        loaded : function loaded() {
+            // Create a notifier.
+            //game.notify = new game.Notify();
 
+            // Set the "Play" ScreenObject.
+            game.play = new game.PlayScreen(20);
+            me.state.set(me.state.PLAY, game.play);
         }
     };
 
