@@ -116,7 +116,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             console.log(x);
             console.log(y);
             // set the default horizontal & vertical speed (accel vector)
-            this.setVelocity(9, 9);
+            this.setVelocity(2, 2);
             console.log(this);
 
             this.setFriction(0.01,0.01);                     //*

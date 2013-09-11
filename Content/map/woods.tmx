@@ -9,11 +9,11 @@
   </data>
  </layer>
  <objectgroup name="Object Layer 1" width="20" height="20">
-  <object name="mainPlayer" x="290" y="244" width="56" height="68">
+  <object name="mainPlayer" x="290" y="244" width="161" height="138">
    <properties>
-    <property name="image" value="rachel"/>
-    <property name="spriteheight" value="36"/>
-    <property name="spritewidth" value="31"/>
+    <property name="image" value="ken"/>
+    <property name="spriteheight" value="52"/>
+    <property name="spritewidth" value="52"/>
    </properties>
   </object>
  </objectgroup>

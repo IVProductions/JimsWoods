@@ -2,7 +2,7 @@ JimsWoods.factory('imageResourceFactory',function() {
 
     var images = [
         {
-            "name": "player"
+            "name": "ken"
         },
         {
             "name": "woods_tiles"
