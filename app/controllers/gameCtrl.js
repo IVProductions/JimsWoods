@@ -118,37 +118,22 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.setVelocity(3, 3);
             console.log(this);
 
-            //this.addAnimation("walk");
-            // stand animation
-            //this.addAnimation ("still", [0]);
-            // walking animation
-            //this.addAnimation ("walk", [3,4]);
-            // jump animation
-            //this.addAnimation ("jump", [1]); //2
-            //set
-            // set the display to follow our position on both axis
             this.setFriction(0.01,0.01);                     //*
             this.animationspeed = 10;
 
             // stand animation
-            this.addAnimation ("still", [0]);
+            this.addAnimation ("still", [0,1,2,3]);         //koordinater på spritebildet (tror vi)
             // walking animation
-            this.addAnimation ("walk", [4,5]);
-            // jump animation
-            this.addAnimation ("jump", [1]); //2
-            //set
+            this.addAnimation ("walkLeft", [1,5,9,13]);
+            this.addAnimation ("walkRight", [3,7,11,15]); //2
+            this.addAnimation ("walkUp", [2,6,10,14]); //2
+            this.addAnimation ("walkDown", [0,4,8,12]); //2
+
             this.setCurrentAnimation("still");
 
             this.updateColRect(4, 20, 10, 38); //*
+            // set the display to follow our position on both axis
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
-
-
-            //this.addAnimation("still",0);
-            //this.addAnimation("walk_down",   [ 0, 4,  8, 12 ]);
-            //this.addAnimation("walk_left",   [ 1, 5,  9, 13 ]);
-            //this.addAnimation("walk_up",     [ 2, 6, 10, 14 ]);
-            //this.addAnimation("walk_right",  [ 3, 7, 11, 15 ]);
-
 
         },
 
