@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/gameCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/img/woods_tiles.png" afterPath="$PROJECT_DIR$/Content/img/woods_tiles.png" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
