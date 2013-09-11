@@ -61,7 +61,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             me.input.bindKey(me.input.KEY.LEFT, "left");
             me.input.bindKey(me.input.KEY.RIGHT, "right");
             me.input.bindKey(me.input.KEY.UP, "up");
-            me.input.bindKey(me.input.KEY.UP, "down");
+            me.input.bindKey(me.input.KEY.DOWN, "down");
 
             // Start the game.
             me.state.change(me.state.PLAY);
@@ -110,14 +110,35 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
         init: function(x, y, settings) {
             // call the constructor
             this.parent(x, y, settings);
-
+            console.log(this.parent);
+            console.log(settings);
+            console.log(x);
+            console.log(y);
             // set the default horizontal & vertical speed (accel vector)
             this.setVelocity(3, 3);
+            console.log(this);
 
+            //this.addAnimation("walk");
+            // stand animation
+            //this.addAnimation ("still", [0]);
+            // walking animation
+            //this.addAnimation ("walk", [3,4]);
+            // jump animation
+            //this.addAnimation ("jump", [1]); //2
+            //set
+            //this.setCurrentAnimation("still");
             // set the display to follow our position on both axis
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
 
+            //this.addAnimation("walk_down",   [ 0, 4,  8, 12 ]);
+            //this.addAnimation("walk_left",   [ 1, 5,  9, 13 ]);
+            //this.addAnimation("walk_up",     [ 2, 6, 10, 14 ]);
+            //this.addAnimation("walk_right",  [ 3, 7, 11, 15 ]);
+
+
         },
+
+
 
         /* -----
 
@@ -125,32 +146,30 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
          ------ */
         update: function() {
+           // me.input.registerPointerEvent('mousemove', this, this);
 
-            if (me.input.isKeyPressed('left')) {
-                // flip the sprite on horizontal axis
-                this.flipX(true);
+            if (me.input.isKeyPressed('left')) {             // 2 6 10 14
                 // update the entity velocity
+                //var direction = 'left';
                 this.vel.x -= this.accel.x * me.timer.tick;
             } else if (me.input.isKeyPressed('right')) {
-                // unflip the sprite
-                this.flipX(false);
+                //var direction = 'right';// 4 8 12 16
                 // update the entity velocity
                 this.vel.x += this.accel.x * me.timer.tick;
             }
-            else if (me.input.isKeyPressed('down')) {
-                // unflip the sprite
-                this.flipY(false);
+            else if (me.input.isKeyPressed('up')) {          // 3 7 11 15
+                //var direction = 'up';
                 // update the entity velocity
                 this.vel.y -= this.accel.y * me.timer.tick;
             }
-            else if (me.input.isKeyPressed('up')) {
-                // unflip the sprite
-                this.flipY(true);
+            else if (me.input.isKeyPressed('down')) {        // 1 5 9 13
+                //var direction = 'down';
                 // update the entity velocity
                 this.vel.y += this.accel.y * me.timer.tick;
             }
             else {
                 this.vel.x = 0;
+                this.vel.y = 0;
             }
 
 
@@ -160,6 +179,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             // update animation if necessary
             if (this.vel.x!=0 || this.vel.y!=0) {
                 // update object animation
+                //this.setCurrentAnimation("walk_" + direction);   //denne oppdaterer spriteanimasjonen
                 this.parent();
                 return true;
             }
@@ -170,5 +190,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
         }
 
     });
+
+    //$scope.game.NPC = game.Sprite.extend({
 
 }
