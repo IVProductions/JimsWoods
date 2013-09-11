@@ -6,6 +6,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
     $scope.game = {
         init : function(){
             // Create Canvas
+
             me.video.init("screen", 960, 640);
             me.sys.gravity = 0;
 
@@ -122,14 +123,14 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.animationspeed = 10;
 
             // stand animation
-            this.addAnimation ("still", [0,1,2,3]);         //koordinater på spritebildet (tror vi)
+            this.renderable.addAnimation("still", [0]);         //koordinater på spritebildet (tror vi)
             // walking animation
-            this.addAnimation ("walkLeft", [1,5,9,13]);
-            this.addAnimation ("walkRight", [3,7,11,15]); //2
-            this.addAnimation ("walkUp", [2,6,10,14]); //2
-            this.addAnimation ("walkDown", [0,4,8,12]); //2
+            this.renderable.addAnimation ("walkLeft", [1,5,9,13]);
+            this.renderable.addAnimation ("walkRight", [3,7,11,15]); //2
+            this.renderable.addAnimation ("walkUp", [2,6,10,14]); //2
+            this.renderable.addAnimation ("walkDown", [0,4,8,12]); //2
 
-            this.setCurrentAnimation("still");
+            this.renderable.setCurrentAnimation("still");
 
             this.updateColRect(4, 20, 10, 38); //*
             // set the display to follow our position on both axis
@@ -179,29 +180,29 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             if (this.vel.x>0 && this.vel.y==0) {
                 // update object animation
                 //this.setCurrentAnimation("walk_" + direction);   //denne oppdaterer spriteanimasjonen
-                this.setCurrentAnimation("walkLeft");
+                this.renderable.setCurrentAnimation("walkRight");
                 this.parent();
                 return true;
             }
             else if (this.vel.x<0 && this.vel.y==0) {
-                this.setCurrentAnimation("walkRight");
+                this.renderable.setCurrentAnimation("walkLeft");
                 this.parent();
             // else inform the engine we did not perform
             // any update (e.g. position, animation)
                 return true;
             }
             else if (this.vel.x==0 && this.vel.y>0) {
-                this.setCurrentAnimation("walkDown");
+                this.renderable.setCurrentAnimation("walkDown");
                 this.parent();
                 return true;
             }
             else if (this.vel.x==0 && this.vel.y<0) {
-                this.setCurrentAnimation("walkUp");
+                this.renderable.setCurrentAnimation("walkUp");
                 this.parent();
                 return true;
             }
             else {
-                this.setCurrentAnimation("still");
+                this.renderable.setCurrentAnimation("still");
                 this.parent();
                 return true;
             }
