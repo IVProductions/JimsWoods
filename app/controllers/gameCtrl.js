@@ -116,7 +116,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             console.log(x);
             console.log(y);
             // set the default horizontal & vertical speed (accel vector)
-            this.setVelocity(3, 3);
+            this.setVelocity(9, 9);
             console.log(this);
 
             this.setFriction(0.01,0.01);                     //*
@@ -178,8 +178,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
             // update animation if necessary
             if (this.vel.x>0 && this.vel.y==0) {
-                // update object animation
-                //this.setCurrentAnimation("walk_" + direction);   //denne oppdaterer spriteanimasjonen
                 this.renderable.setCurrentAnimation("walkRight");
                 this.parent();
                 return true;
@@ -187,8 +185,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             else if (this.vel.x<0 && this.vel.y==0) {
                 this.renderable.setCurrentAnimation("walkLeft");
                 this.parent();
-            // else inform the engine we did not perform
-            // any update (e.g. position, animation)
                 return true;
             }
             else if (this.vel.x==0 && this.vel.y>0) {
