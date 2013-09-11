@@ -123,7 +123,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.animationspeed = 10;
 
             // stand animation
-            this.renderable.addAnimation("still", [0]);         //koordinater på spritebildet (tror vi)
+            this.renderable.addAnimation("still", [0]);
             // walking animation
             this.renderable.addAnimation ("walkLeft", [1,5,9,13]);
             this.renderable.addAnimation ("walkRight", [3,7,11,15]); //2
@@ -149,23 +149,23 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
            // me.input.registerPointerEvent('mousemove', this, this);
 
             if (me.input.isKeyPressed('left')) {             // 2 6 10 14
-                // update the entity velocity
-                //var direction = 'left';
+                this.renderable.addAnimation("still",[1]);
                 this.vel.x -= this.accel.x * me.timer.tick;
+                this.vel.y = 0;
             } else if (me.input.isKeyPressed('right')) {
-                //var direction = 'right';// 4 8 12 16
-                // update the entity velocity
+                this.renderable.addAnimation("still",[3]);
+                this.vel.y = 0;
                 this.vel.x += this.accel.x * me.timer.tick;
             }
             else if (me.input.isKeyPressed('up')) {          // 3 7 11 15
-                //var direction = 'up';
-                // update the entity velocity
+                this.renderable.addAnimation("still",[2]);
                 this.vel.y -= this.accel.y * me.timer.tick;
+                this.vel.x = 0;
             }
             else if (me.input.isKeyPressed('down')) {        // 1 5 9 13
-                //var direction = 'down';
-                // update the entity velocity
+                this.renderable.addAnimation("still",[0]);
                 this.vel.y += this.accel.y * me.timer.tick;
+                this.vel.x = 0;
             }
             else {
                 this.vel.x = 0;
