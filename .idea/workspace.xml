@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="" />
+    <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/resources.js" afterPath="$PROJECT_DIR$/app/services/resources.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/map/woods.tmx" afterPath="$PROJECT_DIR$/Content/map/woods.tmx" />
+    </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378785452776" ignored="false" />
@@ -70,19 +73,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameCtrl.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gameCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="40" selection-start="3206" selection-end="3206" vertical-scroll-proportion="1.8333334">
+            <state line="109" column="40" selection-start="3206" selection-end="3206" vertical-scroll-proportion="-52.26923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resources.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="resources.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="31" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0">
+            <state line="11" column="33" selection-start="228" selection-end="228" vertical-scroll-proportion="-4.4150944">
               <folding />
             </state>
           </provider>
@@ -100,7 +103,7 @@
       <file leaf-file-name="melonJS-0.9.8.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3356" column="29" selection-start="83185" selection-end="83197" vertical-scroll-proportion="-140.6923">
+            <state line="14384" column="67" selection-start="367118" selection-end="367118" vertical-scroll-proportion="-9.076923">
               <folding />
             </state>
           </provider>
@@ -138,8 +141,8 @@
         <option value="$PROJECT_DIR$/app/partials/game.html" />
         <option value="$PROJECT_DIR$/app/game/resources.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/services/resources.js" />
         <option value="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
+        <option value="$PROJECT_DIR$/app/services/resources.js" />
       </list>
     </option>
   </component>
@@ -594,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3356" column="29" selection-start="83185" selection-end="83197" vertical-scroll-proportion="-140.6923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/firstCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="17" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
@@ -608,16 +604,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/resources.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="31" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0">
+        <state line="14384" column="67" selection-start="367118" selection-end="367118" vertical-scroll-proportion="-9.076923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="40" selection-start="3206" selection-end="3206" vertical-scroll-proportion="1.8333334">
+        <state line="109" column="40" selection-start="3206" selection-end="3206" vertical-scroll-proportion="-52.26923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/resources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="33" selection-start="228" selection-end="228" vertical-scroll-proportion="-4.4150944">
           <folding />
         </state>
       </provider>

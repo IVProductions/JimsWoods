@@ -5,7 +5,7 @@ JimsWoods.factory('imageResourceFactory',function() {
             "name": "player"
         },
         {
-            "name": "tiles"
+            "name": "woods_tiles"
         },
         {
             "name" : "rachel"
