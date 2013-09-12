@@ -138,7 +138,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
         },
 
-
+                                                                                                                                  f
 
         /* -----
 
