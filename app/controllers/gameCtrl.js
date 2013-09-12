@@ -7,7 +7,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
         init : function(){
             // Create Canvas
 
-            me.video.init("screen", 400, 400);
+            me.video.init("screen", window.innerWidth, window.innerHeight);
             me.sys.gravity = 0;
 
             // Initialize the audio.
@@ -138,7 +138,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
         },
 
-                                                                                                                                  f
+
 
         /* -----
 
