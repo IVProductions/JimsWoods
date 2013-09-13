@@ -12,3 +12,5 @@ h1 {
     text-align: center;
     text-decoration:underline;
 }
+
+body > div { -webkit-transition: all 1s ease-in-out; }
