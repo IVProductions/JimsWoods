@@ -23,7 +23,10 @@ JimsWoods.config(function ($routeProvider){
         controller:"firstCtrl"
     }).when("/myAnimals",{
         templateUrl:"app/partials/myAnimals.html",
-        controller:"firstCtrl"
+        controller:"myAnimalsCtrl"
+    }).when("/myAnimalDetails",{
+        templateUrl:"app/partials/myAnimalDetails.html",
+        controller:"myAnimalsCtrl"
     }).when("/game",{
         templateUrl:"app/partials/game.html",
         controller:"gameCtrl"
