@@ -1,6 +1,12 @@
 body {
     background-color: goldenrod;
 }
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}
+
 #slotMenu {
     text-align: center;
     padding-top: 10%;
