@@ -1,16 +1,26 @@
+body {
+    background-color: goldenrod;
+}
 #slotMenu {
+
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 10%;
+    background: url('../img/bg.png') no-repeat;
+    background-size: 100% 100%;
 }
 .slotButton {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 50%;
+    background-color: saddlebrown;
     text-align: center;
-    padding: 12px;
-    border:2px solid;
-    border-radius: 20px;
-    background-color: red;
+    padding: 20px;
+    color: ghostwhite;
+    font-size: 20px;
 }
 
 h1 {
     text-align: center;
-    text-decoration:underline;
 }
 
-body > div { -webkit-transition: all 1s ease-in-out; }
