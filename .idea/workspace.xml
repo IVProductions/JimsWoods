@@ -13,6 +13,7 @@
     <file path="/animalDetails.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379045888463" ignored="false" />
     <file path="/wiki.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379045962560" ignored="false" />
     <file path="/myAnimals.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379046938730" ignored="false" />
+    <file path="/index.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379057246346" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +36,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="115" selection-start="380" selection-end="380" vertical-scroll-proportion="0.3253012">
+            <state line="5" column="93" selection-start="230" selection-end="230" vertical-scroll-proportion="0.18072289">
               <folding />
             </state>
           </provider>
@@ -610,7 +611,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="115" selection-start="380" selection-end="380" vertical-scroll-proportion="0.3253012">
+        <state line="5" column="93" selection-start="230" selection-end="230" vertical-scroll-proportion="0.18072289">
           <folding />
         </state>
       </provider>
