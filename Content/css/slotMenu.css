@@ -7,6 +7,18 @@ body {
     -webkit-user-select: none; /* Disable selection/copy in UIWebView */
 }
 
+.backButton {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    padding: 20px;
+    color: ghostwhite;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: saddlebrown;
+}
+
 #slotMenu {
     text-align: center;
     padding-top: 10%;
