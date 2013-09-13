@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/slotMenu.css" afterPath="$PROJECT_DIR$/Content/css/slotMenu.css" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +36,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="67" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.41888618">
+            <state line="28" column="66" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.41888618">
               <folding />
             </state>
           </provider>
@@ -645,7 +644,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="67" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.41888618">
+        <state line="28" column="66" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.41888618">
           <folding />
         </state>
       </provider>
