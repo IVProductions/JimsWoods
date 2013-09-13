@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Scripts/jquery-1.10.2.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/img/bg.png" afterPath="$PROJECT_DIR$/Content/img/bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/animalDetails.html" afterPath="$PROJECT_DIR$/app/partials/animalDetails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/myAnimalDetails.html" afterPath="$PROJECT_DIR$/app/partials/myAnimalDetails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/myAnimals.html" afterPath="$PROJECT_DIR$/app/partials/myAnimals.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/slotMenu.css" afterPath="$PROJECT_DIR$/Content/css/slotMenu.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -13,12 +13,12 @@
     <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379060816275" ignored="false" />
     <file path="/first.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378675328532" ignored="false" />
     <file path="/mainMenu.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379045356598" ignored="false" />
-    <file path="/animalList.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379045790001" ignored="false" />
+    <file path="/animalList.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379108419468" ignored="false" />
     <file path="/animalDetails.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379045888463" ignored="false" />
     <file path="/wiki.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379045962560" ignored="false" />
-    <file path="/myAnimals.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379046938730" ignored="false" />
+    <file path="/myAnimals.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379108463822" ignored="false" />
     <file path="/index.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379105844982" ignored="false" />
-    <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379107841563" ignored="false" />
+    <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379108375215" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slotMenu.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="slotMenu.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/css/slotMenu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.7012987">
+            <state line="19" column="4" selection-start="411" selection-end="411" vertical-scroll-proportion="-5.181818">
               <folding />
             </state>
           </provider>
@@ -77,7 +77,16 @@
       <file leaf-file-name="animalDetails.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/animalDetails.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="52" selection-start="158" selection-end="158" vertical-scroll-proportion="-2.5">
+            <state line="0" column="70" selection-start="70" selection-end="70" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myAnimalDetails.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/partials/myAnimalDetails.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="69" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,16 +95,7 @@
       <file leaf-file-name="animalList.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/animalList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="11" selection-start="0" selection-end="17" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gameCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="57" selection-start="4734" selection-end="4734" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="216" selection-end="216" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -104,7 +104,7 @@
       <file leaf-file-name="myAnimals.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/myAnimals.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="22" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.625">
+            <state line="7" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="-1.329114">
               <folding />
             </state>
           </provider>
@@ -146,22 +146,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/directives/testDirective.js" />
         <option value="$PROJECT_DIR$/app/filters/testFilter.js" />
         <option value="$PROJECT_DIR$/app/services/testService.js" />
         <option value="$PROJECT_DIR$/app/partials/first.html" />
         <option value="$PROJECT_DIR$/app/services/jungleAnimalService.js" />
         <option value="$PROJECT_DIR$/app/partials/mainMenu.html" />
         <option value="$PROJECT_DIR$/app/controllers/wikiCtrl.js" />
-        <option value="$PROJECT_DIR$/app/partials/animalList.html" />
-        <option value="$PROJECT_DIR$/app/partials/animalDetails.html" />
         <option value="$PROJECT_DIR$/app/partials/wiki.html" />
         <option value="$PROJECT_DIR$/app/controllers/firstCtrl.js" />
-        <option value="$PROJECT_DIR$/app/partials/myAnimals.html" />
         <option value="$PROJECT_DIR$/app/services/resources.js" />
         <option value="$PROJECT_DIR$/Scripts/jquery-1.10.2.min.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Content/css/slotMenu.css" />
+        <option value="$PROJECT_DIR$/app/partials/myAnimals.html" />
+        <option value="$PROJECT_DIR$/app/partials/animalList.html" />
+        <option value="$PROJECT_DIR$/app/partials/animalDetails.html" />
+        <option value="$PROJECT_DIR$/app/partials/myAnimalDetails.html" />
       </list>
     </option>
   </component>
@@ -504,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/myAnimals.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/mainMenu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="18" vertical-scroll-proportion="-0.0">
@@ -532,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/slot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/game.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -546,23 +532,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/animalDetails.html">
+    <entry file="file://$PROJECT_DIR$/Content/css/slotMenu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="52" selection-start="158" selection-end="158" vertical-scroll-proportion="-2.5">
+        <state line="19" column="4" selection-start="411" selection-end="411" vertical-scroll-proportion="-5.181818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/slot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/myAnimals.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="-1.329114">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/animalList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11" selection-start="0" selection-end="17" vertical-scroll-proportion="-0.0">
+        <state line="6" column="0" selection-start="216" selection-end="216" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Content/css/slotMenu.css">
+    <entry file="file://$PROJECT_DIR$/app/partials/animalDetails.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.7012987">
+        <state line="0" column="70" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/myAnimalDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="69" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
