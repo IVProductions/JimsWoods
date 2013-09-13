@@ -6,21 +6,20 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
     $scope.game = {
         init : function(){
             // Create Canvas
-
             me.video.init("screen", window.innerWidth, window.innerHeight);
             me.sys.gravity = 0;
 
+
             // Initialize the audio.
             //me.audio.init("ogg");
-
-
-
             // Set a callback to run when loading is complete.
             me.loader.onload = this.loaded.bind(this);
             this.loadResources();
 
             // Initialize melonJS and display a loading screen.
             me.state.change(me.state.LOADING);
+
+
 
         },
 
@@ -76,6 +75,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             // stuff to reset on state change
             // load a level
             me.levelDirector.loadLevel("woods");
+
         },
 
         /* ---
@@ -121,6 +121,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
             this.setFriction(0.01,0.01);                     //*
             this.animationspeed = 10;
+            me.video.getScreenCanvas().addEventListener("touchstart", this.touchstart, false);
 
             // stand animation
             this.renderable.addAnimation("still", [0]);
@@ -133,9 +134,30 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.renderable.setCurrentAnimation("still");
 
             this.updateColRect(4, 20, 10, 38); //*
+
+            $scope.x_coord = 0;
+            $scope.y_coord = 0;
+            $scope.playerX_coord = this.pos.x;
+            $scope.playerY_coord = this.pos.y;
+            $scope.move = false;
             // set the display to follow our position on both axis
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
 
+        },
+
+
+        touchstart : function(e){
+            $scope.x_coord = e.targetTouches[0].clientX;
+            $scope.y_coord = e.targetTouches[0].clientY;
+            $scope.move = true;
+        },
+
+        move : function(){
+            move();
+            this.updateMovement();
+
+            this.renderable.setCurrentAnimation("walkLeft");
+            this.parent();
         },
 
 
@@ -147,6 +169,26 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
          ------ */
         update: function() {
            // me.input.registerPointerEvent('mousemove', this, this);
+            if($scope.move){
+                console.log("move!");
+                console.log(this);
+                $scope.playerX_coord = this.pos.x;
+                $scope.playerY_coord = this.pos.y;
+                console.log($scope.x_coord);
+                console.log($scope.y_coord);
+                console.log($scope.playerX_coord);
+                console.log($scope.playerY_coord);
+                this.renderable.addAnimation("still",[3]);
+                this.vel.y = 0;
+                this.vel.x += this.accel.x * me.timer.tick;
+                this.updateMovement();
+                this.renderable.setCurrentAnimation("walkRight");
+                this.parent();
+                if($scope.playerX_coord == $scope.x_coord){
+                    $scope.move = false;
+                }
+
+            }
 
             if (me.input.isKeyPressed('left')) {             // 2 6 10 14
                 this.renderable.addAnimation("still",[1]);
