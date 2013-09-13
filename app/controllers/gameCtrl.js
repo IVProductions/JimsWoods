@@ -6,22 +6,20 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
     $scope.game = {
         init : function(){
             // Create Canvas
-
-            var canvas = me.video.init("screen", 960, 640);
-            $scope.canvas=canvas;
+            me.video.init("screen", window.innerWidth, window.innerHeight);
             me.sys.gravity = 0;
+
 
             // Initialize the audio.
             //me.audio.init("ogg");
-
-
-
             // Set a callback to run when loading is complete.
             me.loader.onload = this.loaded.bind(this);
             this.loadResources();
 
             // Initialize melonJS and display a loading screen.
             me.state.change(me.state.LOADING);
+
+
 
         },
 
@@ -78,6 +76,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             // stuff to reset on state change
             // load a level
             me.levelDirector.loadLevel("woods");
+
         },
 
         /* ---
@@ -118,11 +117,12 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             console.log(x);
             console.log(y);
             // set the default horizontal & vertical speed (accel vector)
-            this.setVelocity(3, 3);
+            this.setVelocity(2, 2);
             console.log(this);
 
             this.setFriction(0.01,0.01);                     //*
             this.animationspeed = 10;
+            me.video.getScreenCanvas().addEventListener("touchstart", this.touchstart, false);
 
             // stand animation
             this.renderable.addAnimation("still", [0]);
@@ -135,6 +135,12 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.renderable.setCurrentAnimation("still");
 
             this.updateColRect(4, 20, 10, 38); //*
+
+            $scope.x_coord = 0;
+            $scope.y_coord = 0;
+            $scope.playerX_coord = this.pos.x;
+            $scope.playerY_coord = this.pos.y;
+            $scope.move = false;
             // set the display to follow our position on both axis
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
 
@@ -162,8 +168,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             //me.event.unsubscribe(thiss.mouseDown);      //When you are ready to destroy the object which has an open subscription, you must unsubscribe:
             //me.input.releasePointerEvent("mousedown", me.game.viewport);  //And you can safely destroy the event delegator when you no longer need to handle any mouse/touch events:
         },
-
-
         /* -----
 
          update the player pos

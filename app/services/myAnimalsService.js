@@ -1,20 +1,20 @@
-    JimsWoods.factory('jungleAnimalFactory',function() {
+JimsWoods.factory('myAnimalFactory',function() {
     var animals = [
         {
-            "id": 1,
-            "name": "Tiger",
+            "id": 6,
+            "name": "Fox",
             "description": "blabla",
             "imageURL": "Content/img/tiger.png"
         },
         {
-            "id": 2,
-            "name": "Crocodile",
+            "id": 7,
+            "name": "Lepard",
             "description": "blabla",
             "imageURL": "Content/img/crocodile.png"
         },
         {
-            "id": 3,
-            "name": "Orangutang",
+            "id": 8,
+            "name": "Snake",
             "description": "blabla",
             "imageURL": "Content/img/orangutang.png"
         }

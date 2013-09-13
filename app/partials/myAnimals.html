@@ -1,1 +1,8 @@
+<h1>My Animals</h1>
+</br>
 
+<div class="backButton" ng-click="changeView('main')">Back</div>
+<br>
+<div class="slotButton" ng-repeat="animal in myAnimals">
+    <div ng-click="getMyAnimalDetails(animal)">{{animal.name}}</div>
+</div>

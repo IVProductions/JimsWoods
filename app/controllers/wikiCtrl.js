@@ -36,4 +36,7 @@ function wikiCtrl($scope, $location, woodAnimalFactory, stateService, desertAnim
 
     }
 
+    $scope.changeView=function(view){
+        $location.path(view);
+    }
 }
