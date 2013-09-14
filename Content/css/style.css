@@ -1,0 +1,95 @@
+body {
+    background-color: papayawhip;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}
+
+.backButton {
+    background: url('../img/back.png');
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 0;
+}
+
+/* wiki.html */
+.areaBtns {
+    margin-top: 60px;
+}
+.areaBtn {
+    padding-top: 15px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 60px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+.woodsBtn {
+    background: url('../img/woods_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #38b449;
+    border: 4px solid #18792f;
+}
+
+.desertBtn {
+    background: url('../img/desert_icon.png') no-repeat;
+    background-size: 52px 52px;
+    border: 4px solid #9b780d;
+    background-color: #ffc516;
+}
+
+.seaBtn {
+    background: url('../img/sea_icon.png') no-repeat;
+    background-size: 52px 52px;
+    border: 4px solid #26387f;
+    background-color: #5ca3ff;
+}
+
+.jungleBtn {
+    background: url('../img/desert_icon.png') no-repeat;
+    background-size: 52px 52px;
+    border: 4px solid #d7a94c;
+}
+
+.articBtn {
+    background: url('../img/desert_icon.png') no-repeat;
+    background-size: 52px 52px;
+    border: 4px solid #d7a94c;
+}
+
+.fableBtn {
+    background: url('../img/desert_icon.png') no-repeat;
+    background-size: 52px 52px;
+    border: 4px solid #d7a94c;
+}
+
+
+
+/* slot.html */
+
+#slotMenu {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background: url('../img/bg.png') no-repeat;
+    background-size: 100% 100%;
+}
+.slotButton {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: saddlebrown;
+    text-align: center;
+    color: ghostwhite;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
