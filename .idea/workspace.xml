@@ -2,27 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Content/css/slotMenu.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/animalDetails.html" afterPath="$PROJECT_DIR$/app/partials/animalDetails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/img/sea_icon.png" afterPath="$PROJECT_DIR$/Content/img/sea_icon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/animalList.html" afterPath="$PROJECT_DIR$/app/partials/animalList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/mainMenu.html" afterPath="$PROJECT_DIR$/app/partials/mainMenu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/myAnimalDetails.html" afterPath="$PROJECT_DIR$/app/partials/myAnimalDetails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/myAnimals.html" afterPath="$PROJECT_DIR$/app/partials/myAnimals.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/wiki.html" afterPath="$PROJECT_DIR$/app/partials/wiki.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/style.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379060816275" ignored="false" />
     <file path="/first.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378675328532" ignored="false" />
     <file path="/mainMenu.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379110349856" ignored="false" />
-    <file path="/animalList.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379110305097" ignored="false" />
+    <file path="/animalList.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379129756806" ignored="false" />
     <file path="/animalDetails.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379110321313" ignored="false" />
     <file path="/wiki.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379122739917" ignored="false" />
     <file path="/myAnimals.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379110371123" ignored="false" />
     <file path="/index.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379105844982" ignored="false" />
-    <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379124088609" ignored="false" />
+    <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379129893052" ignored="false" />
     <file path="/myAnimalDetails.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379110361626" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +49,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Content/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="29" selection-start="996" selection-end="996" vertical-scroll-proportion="0.72727275">
+            <state line="90" column="30" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.72727275">
               <folding />
             </state>
           </provider>
@@ -100,7 +94,7 @@
       <file leaf-file-name="animalList.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/animalList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="64" selection-start="209" selection-end="209" vertical-scroll-proportion="-3.125">
+            <state line="3" column="43" selection-start="178" selection-end="178" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -159,13 +153,13 @@
         <option value="$PROJECT_DIR$/app/services/resources.js" />
         <option value="$PROJECT_DIR$/Scripts/jquery-1.10.2.min.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/partials/animalList.html" />
         <option value="$PROJECT_DIR$/app/partials/myAnimals.html" />
         <option value="$PROJECT_DIR$/app/partials/mainMenu.html" />
         <option value="$PROJECT_DIR$/app/partials/animalDetails.html" />
         <option value="$PROJECT_DIR$/app/partials/myAnimalDetails.html" />
         <option value="$PROJECT_DIR$/Content/css/slotMenu.css" />
         <option value="$PROJECT_DIR$/app/partials/wiki.html" />
+        <option value="$PROJECT_DIR$/app/partials/animalList.html" />
         <option value="$PROJECT_DIR$/Content/css/style.css" />
       </list>
     </option>
@@ -549,13 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/myAnimals.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="54" selection-start="81" selection-end="81" vertical-scroll-proportion="-0.56962025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/shop.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -591,9 +578,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/animalList.html">
+    <entry file="file://$PROJECT_DIR$/app/partials/wiki.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="64" selection-start="209" selection-end="209" vertical-scroll-proportion="-3.125">
+        <state line="8" column="32" selection-start="535" selection-end="535" vertical-scroll-proportion="-1.5189873">
           <folding />
         </state>
       </provider>
@@ -605,16 +592,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/wiki.html">
+    <entry file="file://$PROJECT_DIR$/app/partials/myAnimals.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="32" selection-start="535" selection-end="535" vertical-scroll-proportion="-1.5189873">
+        <state line="3" column="54" selection-start="81" selection-end="81" vertical-scroll-proportion="-0.56962025">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/animalList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="43" selection-start="178" selection-end="178" vertical-scroll-proportion="-1.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Content/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="29" selection-start="996" selection-end="996" vertical-scroll-proportion="0.72727275">
+        <state line="90" column="30" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.72727275">
           <folding />
         </state>
       </provider>
