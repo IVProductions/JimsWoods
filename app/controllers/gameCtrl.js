@@ -112,17 +112,12 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
         init: function(x, y, settings) {
             // call the constructor
             this.parent(x, y, settings);
-            console.log(this.parent);
-            console.log(settings);
-            console.log(x);
-            console.log(y);
             // set the default horizontal & vertical speed (accel vector)
-            this.setVelocity(2, 2);
-            console.log(this);
+            this.setVelocity(4, 4);
 
             this.setFriction(0.01,0.01);                     //*
             this.animationspeed = 10;
-            me.video.getScreenCanvas().addEventListener("touchstart", this.touchstart, false);
+            //me.video.getScreenCanvas().addEventListener("touchstart", this.touchstart, false);
 
             // stand animation
             this.renderable.addAnimation("still", [0]);
@@ -143,30 +138,57 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             $scope.move = false;
             // set the display to follow our position on both axis
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
+            console.log("Fag");
+            console.log(me.video.getWidth());
+            console.log(me.video.getHeight());
+            console.log(this.pos.x);
+            console.log(this.pos.y);
+            console.log("fagEND");
+            //var grid = new PF.Grid(me.video.getWidth(), me.video.getHeight);
 
-            var grid = new PF.Grid(960, 640);
-            var finder = new PF.AStarFinder();
-            var path = finder.findPath(290, 244, 1, 244, grid);
+            //var path = finder.findPath(this.pos.x, this.pos.y, 520, 320, grid);
+            var path=[];
             $scope.path = path;
-            var mouse = this;
             //console.log(mouse.parent());
-            $scope.stateService=stateService;
-            $scope.stateService.functions.setCurrentContext(this);
-            console.log("yo");
-            console.log($scope.stateService.functions.getCurrentContext());
-
+            //$scope.stateService=stateService;
+            //$scope.stateService.functions.setCurrentContext(this);
+            var mouse = this;
             me.input.registerPointerEvent("mousedown", me.game.viewport, function (event) {
                 me.event.publish("mousedown", [ event ]);
             });
             this.mouseDown = me.event.subscribe("mousedown", function (event) {
                 //console.log(event.pointerId+", ", event.gameX+", ",event.gameY);   //main player default is X:290 Y:244
-                for (var i=0;i<path.length-1;i++) {
-
+                //registrer ny destX og destY
+                //alert(event.gameX+" , y "+event.gameY);
+                var xSource=""+mouse.pos.x;
+                var ySource=""+mouse.pos.y;
+                if (xSource.indexOf(".") !=-1) {
+                    xSource=xSource.split('.')[0];
                 }
+                if (ySource.indexOf(".") !=-1) {
+                    ySource=ySource.split('.')[0];
+                }
+                //alert("x:"+mouse.pos.x+", y:"+ mouse.pos.y+".  x:"+event.gameX+", y:"+event.gameY);
+                //alert(xSource);
+                var grid = new PF.Grid(me.video.getWidth(),me.video.getHeight());
+                //var gridBackup = grid.clone();
+                var finder = new PF.IDAStarFinder();
+                $scope.path = finder.findPath(xSource, ySource, event.gameX, event.gameY, grid);
+                console.log("cock");
+                console.log(mouse.pos.x);
+                console.log(mouse.pos.y);
+                console.log(event.gameX);
+                console.log(event.gameY);
+                console.log($scope.path[0]);
 
             });
             //me.event.unsubscribe(thiss.mouseDown);      //When you are ready to destroy the object which has an open subscription, you must unsubscribe:
             //me.input.releasePointerEvent("mousedown", me.game.viewport);  //And you can safely destroy the event delegator when you no longer need to handle any mouse/touch events:
+            var lastLastDir="";
+            var lastDir="";
+            $scope.lastLastDir=lastLastDir;
+            $scope.lastDir=lastDir;
+
         },
         /* -----
 
@@ -174,81 +196,94 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
          ------ */
         update: function() {
-            console.log(me.video.getHeight());
+            //  console.log(me.video.getHeight());
             console.log("yo2");
-            console.log($scope.stateService.functions.getCurrentContext()/20);
-            var source=$scope.path[0];
+            console.log(this);
+            console.log($scope.path[0]);
+            if ($scope.path.length>0) {            //if path exists
+                var source=$scope.path[0];
+                var sourceX=source[0];
+                var sourceY=source[1];
+            }
+            if ($scope.path.length>1) {            //if not last coordinate
+                var dest = $scope.path[1];
+                var destX=dest[0];
+                var destY=dest[1];
+            }
             $scope.path.splice(0,1);
-            var sourceX=source[0];
-            var sourceY=source[1];
-            var dest="";
-            var destX="";
-            var destY="";
-            if ($scope.path>1) {
-                dest = $scope.path[1];
-                destX=dest[0];
-                destY=dest[1];
-            }
             //console.log(source);
+            console.log("yo3");
+            console.log(sourceX);
+            console.log(sourceY);
+            console.log(destX);
+            console.log(destY);
             var currentWalkingDir=walkFromAtoB(sourceX,sourceY,destX,destY);
-            //console.log(currentWalkingDir);
-            if (currentWalkingDir=="left") {             // 2 6 10 14
-                mouse.renderable.addAnimation("still",[1]);
-                mouse.vel.x -= mouse.accel.x * me.timer.tick;
-                mouse.vel.y = 0;
-            } else if (currentWalkingDir=="right") {
-                mouse.renderable.addAnimation("still",[3]);
-                mouse.vel.y = 0;
-                mouse.vel.x += mouse.accel.x * me.timer.tick;
-            }
-            else if (currentWalkingDir=="up") {          // 3 7 11 15
-                mouse.renderable.addAnimation("still",[2]);
-                mouse.vel.y -= mouse.accel.y * me.timer.tick;
-                mouse.vel.x = 0;
-            }
-            else if (currentWalkingDir=="down") {        // 1 5 9 13
-                mouse.renderable.addAnimation("still",[0]);
-                mouse.vel.y += mouse.accel.y * me.timer.tick;
-                mouse.vel.x = 0;
+            if (currentWalkingDir!=$scope.lastDir) {
+                //$scope.lastLastDir=$scope.lastDir;
+                if (currentWalkingDir=="left") {             // 2 6 10 14
+                    $scope.lastDir="left";
+                    this.renderable.addAnimation("still",[1]);
+                    this.vel.x -= this.accel.x * me.timer.tick;
+                    this.vel.y = 0;
+                } else if (currentWalkingDir=="right") {
+                    $scope.lastDir="right";
+                    this.renderable.addAnimation("still",[3]);
+                    this.vel.y = 0;
+                    this.vel.x += this.accel.x * me.timer.tick;
+                }
+                else if (currentWalkingDir=="up") {          // 3 7 11 15
+                    $scope.lastDir="up";
+                    this.renderable.addAnimation("still",[2]);
+                    this.vel.y -= this.accel.y * me.timer.tick;
+                    this.vel.x = 0;
+                }
+                else if (currentWalkingDir=="down") {        // 1 5 9 13
+                    $scope.lastDir="down";
+                    this.renderable.addAnimation("still",[0]);
+                    this.vel.y += this.accel.y * me.timer.tick;
+                    this.vel.x = 0;
+                }
+                else {
+                    this.vel.x = 0;
+                    this.vel.y = 0;
+                }
+
+
+                // check & update player movement
+                this.updateMovement();
+
+                // update animation if necessary
+                if (this.vel.x>0 && this.vel.y==0) {
+                    this.renderable.setCurrentAnimation("walkRight");
+                    this.parent();
+                    return true;
+                }
+                else if (this.vel.x<0 && this.vel.y==0) {
+                    this.renderable.setCurrentAnimation("walkLeft");
+                    this.parent();
+                    return true;
+                }
+                else if (this.vel.x==0 && this.vel.y>0) {
+                    this.renderable.setCurrentAnimation("walkDown");
+                    this.parent();
+                    return true;
+                }
+                else if (this.vel.x==0 && this.vel.y<0) {
+                    this.renderable.setCurrentAnimation("walkUp");
+                    this.parent();
+                    return true;
+                }
+                else {
+                    this.renderable.setCurrentAnimation("still");
+                    this.parent();
+                    return true;
+                }
+                //if no updates are needed
+                return false;
             }
             else {
-                mouse.vel.x = 0;
-                mouse.vel.y = 0;
+                $scope.lastDir = "";
             }
-
-
-            // check & update player movement
-            mouse.updateMovement();
-
-            // update animation if necessary
-            if (mouse.vel.x>0 && mouse.vel.y==0) {
-                mouse.renderable.setCurrentAnimation("walkRight");
-                //mouse.parent();
-                //return true;
-            }
-            else if (mouse.vel.x<0 && mouse.vel.y==0) {
-                mouse.renderable.setCurrentAnimation("walkLeft");
-                //mouse.parent();
-                //return true;
-            }
-            else if (mouse.vel.x==0 && mouse.vel.y>0) {
-                mouse.renderable.setCurrentAnimation("walkDown");
-                //mouse.parent();
-                //return true;
-            }
-            else if (mouse.vel.x==0 && mouse.vel.y<0) {
-                mouse.renderable.setCurrentAnimation("walkUp");
-                //mouse.parent();
-                console.log("ass");
-                //return true;
-            }
-            else {
-                mouse.renderable.setCurrentAnimation("still");
-                //mouse.parent();
-                //return true;
-            }
-             //if no updates are needed
-             return false;
         }
 
     });
