@@ -154,11 +154,16 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             //console.log(mouse.parent());
             //$scope.stateService=stateService;
             //$scope.stateService.functions.setCurrentContext(this);
+            console.log("height:");
+            console.log(me.game.viewport.getHeight());
+
             var mouse = this;
+
             var mouseEvent = me.input.registerPointerEvent('mousedown', me.game.viewport, function (event) {
                 me.event.publish("mousedown", [ event ]);
             });
             this.mouseDown = me.event.subscribe("mousedown", function (event) {
+
                 //alert(event.gameX+" , y "+event.gameY);
                 var xSource=""+mouse.pos.x;
                 var ySource=""+mouse.pos.y;
@@ -278,6 +283,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 }
                 var grid = new PF.Grid(me.video.getWidth(),me.video.getHeight());
                 var finder = new PF.IDAStarFinder();
+
                 $scope.path = finder.findPath(xSource, ySource, xTarget, yTarget, grid);
                 console.log("cock");
                 console.log(mouse.pos.x);
@@ -285,6 +291,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 console.log(event.gameX);
                 console.log(event.gameY);
                 console.log($scope.path[0]);
+
             });
 
         },
@@ -295,9 +302,9 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
          ------ */
         update: function() {
             //  console.log(me.video.getHeight());
-            console.log("yo2");
-            console.log(this);
-            console.log($scope.path[0]);
+            //console.log("yo2");
+            //console.log(this);
+            //console.log($scope.path[0]);
             if ($scope.path.length>0) {            //if path exists
                 var source=$scope.path[0];
                 var sourceX=source[0];
@@ -310,11 +317,11 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             }
             $scope.path.splice(0,1);
             //console.log(source);
-            console.log("yo3");
-            console.log(sourceX);
-            console.log(sourceY);
-            console.log(destX);
-            console.log(destY);
+            //console.log("yo3");
+            //console.log(sourceX);
+            //console.log(sourceY);
+            //console.log(destX);
+            //console.log(destY);
             var currentWalkingDir=walkFromAtoB(sourceX,sourceY,destX,destY);
             //if (currentWalkingDir!=$scope.lastDir) {
                 if (currentWalkingDir=="left") {             // 2 6 10 14
