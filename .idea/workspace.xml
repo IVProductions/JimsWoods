@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/gameCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/melonJS-0.9.8.js" afterPath="$PROJECT_DIR$/Scripts/melonJS-0.9.8.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379212854180" ignored="false" />
+    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379213122084" ignored="false" />
     <file path="/app.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378751860581" ignored="false" />
     <file path="/second.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378676069663" ignored="false" />
     <file path="/first.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378682143885" ignored="false" />
@@ -30,7 +31,7 @@
     <file path="$USER_HOME$/Diffia/Patient/app/partials/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378711139344" ignored="false" />
     <file path="/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378710695419" ignored="false" />
     <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378715584845" ignored="false" />
-    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379211165957" ignored="false" />
+    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379233198084" ignored="false" />
     <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378768666461" ignored="false" />
     <file path="/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378767812234" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Jims Woods/Neverwell_Moor_v1.0.1/js/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769022115" ignored="false" />
@@ -43,6 +44,7 @@
     <file path="$USER_HOME$/WebstormProjects/game/css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378869485369" ignored="false" />
     <file path="/functions.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378935363662" ignored="false" />
     <file path="/pathfinding-browser.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379203807502" ignored="false" />
+    <file path="/melonJS-0.9.8.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379214027349" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="3" selection-start="1039" selection-end="1121" vertical-scroll-proportion="-1.4583334">
+            <state line="21" column="3" selection-start="1039" selection-end="1121" vertical-scroll-proportion="-0.9166667">
               <folding />
             </state>
           </provider>
@@ -74,8 +76,19 @@
       <file leaf-file-name="gameCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="19" selection-start="5105" selection-end="5105" vertical-scroll-proportion="0.22042139">
+            <state line="282" column="147" selection-start="10593" selection-end="10593" vertical-scroll-proportion="0.34895834">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="melonJS-0.9.8.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10124" column="116" selection-start="257070" selection-end="257070" vertical-scroll-proportion="-10.461538">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,7 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/firstCtrl.js" />
         <option value="$PROJECT_DIR$/app/partials/slot.html" />
         <option value="$PROJECT_DIR$/Content/css/slotMenu.css" />
         <option value="$PROJECT_DIR$/app/app.js" />
@@ -167,6 +179,7 @@
         <option value="$PROJECT_DIR$/Scripts/pathfinding-browser.min.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Scripts/pathfinding-browser.js" />
+        <option value="$PROJECT_DIR$/Scripts/melonJS-0.9.8.js" />
         <option value="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
       </list>
     </option>
@@ -386,14 +399,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Neverwell_Moor_v1.0.1" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Neverwell_Moor_v1.0.1" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -477,8 +490,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982105" sideWeight="0.698" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16537103" sideWeight="0.9820896" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.017910447" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16537103" sideWeight="0.9835821" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.016417911" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -596,15 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5243" column="22" selection-start="134176" selection-end="134190" vertical-scroll-proportion="-4.2920895">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="12" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
@@ -638,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="3" selection-start="1039" selection-end="1121" vertical-scroll-proportion="-1.4583334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/pathfinding-browser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="883" column="54" selection-start="30807" selection-end="30807" vertical-scroll-proportion="0.0">
@@ -652,9 +649,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="3" selection-start="1039" selection-end="1121" vertical-scroll-proportion="-0.9166667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10124" column="116" selection-start="257070" selection-end="257070" vertical-scroll-proportion="-10.461538">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="19" selection-start="5105" selection-end="5105" vertical-scroll-proportion="0.22042139">
+        <state line="282" column="147" selection-start="10593" selection-end="10593" vertical-scroll-proportion="0.34895834">
           <folding />
         </state>
       </provider>

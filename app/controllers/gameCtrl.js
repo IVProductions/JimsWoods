@@ -6,7 +6,8 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
     $scope.game = {
         init : function(){
             // Create Canvas
-            me.video.init("screen", window.innerWidth, window.innerHeight);
+            var thing= me.video.init("screen", window.innerWidth, window.innerHeight);
+            $scope.thing=thing;
             me.sys.gravity = 0;
 
 
@@ -113,7 +114,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             // call the constructor
             this.parent(x, y, settings);
             // set the default horizontal & vertical speed (accel vector)
-            this.setVelocity(4, 4);
+            this.setVelocity(2, 2);
 
             this.setFriction(0.01,0.01);                     //*
             this.animationspeed = 10;
@@ -126,6 +127,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.renderable.addAnimation ("walkRight", [3,7,11,15]); //2
             this.renderable.addAnimation ("walkUp", [2,6,10,14]); //2
             this.renderable.addAnimation ("walkDown", [0,4,8,12]); //2
+            this.renderable.addAnimation ("walkRightDown", [0,4,8,12]); //2
 
             this.renderable.setCurrentAnimation("still");
 
@@ -153,12 +155,10 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             //$scope.stateService=stateService;
             //$scope.stateService.functions.setCurrentContext(this);
             var mouse = this;
-            me.input.registerPointerEvent("mousedown", me.game.viewport, function (event) {
+            var mouseEvent = me.input.registerPointerEvent('mousedown', me.game.viewport, function (event) {
                 me.event.publish("mousedown", [ event ]);
             });
             this.mouseDown = me.event.subscribe("mousedown", function (event) {
-                //console.log(event.pointerId+", ", event.gameX+", ",event.gameY);   //main player default is X:290 Y:244
-                //registrer ny destX og destY
                 //alert(event.gameX+" , y "+event.gameY);
                 var xSource=""+mouse.pos.x;
                 var ySource=""+mouse.pos.y;
@@ -168,26 +168,124 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 if (ySource.indexOf(".") !=-1) {
                     ySource=ySource.split('.')[0];
                 }
-                //alert("x:"+mouse.pos.x+", y:"+ mouse.pos.y+".  x:"+event.gameX+", y:"+event.gameY);
-                //alert(xSource);
+                var xTarget=event.gameX;
+                var yTarget=event.gameY;
+                var oldx="";
+                var oldy="";
+                var yeahX="";
+                var yeahY="";
+                alert(yTarget-ySource);
+                oldx=xTarget;
+                //right dir
+                if (xTarget-xSource>0 && xTarget-xSource<50) {
+                    xTarget=xTarget-0;
+                }
+                else if (xTarget-xSource>50 && xTarget-xSource<100) {
+                    xTarget=xTarget-50;
+                }
+                else if (xTarget-xSource>100 && xTarget-xSource<150) {
+                    xTarget=xTarget-87;
+                }
+                else if (xTarget-xSource>150 && xTarget-xSource<200) {
+                    xTarget=xTarget-97;
+                }
+                else if (xTarget-xSource>200 && xTarget-xSource<250) {
+                    xTarget=xTarget-107
+                }
+                else if (xTarget-xSource>250 && xTarget-xSource<300) {
+                    xTarget=xTarget-157;
+                }
+                else if (xTarget-xSource>300 && xTarget-xSource<350) {
+                    xTarget=xTarget-180;
+                }
+                else if (xTarget-xSource>350) {
+                    xTarget=xTarget-300;
+                }
+                //left dir
+                if (xTarget-xSource<0 && xTarget-xSource>-50) {
+                    xTarget=xTarget;
+                }
+                else if (xTarget-xSource<-50 && xTarget-xSource>-100) {
+                    xTarget=xTarget+30;
+                }
+                else if (xTarget-xSource<-100 && xTarget-xSource>-150) {
+                    xTarget=xTarget+50;
+                }
+                else if (xTarget-xSource<-150 && xTarget-xSource>-200) {
+                    xTarget=xTarget+70;
+                }
+                else if (xTarget-xSource<-200 && xTarget-xSource>-250) {
+                    xTarget=xTarget+90;
+                }
+                else if (xTarget-xSource<-250 && xTarget-xSource>-300) {
+                    xTarget=xTarget+110;
+                }
+                else if (xTarget-xSource<-300 && xTarget-xSource>-350) {
+                    xTarget=xTarget+120;
+                }
+                else if (xTarget-xSource<-350) {
+                    xTarget=xTarget+250;
+                }
+                //down dir
+                if (yTarget-ySource>0 && yTarget-ySource<50) {
+                    yTarget=yTarget-35;
+                }
+                else if (yTarget-ySource>50 && yTarget-ySource<100) {
+                    yTarget=yTarget-50;
+                }
+                else if (yTarget-ySource>100 && yTarget-ySource<150) {
+                    yTarget=yTarget-75;
+                }
+                else if (yTarget-ySource>150 && yTarget-ySource<200) {
+                    yTarget=yTarget-100;
+                }
+                else if (yTarget-ySource>200 && yTarget-ySource<250) {
+                    yTarget=yTarget-130;
+                }
+                else if (yTarget-ySource>250 && yTarget-ySource<300) {
+                    yTarget=yTarget-130;
+                }
+                else if (yTarget-ySource>300 && yTarget-ySource<350) {
+                    yTarget=yTarget-180;
+                }
+                else if (yTarget-ySource>350){
+                    yTarget=yTarget-250;
+                }
+                //up dir
+                if (yTarget-ySource<0 && yTarget-ySource>-50) {
+                    yTarget=yTarget;
+                }
+                else if (yTarget-ySource<-50 && yTarget-ySource>-100) {
+                    yTarget=yTarget+30;
+                }
+                else if (yTarget-ySource<-100 && yTarget-ySource>-150) {
+                    yTarget=yTarget+50;
+                }
+                else if (yTarget-ySource<-150 && yTarget-ySource>-200) {
+                    yTarget=yTarget+70;
+                }
+                else if (yTarget-ySource<-200 && yTarget-ySource>-250) {
+                    yTarget=yTarget+90;
+                }
+                else if (yTarget-ySource<-250 && yTarget-ySource>-300) {
+                    yTarget=yTarget+110;
+                }
+                else if (yTarget-ySource<-300 && yTarget-ySource>-350) {
+                    yTarget=yTarget+120;
+                }
+                else if (yTarget-ySource<-350) {
+                    yTarget=yTarget+250;
+                }
                 var grid = new PF.Grid(me.video.getWidth(),me.video.getHeight());
-                //var gridBackup = grid.clone();
                 var finder = new PF.IDAStarFinder();
-                $scope.path = finder.findPath(xSource, ySource, event.gameX, event.gameY, grid);
+                $scope.path = finder.findPath(xSource, ySource, xTarget, yTarget, grid);
                 console.log("cock");
                 console.log(mouse.pos.x);
                 console.log(mouse.pos.y);
                 console.log(event.gameX);
                 console.log(event.gameY);
                 console.log($scope.path[0]);
-
             });
-            //me.event.unsubscribe(thiss.mouseDown);      //When you are ready to destroy the object which has an open subscription, you must unsubscribe:
-            //me.input.releasePointerEvent("mousedown", me.game.viewport);  //And you can safely destroy the event delegator when you no longer need to handle any mouse/touch events:
-            var lastLastDir="";
-            var lastDir="";
-            $scope.lastLastDir=lastLastDir;
-            $scope.lastDir=lastDir;
 
         },
         /* -----
@@ -218,8 +316,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             console.log(destX);
             console.log(destY);
             var currentWalkingDir=walkFromAtoB(sourceX,sourceY,destX,destY);
-            if (currentWalkingDir!=$scope.lastDir) {
-                $scope.lastLastDir=$scope.lastDir;
+            //if (currentWalkingDir!=$scope.lastDir) {
                 if (currentWalkingDir=="left") {             // 2 6 10 14
                     $scope.lastDir="left";
                     this.renderable.addAnimation("still",[1]);
@@ -242,6 +339,12 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     this.renderable.addAnimation("still",[0]);
                     this.vel.y += this.accel.y * me.timer.tick;
                     this.vel.x = 0;
+                }
+                else if (currentWalkingDir=="rightdown") {        // 1 5 9 13
+                    $scope.lastDir="down";
+                    this.renderable.addAnimation("still",[0]);
+                    this.vel.y += this.accel.y * me.timer.tick;
+                    this.vel.x += this.accel.x * me.timer.tick;
                 }
                 else {
                     this.vel.x = 0;
@@ -273,6 +376,11 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     this.parent();
                     return true;
                 }
+                else if (this.vel.x>0 && this.vel.y>0) {
+                    this.renderable.setCurrentAnimation("walkRightDown");
+                    this.parent();
+                    return true;
+                }
                 else {
                     this.renderable.setCurrentAnimation("still");
                     this.parent();
@@ -280,14 +388,24 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 }
                 //if no updates are needed
                 return false;
-            }
-            else {
-                $scope.lastDir = "";
-            }
+            //}
+            //else {
+                //if ($scope.secondTime) {
+                //    if($scope.thirdTime) {
+                //        $scope.lastDir="";
+                //        $scope.secondTime=false;
+                //        $scope.thirdTime=false;
+                //    }
+                //    else {
+                //         $scope.thirdTime=true;
+                //    }
+                //}
+                //else {
+                //    $scope.secondTime=true;
+                //}
+            //}
         }
 
     });
-
-    //$scope.game.NPC = game.Sprite.extend({
 
 }

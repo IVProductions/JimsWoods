@@ -10129,7 +10129,6 @@ window.me = window.me || {};
 		obj.registerPointerEvent = function (eventType, rect, callback, floating) {
 		    // make sure the mouse/touch events are initialized
 		    enablePointerEvent();
-
 		    // convert mouse events to iOS/PointerEvent equivalent
 		    if ((mouseEventList.indexOf(eventType) !== -1) && (me.sys.touch || window.navigator.pointerEnabled)) {
 		        eventType = activeEventList[mouseEventList.indexOf(eventType)];
