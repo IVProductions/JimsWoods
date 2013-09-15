@@ -152,11 +152,15 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             //console.log(mouse.parent());
             //$scope.stateService=stateService;
             //$scope.stateService.functions.setCurrentContext(this);
+            console.log("height:");
+            console.log(me.game.viewport.getHeight());
+
             var mouse = this;
             me.input.registerPointerEvent("mousedown", me.game.viewport, function (event) {
-                me.event.publish("mousedown", [ event ]);
+                me.event.publish("touchstart", [ event ]);
             });
-            this.mouseDown = me.event.subscribe("mousedown", function (event) {
+            this.mouseDown = me.event.subscribe("touchstart", function (event) {
+
                 //console.log(event.pointerId+", ", event.gameX+", ",event.gameY);   //main player default is X:290 Y:244
                 //registrer ny destX og destY
                 //alert(event.gameX+" , y "+event.gameY);
@@ -174,12 +178,12 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 //var gridBackup = grid.clone();
                 var finder = new PF.IDAStarFinder();
                 $scope.path = finder.findPath(xSource, ySource, event.gameX, event.gameY, grid);
-                console.log("cock");
-                console.log(mouse.pos.x);
-                console.log(mouse.pos.y);
-                console.log(event.gameX);
-                console.log(event.gameY);
-                console.log($scope.path[0]);
+                //console.log("cock");
+                //console.log(mouse.pos.x);
+                //console.log(mouse.pos.y);
+                //console.log(event.gameX);
+                //console.log(event.gameY);
+                //console.log($scope.path[0]);
 
             });
             //me.event.unsubscribe(thiss.mouseDown);      //When you are ready to destroy the object which has an open subscription, you must unsubscribe:
@@ -197,9 +201,9 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
          ------ */
         update: function() {
             //  console.log(me.video.getHeight());
-            console.log("yo2");
-            console.log(this);
-            console.log($scope.path[0]);
+            //console.log("yo2");
+            //console.log(this);
+            //console.log($scope.path[0]);
             if ($scope.path.length>0) {            //if path exists
                 var source=$scope.path[0];
                 var sourceX=source[0];
@@ -212,11 +216,11 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             }
             $scope.path.splice(0,1);
             //console.log(source);
-            console.log("yo3");
-            console.log(sourceX);
-            console.log(sourceY);
-            console.log(destX);
-            console.log(destY);
+            //console.log("yo3");
+            //console.log(sourceX);
+            //console.log(sourceY);
+            //console.log(destX);
+            //console.log(destY);
             var currentWalkingDir=walkFromAtoB(sourceX,sourceY,destX,destY);
             if (currentWalkingDir!=$scope.lastDir) {
                 $scope.lastLastDir=$scope.lastDir;
