@@ -219,7 +219,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             console.log(destY);
             var currentWalkingDir=walkFromAtoB(sourceX,sourceY,destX,destY);
             if (currentWalkingDir!=$scope.lastDir) {
-                //$scope.lastLastDir=$scope.lastDir;
+                $scope.lastLastDir=$scope.lastDir;
                 if (currentWalkingDir=="left") {             // 2 6 10 14
                     $scope.lastDir="left";
                     this.renderable.addAnimation("still",[1]);
