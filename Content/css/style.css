@@ -119,10 +119,16 @@ body {
     border: 4px solid darkgrey;
 }
 
-.animalImage {
-    width: 10%;
+.statsIcon {
+    width:35px;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
+.description {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 /* slot.html */
 
 #slotMenu {
