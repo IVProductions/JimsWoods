@@ -4,7 +4,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "id": 1,
             "name": "Dog",
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/wolf.png"
+            "imageURL": "Content/img/dog.png"
         },
         {
             "id": 2,
