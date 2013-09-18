@@ -4,7 +4,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
     $scope.mapResources = mapResourceFactory.maps;
 
     $scope.showMenu = function(){
-        me.state.change(me.state.MENU);
+        console.log($scope.menu)
     }
 
     $scope.showMap = function(){
