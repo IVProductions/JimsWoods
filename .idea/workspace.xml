@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/game.html" afterPath="$PROJECT_DIR$/app/partials/game.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/gameCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/style.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379474454028" ignored="false" />
+    <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379481651928" ignored="false" />
     <file path="/app.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378751860581" ignored="false" />
     <file path="/second.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378676069663" ignored="false" />
     <file path="/first.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378682143885" ignored="false" />
@@ -32,7 +33,7 @@
     <file path="/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378710695419" ignored="false" />
     <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378715584845" ignored="false" />
     <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379473575483" ignored="false" />
-    <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379480235364" ignored="false" />
+    <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379483726799" ignored="false" />
     <file path="/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378767812234" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Jims Woods/Neverwell_Moor_v1.0.1/js/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769022115" ignored="false" />
     <file path="/resources.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378786051919" ignored="false" />
@@ -44,7 +45,7 @@
     <file path="$USER_HOME$/WebstormProjects/game/css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378869485369" ignored="false" />
     <file path="/functions.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378935363662" ignored="false" />
     <file path="/pathfinding-browser.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379203807502" ignored="false" />
-    <file path="/style.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379479672581" ignored="false" />
+    <file path="/style.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379483331408" ignored="false" />
     <file path="$PROJECT_DIR$/../Diffia/Patient/app/controllers/bodyController.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379383593060" ignored="false" />
     <file path="$PROJECT_DIR$/../Diffia/Patient/Content/css/style.less" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379383593060" ignored="false" />
     <file path="/style.less" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379376300148" ignored="false" />
@@ -75,7 +76,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="78" selection-start="1943" selection-end="1943" vertical-scroll-proportion="-13.791667">
+            <state line="39" column="78" selection-start="1943" selection-end="1943" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,19 +91,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Content/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="0" selection-start="3565" selection-end="3565" vertical-scroll-proportion="0.0">
+            <state line="13" column="26" selection-start="266" selection-end="266" vertical-scroll-proportion="0.25603217">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wiki.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="wiki.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/wiki.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="62" selection-end="777" vertical-scroll-proportion="0.041608877">
+            <state line="2" column="0" selection-start="62" selection-end="777" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -111,7 +112,16 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="20" selection-start="633" selection-end="633" vertical-scroll-proportion="-11.25">
+            <state line="47" column="0" selection-start="2191" selection-end="2191" vertical-scroll-proportion="-23.833334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="animalList.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/partials/animalList.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="73" selection-end="270" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -120,7 +130,7 @@
       <file leaf-file-name="gameCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+            <state line="331" column="0" selection-start="12525" selection-end="12525" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,19 +154,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myAnimalsCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/myAnimalsCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="wikiCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/wikiCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="95" selection-start="2055" selection-end="2055" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="2376" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -194,8 +195,8 @@
         <option value="$PROJECT_DIR$/app/controllers/wikiCtrl.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
-        <option value="$PROJECT_DIR$/Content/css/style.css" />
         <option value="$PROJECT_DIR$/app/partials/game.html" />
+        <option value="$PROJECT_DIR$/Content/css/style.css" />
       </list>
     </option>
   </component>
@@ -272,6 +273,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -424,20 +426,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="false" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Diffia" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="FullScreen" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -532,8 +533,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982105" sideWeight="0.698" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1644319" sideWeight="0.9900498" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0099502485" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1644319" sideWeight="0.99129355" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.008706467" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -608,13 +609,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/services/woodAnimalService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/animalDetails.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="32" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0">
@@ -664,20 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/wikiCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="95" selection-start="2055" selection-end="2055" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/seaAnimalService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -694,28 +674,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="78" selection-start="1943" selection-end="1943" vertical-scroll-proportion="-13.791667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="0" selection-start="3565" selection-end="3565" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="20" selection-start="633" selection-end="633" vertical-scroll-proportion="-11.25">
+        <state line="39" column="78" selection-start="1943" selection-end="1943" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/wiki.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="62" selection-end="777" vertical-scroll-proportion="0.041608877">
+        <state line="2" column="0" selection-start="62" selection-end="777" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/animalList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="73" selection-end="270" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/wikiCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="2376" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="331" column="0" selection-start="12525" selection-end="12525" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="2191" selection-end="2191" vertical-scroll-proportion="-23.833334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="26" selection-start="266" selection-end="266" vertical-scroll-proportion="0.25603217">
           <folding />
         </state>
       </provider>

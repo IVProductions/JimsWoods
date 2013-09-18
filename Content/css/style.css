@@ -20,15 +20,12 @@ body {
     margin-top: 60px;
 }
 .areaBtn {
-    padding-top: 13px;
+    padding-top: 5px;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
     height: 60px;
     border-radius: 5px;
     margin-bottom: 20px;
     font-size: 20px;
-
 }
 .woodsBtn {
     background: url('../img/woods_icon.png') no-repeat;
@@ -192,6 +189,11 @@ h1 {
     height: 60px;
 }
 
+.hiddenBack {
+    background-size: 52px 52px;
+    height: 60px;
+}
+
 .menuButton.map {
     margin-bottom: 10px;
     margin-right: 10px;
@@ -221,7 +223,7 @@ h1 {
 }
 
 .mainMenu {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     position: absolute;
     top: 0;
     right: 0;
@@ -229,5 +231,7 @@ h1 {
     bottom: 0;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 15%;
+    padding-top: 10%;
+    overflow-y:auto;
+    height:100%;
 }
