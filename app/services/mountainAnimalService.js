@@ -1,4 +1,4 @@
-JimsWoods.factory('jungleAnimalFactory',function() {
+JimsWoods.factory('mountainAnimalFactory',function() {
     var animals = [
         {
             "id": 1,

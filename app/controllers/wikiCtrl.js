@@ -1,4 +1,4 @@
-function wikiCtrl($scope, $location, woodAnimalFactory, stateService, desertAnimalFactory, seaAnimalFactory, jungleAnimalFactory, arcticAnimalFactory, fableAnimalFactory) {
+function wikiCtrl($scope, $location, woodAnimalFactory, stateService, desertAnimalFactory, seaAnimalFactory, jungleAnimalFactory, arcticAnimalFactory, fableAnimalFactory, mountainAnimalFactory, lostworldAnimalFactory) {
     $scope.stateService = stateService;
     $scope.animals = $scope.stateService.functions.getCurrentAnimalFactory();
     $scope.animal = $scope.stateService.functions.getCurrentAnimal();
@@ -26,6 +26,14 @@ function wikiCtrl($scope, $location, woodAnimalFactory, stateService, desertAnim
         else if (world=="fable") {
             $scope.fableAnimalFactory = fableAnimalFactory;
             $scope.stateService.functions.setCurrentAnimalFactory($scope.fableAnimalFactory);
+        }
+        else if (world=="mountain") {
+            $scope.mountainAnimalFactory = mountainAnimalFactory;
+            $scope.stateService.functions.setCurrentAnimalFactory($scope.mountainAnimalFactory);
+        }
+        else if (world=="lostworld") {
+            $scope.lostWorldAnimalFactory = lostworldAnimalFactory;
+            $scope.stateService.functions.setCurrentAnimalFactory($scope.lostWorldAnimalFactory);
         }
         $location.path("animalList");
     }

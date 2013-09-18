@@ -1,4 +1,4 @@
-JimsWoods.factory('jungleAnimalFactory',function() {
+JimsWoods.factory('lostworldAnimalFactory',function() {
     var animals = [
         {
             "id": 1,
