@@ -147,17 +147,31 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             // set the display to follow our position on both axis
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
             //initialize list of unwalkable tiles
-            var unwalkableTiles=[[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[2,4],[2,5],[2,6],[2,7],[2,8],[2,9],[3,5],[3,6],[3,7],[3,8],[3,9],[4,6],[4,7],[4,8],[4,9],[5,6],[5,7],[5,8],[5,9]];
             var grid = new PF.Grid(150,150);
-            for(var i=0; i<unwalkableTiles.length;i++) {
-                var tile=unwalkableTiles[i];
-                var x=tile[0];
-                var y=tile[1];
-                grid.setWalkableAt(x,y,false);
+            var layer = me.game.currentLevel.getLayerByName("Tile Layer 1");  //hent layer fra 'Tiled'
+            //layer.getTile(event.gameX, event.gameY);
+            var tile=layer.layerData[~~(0)][~~(1)];
+            var unwalkableTiles=[];
+            for (var i=0;i<150;i++) {
+                for (var j=0;j<150;j++) {
+                    var tile=layer.layerData[~~(i)][~~(j)];
+                    if (tile.tileId=='1' || tile.tileId=='2') {
+                        unwalkableTiles.push("["+i+","+j+"]");
+                        grid.setWalkableAt(i,j,false);
+                        //console.log(i+" , "+j);
+                    }
+                }
             }
-            //grid.setWalkableAt(1, 2, false);
-            //grid.setWalkableAt(1, 3, false);
-            //grid.setWalkableAt(1, 4, false);
+            //console.log("cockcheese");
+            //console.log(tile.tileId);
+            //var unwalkableTiles=[[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[2,4],[2,5],[2,6],[2,7],[2,8],[2,9],[3,5],[3,6],[3,7],[3,8],[3,9],[4,6],[4,7],[4,8],[4,9],[5,6],[5,7],[5,8],[5,9]];
+            //var grid = new PF.Grid(150,150);
+            //for(var i=0; i<unwalkableTiles.length;i++) {
+            //    var tile=unwalkableTiles[i];
+            //    var x=tile[0];
+            //    var y=tile[1];
+            //    grid.setWalkableAt(x,y,false);
+            //}
             var gridBackup = grid.clone();
             var finder = new PF.IDAStarFinder();
             $scope.myList=[];
@@ -166,12 +180,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 me.event.publish("mousedown", [ event ]);
             });
             this.mouseDown = me.event.subscribe("mousedown", function (event) {
-                var layer = me.game.currentLevel.getLayerByName("Tile Layer 1");
-                layer.getTile(event.gameX, event.gameY);
-                //var tile=layer.layerData[~~(mouse.pos.x / 52)][~~(mouse.pos.y / 52)];
-                var tile = layer.getTileId();
-                console.log("cockcheese");
-                console.log(tile);
                 $scope.myList=[];
                 $scope.walkNumber=0;
                 //var prexSource=mouse.pos.x+26;
@@ -179,7 +187,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 var xSource=""+mouse.pos.x;
                 var ySource=""+mouse.pos.y;
 
-                var sourceTileX=""+xSource/52;
+                var sourceTileX=""+xSource/52;               //fiks slik at det blir 0-indeksert
                 var sourceTileY=""+ySource/52;
                 if (sourceTileX.indexOf(".")!=-1) {
                     sourceTileX=sourceTileX.split('.')[0];
@@ -213,13 +221,13 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 }
                 //alert(yTarget-ySource);
                 //right dir
-                alert(targetTileX+", "+targetTileY);
+                //alert(targetTileX+", "+targetTileY);
                 console.log("info2");
                 console.log(event.gameX+", "+targetTileX);
                 console.log(event.gameY+", "+targetTileY);
                 console.log("infoEnd2");
 
-
+                if (unwalkableTiles.indexOf("["+targetTileX+","+targetTileY+"]")==-1) {
                 var path = finder.findPath(sourceTileX, sourceTileY, targetTileX, targetTileY, gridBackup);
 
                 for (var i=0;i<path.length-1;i++) {
@@ -230,12 +238,9 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     var destX=dest[0];
                     var destY=dest[1];
                     $scope.myList.push(walkFromAtoB(sourceX,sourceY,destX,destY));
-                    //$scope.myList.push(currentWalkingDir);
                 }
-                console.log("mongo");
-                for (var j=0;j<$scope.myList.length;j++){
-                    console.log($scope.myList[j]);
                 }
+                //else {alert("clicked in woods!");}
 
             });
 
