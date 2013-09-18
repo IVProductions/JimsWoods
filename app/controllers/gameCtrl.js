@@ -13,7 +13,8 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
     $scope.game = {
         init : function(){
             // Create Canvas
-            me.video.init("screen", window.innerWidth, window.innerHeight);
+            var thing= me.video.init("screen", window.innerWidth, window.innerHeight);
+            $scope.thing=thing;
             me.sys.gravity = 0;
 
 
@@ -120,7 +121,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             // call the constructor
             this.parent(x, y, settings);
             // set the default horizontal & vertical speed (accel vector)
-            this.setVelocity(4, 4);
+            this.setVelocity(2, 2);
 
             this.setFriction(0.01,0.01);                     //*
             this.animationspeed = 10;
@@ -133,6 +134,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.renderable.addAnimation ("walkRight", [3,7,11,15]); //2
             this.renderable.addAnimation ("walkUp", [2,6,10,14]); //2
             this.renderable.addAnimation ("walkDown", [0,4,8,12]); //2
+            this.renderable.addAnimation ("walkRightDown", [0,4,8,12]); //2
 
             this.renderable.setCurrentAnimation("still");
 
@@ -145,60 +147,81 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             $scope.move = false;
             // set the display to follow our position on both axis
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
-            console.log("Fag");
-            console.log(me.video.getWidth());
-            console.log(me.video.getHeight());
-            console.log(this.pos.x);
-            console.log(this.pos.y);
-            console.log("fagEND");
             //var grid = new PF.Grid(me.video.getWidth(), me.video.getHeight);
 
             //var path = finder.findPath(this.pos.x, this.pos.y, 520, 320, grid);
             var path=[];
+            $scope.myList=[];
             $scope.path = path;
-            //console.log(mouse.parent());
-            //$scope.stateService=stateService;
-            //$scope.stateService.functions.setCurrentContext(this);
-            console.log("height:");
-            console.log(me.game.viewport.getHeight());
-
             var mouse = this;
-            me.input.registerPointerEvent("mousedown", me.game.viewport, function (event) {
-                me.event.publish("touchstart", [ event ]);
+            var mouseEvent = me.input.registerPointerEvent('mousedown', me.game.viewport, function (event) {
+                me.event.publish("mousedown", [ event ]);
             });
-            this.mouseDown = me.event.subscribe("touchstart", function (event) {
+            this.mouseDown = me.event.subscribe("mousedown", function (event) {
 
-                //console.log(event.pointerId+", ", event.gameX+", ",event.gameY);   //main player default is X:290 Y:244
-                //registrer ny destX og destY
-                //alert(event.gameX+" , y "+event.gameY);
+                //alert(event.gameY);
                 var xSource=""+mouse.pos.x;
                 var ySource=""+mouse.pos.y;
-                if (xSource.indexOf(".") !=-1) {
-                    xSource=xSource.split('.')[0];
+
+                var sourceTileX=""+xSource/53;
+                var sourceTileY=""+ySource/53;
+                if (sourceTileX.indexOf(".")!=-1) {
+                    sourceTileX=sourceTileX.split('.')[0];
+                    var numX=parseInt(sourceTileX);
+                    sourceTileX=numX+1;
                 }
-                if (ySource.indexOf(".") !=-1) {
-                    ySource=ySource.split('.')[0];
+                if (sourceTileY.indexOf(".")!=-1) {
+                    sourceTileY=sourceTileY.split('.')[0];
+                    var numY=parseInt(sourceTileY);
+                    sourceTileY=numY+1;
                 }
-                //alert("x:"+mouse.pos.x+", y:"+ mouse.pos.y+".  x:"+event.gameX+", y:"+event.gameY);
-                //alert(xSource);
-                var grid = new PF.Grid(me.video.getWidth(),me.video.getHeight());
-                //var gridBackup = grid.clone();
+                console.log("info");
+                console.log(mouse.pos.x+", "+sourceTileX);
+                console.log(mouse.pos.y+", "+sourceTileY);
+                console.log("infoEnd");
+
+
+                var xTarget=event.gameX;
+                var yTarget=event.gameY;
+                var targetTileX=""+xTarget/53;
+                var targetTileY=""+yTarget/53;
+                if (targetTileX.indexOf(".")!=-1) {
+                    targetTileX=targetTileX.split('.')[0];
+                    var nummX=parseInt(targetTileX);
+                    targetTileX=nummX+1;
+                }
+                if (targetTileY.indexOf(".")!=-1) {
+                    targetTileY=targetTileY.split('.')[0];
+                    var nummY=parseInt(targetTileY);
+                    targetTileY=nummY+1;
+                }
+                //alert(yTarget-ySource);
+                //right dir
+                console.log("info2");
+                console.log(event.gameX+", "+targetTileX);
+                console.log(event.gameY+", "+targetTileY);
+                console.log("infoEnd2");
+                var grid = new PF.Grid(150,150);
                 var finder = new PF.IDAStarFinder();
-                $scope.path = finder.findPath(xSource, ySource, event.gameX, event.gameY, grid);
-                //console.log("cock");
-                //console.log(mouse.pos.x);
-                //console.log(mouse.pos.y);
-                //console.log(event.gameX);
-                //console.log(event.gameY);
-                //console.log($scope.path[0]);
+
+                $scope.path = finder.findPath(sourceTileX, sourceTileY, targetTileX, targetTileY, grid);
+                for (var i=0;i<$scope.path.length-1;i++) {
+                    var source=$scope.path[i];
+                    var sourceX=source[0];
+                    var sourceY=source[1];
+                    var dest = $scope.path[i+1];
+                    var destX=dest[0];
+                    var destY=dest[1];
+                    $scope.myList.push(walkFromAtoB(sourceX,sourceY,destX,destY));
+                    //$scope.myList.push(currentWalkingDir);
+                }
+                $scope.walkNumber=0;
+                console.log("mongo");
+                for (var j=0;j<$scope.myList.length;j++){
+                    console.log($scope.myList[j]);
+                }
 
             });
-            //me.event.unsubscribe(thiss.mouseDown);      //When you are ready to destroy the object which has an open subscription, you must unsubscribe:
-            //me.input.releasePointerEvent("mousedown", me.game.viewport);  //And you can safely destroy the event delegator when you no longer need to handle any mouse/touch events:
-            var lastLastDir="";
-            var lastDir="";
-            $scope.lastLastDir=lastLastDir;
-            $scope.lastDir=lastDir;
 
         },
         /* -----
@@ -207,49 +230,42 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
          ------ */
         update: function() {
-            //  console.log(me.video.getHeight());
-            //console.log("yo2");
-            //console.log(this);
-            //console.log($scope.path[0]);
-            if ($scope.path.length>0) {            //if path exists
-                var source=$scope.path[0];
-                var sourceX=source[0];
-                var sourceY=source[1];
+            $scope.walkNumber++;
+            //console.log(me.video.getHeight());
+            //if ($scope.path.length>0) {            //if path exists
+            //    var source=$scope.path[0];
+            //    var sourceX=source[0];
+            //    var sourceY=source[1];
+            //}
+            //if ($scope.path.length>1) {            //if not last coordinate
+            //    var dest = $scope.path[1];
+            //    var destX=dest[0];
+            //    var destY=dest[1];
+            //}
+            //$scope.path.splice(0,1);
+            if ($scope.walkNumber>24) {
+                $scope.walkNumber=0;
+                $scope.myList.splice(0,1);
             }
-            if ($scope.path.length>1) {            //if not last coordinate
-                var dest = $scope.path[1];
-                var destX=dest[0];
-                var destY=dest[1];
-            }
-            $scope.path.splice(0,1);
-            //console.log(source);
-            //console.log("yo3");
-            //console.log(sourceX);
-            //console.log(sourceY);
-            //console.log(destX);
-            //console.log(destY);
-            var currentWalkingDir=walkFromAtoB(sourceX,sourceY,destX,destY);
-            if (currentWalkingDir!=$scope.lastDir) {
-                $scope.lastLastDir=$scope.lastDir;
-                if (currentWalkingDir=="left") {             // 2 6 10 14
-                    $scope.lastDir="left";
+            //var currentWalkingDir=walkFromAtoB(sourceX,sourceY,destX,destY);
+            var currentWalkingDir=$scope.myList[0];
+            //if (currentWalkingDir=="left" || currentWalkingDir=="right" || currentWalkingDir=="up" || currentWalkingDir=="down"){
+            //for (var i=0;i<53;i++){
+            if (currentWalkingDir=="left") {             // 2 6 10 14
                     this.renderable.addAnimation("still",[1]);
                     this.vel.x -= this.accel.x * me.timer.tick;
                     this.vel.y = 0;
                 } else if (currentWalkingDir=="right") {
-                    $scope.lastDir="right";
                     this.renderable.addAnimation("still",[3]);
                     this.vel.y = 0;
                     this.vel.x += this.accel.x * me.timer.tick;
                 }
                 else if (currentWalkingDir=="up") {          // 3 7 11 15
-                    $scope.lastDir="up";
                     this.renderable.addAnimation("still",[2]);
                     this.vel.y -= this.accel.y * me.timer.tick;
                     this.vel.x = 0;
                 }
                 else if (currentWalkingDir=="down") {        // 1 5 9 13
-                    $scope.lastDir="down";
                     this.renderable.addAnimation("still",[0]);
                     this.vel.y += this.accel.y * me.timer.tick;
                     this.vel.x = 0;
@@ -262,7 +278,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
                 // check & update player movement
                 this.updateMovement();
-
                 // update animation if necessary
                 if (this.vel.x>0 && this.vel.y==0) {
                     this.renderable.setCurrentAnimation("walkRight");
@@ -291,14 +306,10 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 }
                 //if no updates are needed
                 return false;
-            }
-            else {
-                $scope.lastDir = "";
-            }
+            //}}
+
         }
 
     });
-
-    //$scope.game.NPC = game.Sprite.extend({
 
 }
