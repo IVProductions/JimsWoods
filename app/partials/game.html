@@ -8,12 +8,16 @@
         <div class="col-xs-6 exit" ng-click="menu = false"></div>
     </div>
     <div class="row">
-        <div class="col-xs-6 menuButton map" ng-click="menu = true">Map</div>
-        <div class="col-xs-6 menuButton shop">Shop</div>
+        <div class="col-xs-12 menuButton map" ng-click="menu = true">Map</div>
     </div>
     <div class="row">
-        <div class="col-xs-6 menuButton wiki" ng-click="wiki = true; menu = false">Wikipedia</div>
-        <div class="col-xs-6 menuButton myanimals">My Animals</div>
+        <div class="col-xs-12 menuButton shop">Shop</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 menuButton wiki" ng-click="wiki = true; menu = false">Wikipedia</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 menuButton myanimals">My Animals</div>
     </div>
 </div>
 
@@ -53,7 +57,7 @@
         <div class="col-xs-6 back" ng-click="wiki = true; animallist = false"></div>
         <div class="col-xs-6 exit" ng-click="animallist = false"></div>
     </div>
-    <div class="" ng-repeat="animal in animals">
-        <div class="animalBtn {{animal.name}} ">{{animal.name}}</div>
+    <div class="row" ng-repeat="animal in animals">
+        <div class="col-xs-12 menuButton iconBtn {{animal.name}} ">{{animal.name}}</div>
     </div>
 </div>
