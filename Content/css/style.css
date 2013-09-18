@@ -162,10 +162,12 @@ h1 {
 
 .menuBtn {
     position: absolute;
-    top: 0;
-    right: 15%;
-    background-color: blue;
-    padding: 10px;
+    top: 5px;
+    right: 5px;
+    width: 52px;
+    height: 52px;
+    background: url('../img/menu_icon.png') no-repeat;
+    background-size: 52px 52px;
 }
 
 .menuButton{

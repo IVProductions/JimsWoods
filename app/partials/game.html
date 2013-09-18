@@ -1,10 +1,10 @@
 <div ng-init="game.init()" id="screen"></div>
 
-<div class="menuBtn" ng-click="showMenu()">Menu</div>
+<div class="menuBtn" ng-click="menu = true"></div>
 
-<div class="mainMenu" ng-hide="true">
+<div class="mainMenu" ng-show="menu" ng-click="menu = false">
     <div class="row">
-        <div class="col-xs-6 menuButton map">Map</div>
+        <div class="col-xs-6 menuButton map" ng-click="menu = true">Map</div>
         <div class="col-xs-6 menuButton shop">Shop</div>
     </div>
     <div class="row">
