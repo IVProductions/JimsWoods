@@ -3,6 +3,13 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
     $scope.imageResources = imageResourceFactory.images;
     $scope.mapResources = mapResourceFactory.maps;
 
+    $scope.showMenu = function(){
+        console.log($scope.menu)
+    }
+
+    $scope.showMap = function(){
+        me.state.change(me.state.PLAY);
+    }
     $scope.game = {
         init : function(){
             // Create Canvas

@@ -1,5 +1,5 @@
 body {
-    background-color: papayawhip;
+    background-color: #ffe6a3;
 }
 
 * {
@@ -135,7 +135,6 @@ body {
     text-align: center;
     padding-top: 10%;
     padding-bottom: 10%;
-    background: url('../img/bg.png') no-repeat;
     background-size: 100% 100%;
 }
 .slotButton {
@@ -152,3 +151,71 @@ h1 {
     text-align: center;
 }
 
+/* Game.html */
+.mapBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    padding: 10px;
+}
+
+.menuBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 52px;
+    height: 52px;
+    background: url('../img/menu_icon.png') no-repeat;
+    background-size: 52px 52px;
+}
+
+.menuButton{
+    background-color: darkgrey;
+    height: 60px;
+    width: 47%;
+    border-radius: 5px;
+    border: 4px solid floralwhite;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.menuButton.map {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background: url('../img/map_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: white;
+}
+
+.menuButton.shop {
+    margin-bottom: 10px;
+    background: url('../img/shop_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: white;
+}
+
+.menuButton.myanimals {
+    background: url('../img/myanimals_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: white;
+}
+
+.menuButton.wiki {
+    margin-right: 10px;
+    background: url('../img/book_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: white;
+}
+
+.mainMenu {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15%;
+}
