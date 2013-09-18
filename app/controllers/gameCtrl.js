@@ -127,7 +127,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.renderable.addAnimation ("walkRight", [3,7,11,15]); //2
             this.renderable.addAnimation ("walkUp", [2,6,10,14]); //2
             this.renderable.addAnimation ("walkDown", [0,4,8,12]); //2
-            this.renderable.addAnimation ("walkRightDown", [0,4,8,12]); //2
 
             this.renderable.setCurrentAnimation("still");
 
@@ -140,24 +139,41 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             $scope.move = false;
             // set the display to follow our position on both axis
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
-            //var grid = new PF.Grid(me.video.getWidth(), me.video.getHeight);
-
-            //var path = finder.findPath(this.pos.x, this.pos.y, 520, 320, grid);
-            var path=[];
+            //initialize list of unwalkable tiles
+            var unwalkableTiles=[[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[2,4],[2,5],[2,6],[2,7],[2,8],[2,9],[3,5],[3,6],[3,7],[3,8],[3,9],[4,6],[4,7],[4,8],[4,9],[5,6],[5,7],[5,8],[5,9]];
+            var grid = new PF.Grid(150,150);
+            for(var i=0; i<unwalkableTiles.length;i++) {
+                var tile=unwalkableTiles[i];
+                var x=tile[0];
+                var y=tile[1];
+                grid.setWalkableAt(x,y,false);
+            }
+            //grid.setWalkableAt(1, 2, false);
+            //grid.setWalkableAt(1, 3, false);
+            //grid.setWalkableAt(1, 4, false);
+            var gridBackup = grid.clone();
+            var finder = new PF.IDAStarFinder();
             $scope.myList=[];
-            $scope.path = path;
             var mouse = this;
             var mouseEvent = me.input.registerPointerEvent('mousedown', me.game.viewport, function (event) {
                 me.event.publish("mousedown", [ event ]);
             });
             this.mouseDown = me.event.subscribe("mousedown", function (event) {
-
-                //alert(event.gameY);
+                var layer = me.game.currentLevel.getLayerByName("Tile Layer 1");
+                layer.getTile(event.gameX, event.gameY);
+                //var tile=layer.layerData[~~(mouse.pos.x / 52)][~~(mouse.pos.y / 52)];
+                var tile = layer.getTileId();
+                console.log("cockcheese");
+                console.log(tile);
+                $scope.myList=[];
+                $scope.walkNumber=0;
+                //var prexSource=mouse.pos.x+26;
+                //var preySource=mouse.pos.y+26;
                 var xSource=""+mouse.pos.x;
                 var ySource=""+mouse.pos.y;
 
-                var sourceTileX=""+xSource/53;
-                var sourceTileY=""+ySource/53;
+                var sourceTileX=""+xSource/52;
+                var sourceTileY=""+ySource/52;
                 if (sourceTileX.indexOf(".")!=-1) {
                     sourceTileX=sourceTileX.split('.')[0];
                     var numX=parseInt(sourceTileX);
@@ -176,8 +192,8 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
                 var xTarget=event.gameX;
                 var yTarget=event.gameY;
-                var targetTileX=""+xTarget/53;
-                var targetTileY=""+yTarget/53;
+                var targetTileX=""+xTarget/52;
+                var targetTileY=""+yTarget/52;
                 if (targetTileX.indexOf(".")!=-1) {
                     targetTileX=targetTileX.split('.')[0];
                     var nummX=parseInt(targetTileX);
@@ -190,25 +206,25 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 }
                 //alert(yTarget-ySource);
                 //right dir
+                alert(targetTileX+", "+targetTileY);
                 console.log("info2");
                 console.log(event.gameX+", "+targetTileX);
                 console.log(event.gameY+", "+targetTileY);
                 console.log("infoEnd2");
-                var grid = new PF.Grid(150,150);
-                var finder = new PF.IDAStarFinder();
 
-                $scope.path = finder.findPath(sourceTileX, sourceTileY, targetTileX, targetTileY, grid);
-                for (var i=0;i<$scope.path.length-1;i++) {
-                    var source=$scope.path[i];
+
+                var path = finder.findPath(sourceTileX, sourceTileY, targetTileX, targetTileY, gridBackup);
+
+                for (var i=0;i<path.length-1;i++) {
+                    var source=path[i];
                     var sourceX=source[0];
                     var sourceY=source[1];
-                    var dest = $scope.path[i+1];
+                    var dest = path[i+1];
                     var destX=dest[0];
                     var destY=dest[1];
                     $scope.myList.push(walkFromAtoB(sourceX,sourceY,destX,destY));
                     //$scope.myList.push(currentWalkingDir);
                 }
-                $scope.walkNumber=0;
                 console.log("mongo");
                 for (var j=0;j<$scope.myList.length;j++){
                     console.log($scope.myList[j]);
@@ -267,7 +283,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     this.vel.x = 0;
                     this.vel.y = 0;
                 }
-
 
                 // check & update player movement
                 this.updateMovement();
