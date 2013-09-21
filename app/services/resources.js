@@ -9,9 +9,6 @@ JimsWoods.factory('imageResourceFactory',function() {
         },
         {
             "name": "collision_tile"
-        },
-        {
-            "name" : "rachel"
         }
         /*
         {

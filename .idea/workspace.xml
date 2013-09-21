@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/dog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/eagle_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/kjartan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/player.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/rachel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/wolf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/img/wolftest.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/game.html" afterPath="$PROJECT_DIR$/app/partials/game.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/gameCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/resources.js" afterPath="$PROJECT_DIR$/app/services/resources.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/style.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/woodAnimalService.js" afterPath="$PROJECT_DIR$/app/services/woodAnimalService.js" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +40,8 @@
     <file path="$USER_HOME$/Diffia/Patient/app/partials/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378711139344" ignored="false" />
     <file path="/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378710695419" ignored="false" />
     <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378715584845" ignored="false" />
-    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379462324449" ignored="false" />
-    <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379790521590" ignored="false" />
+    <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379792497326" ignored="false" />
+    <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379793105031" ignored="false" />
     <file path="/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378767812234" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Jims Woods/Neverwell_Moor_v1.0.1/js/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769022115" ignored="false" />
     <file path="/resources.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378786051919" ignored="false" />
@@ -69,10 +79,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="woodAnimalService.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="woodAnimalService.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/woodAnimalService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="301" column="9" selection-start="9766" selection-end="9766" vertical-scroll-proportion="0.0">
+            <state line="300" column="54" selection-start="10027" selection-end="10027" vertical-scroll-proportion="0.7991968">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gameCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="453" column="28" selection-start="19337" selection-end="19337" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -81,7 +100,7 @@
       <file leaf-file-name="animalList.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/animalList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="5" column="82" selection-start="205" selection-end="229" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -90,52 +109,52 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="53" selection-start="2271" selection-end="2271" vertical-scroll-proportion="-21.25">
+            <state line="111" column="14" selection-start="4594" selection-end="4594" vertical-scroll-proportion="-28.333334">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="resources.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/services/resources.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="9" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="87" selection-start="3926" selection-end="3926" vertical-scroll-proportion="0.08345979">
+            <state line="226" column="0" selection-start="4802" selection-end="4802" vertical-scroll-proportion="-6.340909">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seaAnimalService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/seaAnimalService.js">
+      <file leaf-file-name="animalDetails.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/partials/animalDetails.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="231" column="9" selection-start="6203" selection-end="6203" vertical-scroll-proportion="0.0">
+            <state line="1" column="25" selection-start="79" selection-end="92" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jungleAnimalService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/jungleAnimalService.js">
+      <file leaf-file-name="stateService.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="241" column="10" selection-start="6477" selection-end="6477" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mountainAnimalService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/mountainAnimalService.js">
+      <file leaf-file-name="wikiCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/wikiCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="190" column="9" selection-start="5150" selection-end="5150" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arcticAnimalService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/arcticAnimalService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="9" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,15 +164,6 @@
         <entry file="file://$PROJECT_DIR$/app/services/lostworldAnimalService.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="141" column="9" selection-start="3899" selection-end="3899" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fableAnimalService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/fableAnimalService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="9" selection-start="5734" selection-end="5734" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,13 +187,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Scripts/pathfinding-browser.min.js" />
         <option value="$PROJECT_DIR$/Scripts/pathfinding-browser.js" />
         <option value="$PROJECT_DIR$/Scripts/melonJS-0.9.8.js" />
         <option value="$PROJECT_DIR$/Scripts/functions.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
-        <option value="$PROJECT_DIR$/app/services/woodAnimalService.js" />
         <option value="$PROJECT_DIR$/app/services/desertAnimalService.js" />
         <option value="$PROJECT_DIR$/app/services/seaAnimalService.js" />
         <option value="$PROJECT_DIR$/app/services/jungleAnimalService.js" />
@@ -191,8 +198,11 @@
         <option value="$PROJECT_DIR$/app/services/arcticAnimalService.js" />
         <option value="$PROJECT_DIR$/app/services/lostworldAnimalService.js" />
         <option value="$PROJECT_DIR$/app/services/fableAnimalService.js" />
-        <option value="$PROJECT_DIR$/app/partials/game.html" />
+        <option value="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
         <option value="$PROJECT_DIR$/Content/css/style.css" />
+        <option value="$PROJECT_DIR$/app/partials/game.html" />
+        <option value="$PROJECT_DIR$/app/services/resources.js" />
+        <option value="$PROJECT_DIR$/app/services/woodAnimalService.js" />
       </list>
     </option>
   </component>
@@ -348,6 +358,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="animals" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JimsWoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -435,6 +485,17 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="5e285b50-79db-45e9-b8e8-0a669e2f161c">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -594,35 +655,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Scripts/pathfinding-browser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1435" column="27" selection-start="52931" selection-end="52931" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/melonJS-0.9.8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2564" column="28" selection-start="65072" selection-end="65072" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="81" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="243" column="36" selection-start="9297" selection-end="9297" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/desertAnimalService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="231" column="9" selection-start="6217" selection-end="6217" vertical-scroll-proportion="0.0">
@@ -658,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/lostworldAnimalService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="9" selection-start="3899" selection-end="3899" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/fableAnimalService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="211" column="9" selection-start="5734" selection-end="5734" vertical-scroll-proportion="0.0">
@@ -672,30 +697,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/woodAnimalService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="9" selection-start="9766" selection-end="9766" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/animalList.html">
+    <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/game.html">
+    <entry file="file://$PROJECT_DIR$/app/controllers/wikiCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="53" selection-start="2271" selection-end="2271" vertical-scroll-proportion="-21.25">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/lostworldAnimalService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="9" selection-start="3899" selection-end="3899" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/animalDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="25" selection-start="79" selection-end="92" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="453" column="28" selection-start="19337" selection-end="19337" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Content/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="87" selection-start="3926" selection-end="3926" vertical-scroll-proportion="0.08345979">
+        <state line="226" column="0" selection-start="4802" selection-end="4802" vertical-scroll-proportion="-6.340909">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/animalList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="82" selection-start="205" selection-end="229" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="14" selection-start="4594" selection-end="4594" vertical-scroll-proportion="-28.333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/resources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="9" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/woodAnimalService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="300" column="54" selection-start="10027" selection-end="10027" vertical-scroll-proportion="0.7991968">
           <folding />
         </state>
       </provider>

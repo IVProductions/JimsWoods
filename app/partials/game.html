@@ -58,6 +58,58 @@
         <div class="col-xs-6 exit" ng-click="animallist = false"></div>
     </div>
     <div class="row" ng-repeat="animal in animals">
-        <div class="col-xs-12 menuButton iconBtn {{animal.name}} ">{{animal.name}}</div>
+        <div class="col-xs-12 menuButton iconBtn {{animal.name}}" ng-click="$parent.details = true; $parent.animallist = false; getAnimalDetails(animal)">{{animal.name}}</div>
     </div>
+</div>
+
+<div class="mainMenu" ng-show="details">
+    <div class="row">
+        <div class="col-xs-6 back" ng-click="animallist = true; details = false"></div>
+        <div class="col-xs-6 exit" ng-click="details = false"></div>
+    </div>
+    <div class="animalDetails">
+        <div class="row">
+            <div class="col-xs-5">
+                <img ng-src="{{animal.imageURL}}" alt="img">
+            </div>
+            <div class="col-xs-3">
+                <div class="row">
+                    <img class="statsIcon" ng-src="Content/img/health_icon.png" alt="img">
+                    {{ animal.health }}
+                </div>
+                <div class="row">
+                    <img class="statsIcon" ng-src="Content/img/attack_icon.png" alt="img">
+                    {{ animal.attack }}
+                </div>
+                <div class="row">
+                    <img class="statsIcon" ng-src="Content/img/defence_icon.png" alt="img">
+                    {{ animal.defence }}
+                </div>
+                <div class="row">
+                    <img class="statsIcon" ng-src="Content/img/speed_icon.png" alt="img">
+                    {{ animal.speed }}
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="row">
+                    <strong>Attack 1</strong> <br>
+                    This attack does something
+                </div>
+                <div class="row">
+                    <strong>Attack 2</strong> <br>
+                    This attack does something
+                </div>
+                <div class="row">
+                    <strong>Attack 3</strong> <br>
+                    This attack does something
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row description">
+            {{animal.description}}
+        </div>
+    </div>
+
 </div>

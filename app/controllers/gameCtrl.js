@@ -451,8 +451,10 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
         $scope.animals = $scope.stateService.functions.getCurrentAnimalFactory();
     }
     $scope.getAnimalDetails=function(animal){
+        console.log(animal);
         //alert(animal.name);
         $scope.stateService.functions.setCurrentAnimal(animal);
+        $scope.animal = $scope.stateService.functions.getCurrentAnimal();
     }
 
 }
