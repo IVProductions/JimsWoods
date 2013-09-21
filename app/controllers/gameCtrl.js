@@ -130,14 +130,14 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             // stand animation
             this.renderable.addAnimation("still", [0]);
             // walking animation
-            this.renderable.addAnimation ("walkLeft", [1,7,13,19]);
-            this.renderable.addAnimation ("walkRight", [3,9,15,21]); //2
-            this.renderable.addAnimation ("walkUp", [2,8,14,20]); //2
-            this.renderable.addAnimation ("walkDown", [0,6,12,18]); //2
-            this.renderable.addAnimation ("walkRightDown", [5,11,17,23]); //2
-            this.renderable.addAnimation ("walkLeftDown", [4,10,16,22]); //2
-            this.renderable.addAnimation ("walkRightUp", [2,6,10,14]); //2
-            this.renderable.addAnimation ("walkLeftUp", [2,6,10,14]); //2
+            this.renderable.addAnimation ("walkLeft", [1,9,17,25]);
+            this.renderable.addAnimation ("walkRight", [3,11,19,27]); //2
+            this.renderable.addAnimation ("walkUp", [2,10,18,26]); //2
+            this.renderable.addAnimation ("walkDown", [0,8,16,24]); //2
+            this.renderable.addAnimation ("walkRightDown", [5,13,21,29]); //2
+            this.renderable.addAnimation ("walkLeftDown", [4,12,20,28]); //2
+            this.renderable.addAnimation ("walkRightUp", [7,15,23,31]); //2
+            this.renderable.addAnimation ("walkLeftUp", [6,14,22,30]); //2
 
             this.renderable.setCurrentAnimation("still");
 
