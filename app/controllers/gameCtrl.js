@@ -134,6 +134,10 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.renderable.addAnimation ("walkRight", [3,7,11,15]); //2
             this.renderable.addAnimation ("walkUp", [2,6,10,14]); //2
             this.renderable.addAnimation ("walkDown", [0,4,8,12]); //2
+            this.renderable.addAnimation ("walkRightDown", [0,4,8,12]); //2
+            this.renderable.addAnimation ("walkLeftDown", [0,4,8,12]); //2
+            this.renderable.addAnimation ("walkRightUp", [2,6,10,14]); //2
+            this.renderable.addAnimation ("walkLeftUp", [2,6,10,14]); //2
 
             this.renderable.setCurrentAnimation("still");
 
@@ -148,7 +152,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
             //initialize list of unwalkable tiles
             var grid = new PF.Grid(150,150);
-            var layer = me.game.currentLevel.getLayerByName("Tile Layer 1");  //hent layer fra 'Tiled'
+            var layer = me.game.currentLevel.getLayerByName("Tile Layer 1");  //get layer from 'Tiled'
             //layer.getTile(event.gameX, event.gameY);
             var tile=layer.layerData[~~(0)][~~(1)];
             var unwalkableTiles=[];
@@ -158,7 +162,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     if (tile.tileId=='1' || tile.tileId=='2') {
                         unwalkableTiles.push("["+i+","+j+"]");
                         grid.setWalkableAt(i,j,false);
-                        //console.log(i+" , "+j);
                     }
                 }
             }
@@ -172,36 +175,33 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             //    var y=tile[1];
             //    grid.setWalkableAt(x,y,false);
             //}
-            var gridBackup = grid.clone();
-            var finder = new PF.IDAStarFinder();
-            $scope.myList=[];
+
+            var finder = new PF.AStarFinder({heuristic: PF.Heuristic.euclidean,allowDiagonal: true,dontCrossCorners: true});
+            $scope.listOfWalkingDir=[];
+            var path=[];
+            var gridBackup;
             var mouse = this;
             var mouseEvent = me.input.registerPointerEvent('mousedown', me.game.viewport, function (event) {
                 me.event.publish("mousedown", [ event ]);
             });
             this.mouseDown = me.event.subscribe("mousedown", function (event) {
-                $scope.myList=[];
-                $scope.walkNumber=0;
-                //var prexSource=mouse.pos.x+26;
-                //var preySource=mouse.pos.y+26;
-                var xSource=""+mouse.pos.x;
-                var ySource=""+mouse.pos.y;
-
-                var sourceTileX=""+xSource/52;               //fiks slik at det blir 0-indeksert
-                var sourceTileY=""+ySource/52;
+                $scope.listOfWalkingDir=[];
+                //$scope.walkIncrement=0;
+                //var xSource=mouse.pos.x+26;
+                //var ySource=mouse.pos.y+26;
+                var sourceTileX=""+((mouse.pos.x+26)/52);               //fiks slik at det blir 0-indeksert
+                var sourceTileY=""+((mouse.pos.y+26)/52);
                 if (sourceTileX.indexOf(".")!=-1) {
-                    sourceTileX=sourceTileX.split('.')[0];
-                    var numX=parseInt(sourceTileX);
-                    sourceTileX=numX+1;
+                    sourceTileX=parseInt(sourceTileX);
                 }
                 if (sourceTileY.indexOf(".")!=-1) {
-                    sourceTileY=sourceTileY.split('.')[0];
-                    var numY=parseInt(sourceTileY);
-                    sourceTileY=numY+1;
+                    sourceTileY=parseInt(sourceTileY);
                 }
                 console.log("info");
                 console.log(mouse.pos.x+", "+sourceTileX);
                 console.log(mouse.pos.y+", "+sourceTileY);
+                console.log(mouse.pos.x);
+                console.log(mouse.pos.y);
                 console.log("infoEnd");
 
 
@@ -210,14 +210,10 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 var targetTileX=""+xTarget/52;
                 var targetTileY=""+yTarget/52;
                 if (targetTileX.indexOf(".")!=-1) {
-                    targetTileX=targetTileX.split('.')[0];
-                    var nummX=parseInt(targetTileX);
-                    targetTileX=nummX+1;
+                    targetTileX=parseInt(targetTileX);
                 }
                 if (targetTileY.indexOf(".")!=-1) {
-                    targetTileY=targetTileY.split('.')[0];
-                    var nummY=parseInt(targetTileY);
-                    targetTileY=nummY+1;
+                    targetTileY=parseInt(targetTileY);
                 }
                 //alert(yTarget-ySource);
                 //right dir
@@ -227,8 +223,11 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 console.log(event.gameY+", "+targetTileY);
                 console.log("infoEnd2");
 
+                gridBackup = grid.clone();
                 if (unwalkableTiles.indexOf("["+targetTileX+","+targetTileY+"]")==-1) {
-                var path = finder.findPath(sourceTileX, sourceTileY, targetTileX, targetTileY, gridBackup);
+                console.log("sofa");
+                //console.log(finder.findPath(sourceTileX, sourceTileY, targetTileX, targetTileY, gridBackup));
+                path = finder.findPath(sourceTileX, sourceTileY, targetTileX, targetTileY, gridBackup);
 
                 for (var i=0;i<path.length-1;i++) {
                     var source=path[i];
@@ -237,10 +236,49 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     var dest = path[i+1];
                     var destX=dest[0];
                     var destY=dest[1];
-                    $scope.myList.push(walkFromAtoB(sourceX,sourceY,destX,destY));
+                    $scope.listOfWalkingDir.push(walkFromAtoB(sourceX,sourceY,destX,destY));
                 }
+                    var x= parseInt(mouse.pos.x+26);
+                    var y= parseInt(mouse.pos.y+26);
+                    var xPixelsInTile=x-(sourceTileX*52);
+                    var yPixelsInTile=y-(sourceTileY*52);
+                    var dir=$scope.listOfWalkingDir[0];
+                    if (dir=="left") {
+                        $scope.walkIncrement=parseInt((26-(xPixelsInTile/2))-14);
+                    }
+                    else if (dir=="right") {
+                        $scope.walkIncrement=parseInt((26-((52-xPixelsInTile)/2))-14);
+                    }
+                    else if (dir=="up") {
+                        $scope.walkIncrement=parseInt((26-(yPixelsInTile/2))-14);
+                    }
+                    else if (dir=="down") {
+                        $scope.walkIncrement=parseInt((26-((52-yPixelsInTile)/2))-14);
+                    }
+                    else if (dir="rightdown") {
+                        var xValue=parseInt((26-((52-xPixelsInTile)/2)));
+                        var yValue=parseInt((26-((52-yPixelsInTile)/2)));
+                        $scope.walkIncrement=parseInt(((xValue+yValue)/2)-14);
+                    }
+                    else if (dir="leftdown") {
+                        var xValue=parseInt((26-(xPixelsInTile/2)));
+                        var yValue=parseInt((26-((52-yPixelsInTile)/2)));
+                        $scope.walkIncrement=parseInt(((xValue+yValue)/2)-14);
+                    }
+                    else if (dir="rightup") {
+                        var xValue=parseInt((26-((52-xPixelsInTile)/2)));
+                        var yValue=parseInt((26-(yPixelsInTile/2)));
+                        $scope.walkIncrement=parseInt(((xValue+yValue)/2)-14);
+                    }
+                    else if (dir="leftup") {
+                        var xValue=parseInt((26-(xPixelsInTile/2)));
+                        var yValue=parseInt((26-(yPixelsInTile/2)));
+                        $scope.walkIncrement=parseInt(((xValue+yValue)/2)-14);
+                    }
+                    console.log("xpos: "+x+" , ypos:"+y+" , xpixel: "+xPixelsInTile+" , ypixel: "+yPixelsInTile+" , dir: " +dir+ " , walkInc: "+$scope.walkIncrement);
                 }
-                //else {alert("clicked in woods!");}
+                else {console.log("homse1");alert("clicked in woods!"+targetTileX+" , "+targetTileY);}
+                console.log("homse2");
 
             });
 
@@ -251,7 +289,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
          ------ */
         update: function() {
-            $scope.walkNumber++;
+            $scope.walkIncrement++;
             //console.log(me.video.getHeight());
             //if ($scope.path.length>0) {            //if path exists
             //    var source=$scope.path[0];
@@ -264,12 +302,12 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             //    var destY=dest[1];
             //}
             //$scope.path.splice(0,1);
-            if ($scope.walkNumber>24) {
-                $scope.walkNumber=0;
-                $scope.myList.splice(0,1);
+            if ($scope.walkIncrement>25) {
+                $scope.walkIncrement=0;
+                $scope.listOfWalkingDir.splice(0,1);
             }
             //var currentWalkingDir=walkFromAtoB(sourceX,sourceY,destX,destY);
-            var currentWalkingDir=$scope.myList[0];
+            var currentWalkingDir=$scope.listOfWalkingDir[0];
             //if (currentWalkingDir=="left" || currentWalkingDir=="right" || currentWalkingDir=="up" || currentWalkingDir=="down"){
             //for (var i=0;i<53;i++){
             if (currentWalkingDir=="left") {             // 2 6 10 14
@@ -290,6 +328,26 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     this.renderable.addAnimation("still",[0]);
                     this.vel.y += this.accel.y * me.timer.tick;
                     this.vel.x = 0;
+                }
+                else if (currentWalkingDir=="rightdown") {        // 1 5 9 13
+                    this.renderable.addAnimation("still",[0]);
+                    this.vel.y += this.accel.y * me.timer.tick;
+                    this.vel.x += this.accel.x * me.timer.tick;
+                }
+                else if (currentWalkingDir=="leftdown") {        // 1 5 9 13
+                    this.renderable.addAnimation("still",[0]);
+                    this.vel.y += this.accel.y * me.timer.tick;
+                    this.vel.x -= this.accel.x * me.timer.tick;
+                }
+                else if (currentWalkingDir=="rightup") {        // 1 5 9 13
+                    this.renderable.addAnimation("still",[0]);
+                    this.vel.y -= this.accel.y * me.timer.tick;
+                    this.vel.x += this.accel.x * me.timer.tick;
+                }
+                else if (currentWalkingDir=="leftup") {        // 1 5 9 13
+                    this.renderable.addAnimation("still",[0]);
+                    this.vel.y -= this.accel.y * me.timer.tick;
+                    this.vel.x -= this.accel.x * me.timer.tick;
                 }
                 else {
                     this.vel.x = 0;
@@ -316,6 +374,26 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 }
                 else if (this.vel.x==0 && this.vel.y<0) {
                     this.renderable.setCurrentAnimation("walkUp");
+                    this.parent();
+                    return true;
+                }
+                else if (this.vel.x>0 && this.vel.y>0) {
+                    this.renderable.setCurrentAnimation("walkRightDown");
+                    this.parent();
+                    return true;
+                }
+                else if (this.vel.x<0 && this.vel.y>0) {
+                    this.renderable.setCurrentAnimation("walkLeftDown");
+                    this.parent();
+                    return true;
+                }
+                else if (this.vel.x>0 && this.vel.y<0) {
+                    this.renderable.setCurrentAnimation("walkRightUp");
+                    this.parent();
+                    return true;
+                }
+                else if (this.vel.x<0 && this.vel.y<0) {
+                    this.renderable.setCurrentAnimation("walkLeftUp");
                     this.parent();
                     return true;
                 }
