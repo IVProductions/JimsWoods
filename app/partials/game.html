@@ -4,33 +4,60 @@
 
 <div class="mainMenu" ng-show="menu">
     <div class="row">
-        <div class="col-xs-12 exit" ng-click="menu = false"></div>
+        <div class="col-xs-6 hiddenBack"></div>
+        <div class="col-xs-6 exit" ng-click="menu = false"></div>
     </div>
     <div class="row">
-        <div class="col-xs-6 menuButton map" ng-click="menu = true">Map</div>
-        <div class="col-xs-6 menuButton shop">Shop</div>
+        <div class="col-xs-12 menuButton map" ng-click="menu = true">Map</div>
     </div>
     <div class="row">
-        <div class="col-xs-6 menuButton wiki" ng-click="wiki = true; menu = false">Wikipedia</div>
-        <div class="col-xs-6 menuButton myanimals">My Animals</div>
+        <div class="col-xs-12 menuButton shop">Shop</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 menuButton wiki" ng-click="wiki = true; menu = false">Wikipedia</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 menuButton myanimals">My Animals</div>
     </div>
 </div>
 
 <div class="mainMenu" ng-show="wiki">
     <div class="row">
         <div class="col-xs-6 back" ng-click="menu = true; wiki = false"></div>
-        <div class="col-xs-6 exit" ng-click="menu = false"></div>
+        <div class="col-xs-6 exit" ng-click="wiki = false"></div>
     </div>
-    <div class="areaBtn woodsBtn" ng-click="chooseWorldList('woods')">Woods</div>
-    <div class="areaBtn desertBtn" ng-click="chooseWorldList('desert')">Desert</div>
-    <div class="areaBtn seaBtn" ng-click="chooseWorldList('sea')">Sea World</div>
-    <div class="areaBtn fableBtn" ng-click="chooseWorldList('mountain')">Mountains</div>
-    <div class="areaBtn jungleBtn" ng-click="chooseWorldList('jungle')">Jungle</div>
-    <div class="areaBtn articBtn" ng-click="chooseWorldList('arctic')">Arctic</div>
-    <div class="areaBtn fableBtn" ng-click="chooseWorldList('lostworld')">Lost World</div>
-    <div class="areaBtn fableBtn" ng-click="chooseWorldList('fable')">Fable World</div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn woodsBtn" ng-click="chooseWorldList('woods'); animallist = true; wiki = false">Woods</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn desertBtn" ng-click="chooseWorldList('desert'); animallist = true; wiki = false">Desert</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn seaBtn" ng-click="chooseWorldList('sea'); animallist = true; wiki = false">Sea World</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn fableBtn" ng-click="chooseWorldList('mountain'); animallist = true; wiki = false">Mountains</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn jungleBtn" ng-click="chooseWorldList('jungle'); animallist = true; wiki = false">Jungle</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn articBtn" ng-click="chooseWorldList('arctic'); animallist = true; wiki = false">Arctic</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn fableBtn" ng-click="chooseWorldList('lostworld'); animallist = true; wiki = false">Lost World</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn fableBtn" ng-click="chooseWorldList('fable'); animallist = true; wiki = false">Fable World</div>
+    </div>
 </div>
 
-<div class="areaBtns" ng-show="worlds">
-
+<div class="mainMenu" ng-show="animallist">
+    <div class="row">
+        <div class="col-xs-6 back" ng-click="wiki = true; animallist = false"></div>
+        <div class="col-xs-6 exit" ng-click="animallist = false"></div>
+    </div>
+    <div class="row" ng-repeat="animal in animals">
+        <div class="col-xs-12 menuButton iconBtn {{animal.name}} ">{{animal.name}}</div>
+    </div>
 </div>
