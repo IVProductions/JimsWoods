@@ -22,5 +22,17 @@ function walkFromAtoB(Ax,Ay, Bx,By) {
             direction="left";
         }
     }
+    else if (Ax<Bx && Ay<By) {
+        direction = "rightdown";
+    }
+    else if (Ax>Bx && Ay<By) {
+        direction = "leftdown";
+    }
+    else if (Ax<Bx && Ay>By) {
+        direction = "rightup";
+    }
+    else if (Ax>Bx && Ay>By) {
+        direction = "leftup";
+    }
     return direction;
 }
