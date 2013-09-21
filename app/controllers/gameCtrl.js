@@ -130,12 +130,12 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             // stand animation
             this.renderable.addAnimation("still", [0]);
             // walking animation
-            this.renderable.addAnimation ("walkLeft", [1,5,9,13]);
-            this.renderable.addAnimation ("walkRight", [3,7,11,15]); //2
-            this.renderable.addAnimation ("walkUp", [2,6,10,14]); //2
-            this.renderable.addAnimation ("walkDown", [0,4,8,12]); //2
-            this.renderable.addAnimation ("walkRightDown", [0,4,8,12]); //2
-            this.renderable.addAnimation ("walkLeftDown", [0,4,8,12]); //2
+            this.renderable.addAnimation ("walkLeft", [1,7,13,19]);
+            this.renderable.addAnimation ("walkRight", [3,9,15,21]); //2
+            this.renderable.addAnimation ("walkUp", [2,8,14,20]); //2
+            this.renderable.addAnimation ("walkDown", [0,6,12,18]); //2
+            this.renderable.addAnimation ("walkRightDown", [5,11,17,23]); //2
+            this.renderable.addAnimation ("walkLeftDown", [4,10,16,22]); //2
             this.renderable.addAnimation ("walkRightUp", [2,6,10,14]); //2
             this.renderable.addAnimation ("walkLeftUp", [2,6,10,14]); //2
 
@@ -160,12 +160,14 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 for (var j=0;j<150;j++) {
                     var tile=layer.layerData[~~(i)][~~(j)];
                     if (tile.tileId=='1' || tile.tileId=='2') {
+                      //if (tile.tileId=='20'){
                         unwalkableTiles.push("["+i+","+j+"]");
                         grid.setWalkableAt(i,j,false);
                     }
                 }
             }
-            //console.log("cockcheese");
+            console.log("cockcheese");
+            console.log(unwalkableTiles.length);
             //console.log(tile.tileId);
             //var unwalkableTiles=[[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[2,4],[2,5],[2,6],[2,7],[2,8],[2,9],[3,5],[3,6],[3,7],[3,8],[3,9],[4,6],[4,7],[4,8],[4,9],[5,6],[5,7],[5,8],[5,9]];
             //var grid = new PF.Grid(150,150);
