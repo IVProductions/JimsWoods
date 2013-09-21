@@ -83,28 +83,130 @@ body {
 }
 
 .animalBtn.Dog {
-    background: url('../img/dog_icon.png') no-repeat;
+    background: url('../img/animal_icons/dog_icon.png') no-repeat;
     background-size: 52px 52px;
     background-color: #f5f5f5;
 
 }
 
 .animalBtn.Cat {
-    background: url('../img/cat_icon.png') no-repeat;
+    background: url('../img/animal_icons/cat_icon.png') no-repeat;
     background-size: 52px 52px;
     background-color: #f5f5f5;
-}
-.animalBtn.Parrot {
-    background: url('../img/parrot_icon.png') no-repeat;
-    background-size: 52px 52px;
-    background-color: #f5f5f5;
-}
-.animalBtn.Eagle {
-    background: url('../img/dog_icon.png') no-repeat;
-    background-size: 52px 52px;
-    background-color: #f5f5f5;
+
 }
 
+.animalBtn.Parrot {
+    background: url('../img/animal_icons/parrot_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Eagle {
+    background: url('../img/animal_icons/eagle_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Bear {
+    background: url('../img/animal_icons/bear_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Cow {
+    background: url('../img/animal_icons/cow_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Pigeon {
+    background: url('../img/animal_icons/pigeon_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Pig {
+    background: url('../img/animal_icons/pig_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Swan {
+    background: url('../img/animal_icons/swan_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Porcupine {
+    background: url('../img/animal_icons/porcupine_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Snail {
+    background: url('../img/animal_icons/snail_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Skunk {
+    background: url('../img/animal_icons/skunk_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Lynx {
+    background: url('../img/animal_icons/lynx_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Wolf {
+    background: url('../img/animal_icons/wolf_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Snake {
+    background: url('../img/animal_icons/snake_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Bee {
+    background: url('../img/animal_icons/bee_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Moose {
+    background: url('../img/animal_icons/moose_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
+
+.animalBtn.Rabbit {
+    background: url('../img/animal_icons/rabbit_icon.png') no-repeat;
+    background-size: 52px 52px;
+    background-color: #f5f5f5;
+
+}
 /* animalDetails.html */
 .animalDetails {
     padding: 5px;
