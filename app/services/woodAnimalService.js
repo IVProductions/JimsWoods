@@ -299,6 +299,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "speed": 55,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
             "imageURL": "Content/img/animals/brownbear.png"
+
         }
     ]
     return {animals:animals};
