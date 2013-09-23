@@ -26,5 +26,12 @@
     <property name="spritewidth" value="52"/>
    </properties>
   </object>
+  <object name="animal" x="781" y="573" width="50" height="49">
+   <properties>
+    <property name="image" value="track"/>
+    <property name="spriteheight" value="52"/>
+    <property name="spritewidth" value="52"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
