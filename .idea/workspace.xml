@@ -74,7 +74,7 @@
       <file leaf-file-name="gameCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="645" column="67" selection-start="29446" selection-end="29446" vertical-scroll-proportion="-0.49833888">
+            <state line="155" column="13" selection-start="5538" selection-end="5538" vertical-scroll-proportion="-9.714286">
               <folding />
             </state>
           </provider>
@@ -592,7 +592,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="645" column="67" selection-start="29446" selection-end="29446" vertical-scroll-proportion="-0.49833888">
+        <state line="155" column="13" selection-start="5538" selection-end="5538" vertical-scroll-proportion="-9.714286">
           <folding />
         </state>
       </provider>
