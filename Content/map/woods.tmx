@@ -21,17 +21,15 @@
   </object>
   <object name="animal" x="260" y="571" width="52" height="52">
    <properties>
+    <property name="down" value="5"/>
     <property name="image" value="track"/>
+    <property name="left" value="6"/>
+    <property name="right" value="6"/>
     <property name="spriteheight" value="52"/>
     <property name="spritewidth" value="52"/>
+    <property name="up" value="5"/>
    </properties>
   </object>
-  <object name="animal" x="781" y="573" width="50" height="49">
-   <properties>
-    <property name="image" value="track"/>
-    <property name="spriteheight" value="52"/>
-    <property name="spritewidth" value="52"/>
-   </properties>
-  </object>
+  <object x="801" y="587" height="1"/>
  </objectgroup>
 </map>
