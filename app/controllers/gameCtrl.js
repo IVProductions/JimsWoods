@@ -417,9 +417,9 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             // stand animation
             this.renderable.addAnimation("still", [3]);
             // walking animation
-            this.renderable.addAnimation ("walkLeft", [1,6]);
-            this.renderable.addAnimation ("walkRight", [2,7]); //2
-            this.renderable.addAnimation ("walkUp", [0,5]); //2
+            this.renderable.addAnimation ("walkLeft", [1]);
+            this.renderable.addAnimation ("walkRight", [2]); //2
+            this.renderable.addAnimation ("walkUp", [0]); //2
             this.renderable.addAnimation ("walkDown", [3]); //2
             this.renderable.addAnimation("walkInvisible", [4,9])
             //this.renderable.addAnimation ("walkRightDown", [5,13,21,29]); //2
@@ -640,6 +640,10 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             // update animation if necessary
 
             if (this.vel.x>0 && this.vel.y==0) {
+                if ($scope.first==false) {
+                    this.renderable.addAnimation ("walkRight", [7]);
+                }
+                else {this.renderable.addAnimation ("walkRight", [2]);}
                 if (isInWoods) {
                     this.renderable.setCurrentAnimation("walkInvisible");
                 }
@@ -653,6 +657,10 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 return true;
             }
             else if (this.vel.x<0 && this.vel.y==0) {
+                if ($scope.first==false) {
+                    this.renderable.addAnimation ("walkLeft", [6]);
+                }
+                else {this.renderable.addAnimation ("walkLeft", [1]);}
                 if (isInWoods) {
                     this.renderable.setCurrentAnimation("walkInvisible");
                 }
@@ -683,6 +691,10 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 return true;
             }
             else if (this.vel.x==0 && this.vel.y<0) {
+                if ($scope.first==false) {
+                    this.renderable.addAnimation ("walkUp", [5]);
+                }
+                else {this.renderable.addAnimation ("walkUp", [0]);}
                 if (isInWoods) {
                     this.renderable.setCurrentAnimation("walkInvisible");
                 }
