@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/resources.js" afterPath="$PROJECT_DIR$/app/services/resources.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/map/woods.tmx" afterPath="$PROJECT_DIR$/Content/map/woods.tmx" />
-    </list>
+    <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="" />
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1379794511423" ignored="false" />
@@ -78,10 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameCtrl.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="gameCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="453" column="28" selection-start="19337" selection-end="19337" vertical-scroll-proportion="0.0">
+            <state line="65" column="14" selection-start="2278" selection-end="2342" vertical-scroll-proportion="0.67346936">
               <folding />
             </state>
           </provider>
@@ -105,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resources.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="resources.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/resources.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="27" selection-start="271" selection-end="271" vertical-scroll-proportion="0.2606952">
+            <state line="13" column="27" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -709,13 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="453" column="28" selection-start="19337" selection-end="19337" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/game.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="22" selection-start="4315" selection-end="4315" vertical-scroll-proportion="-28.75">
@@ -746,7 +736,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/resources.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="271" selection-end="271" vertical-scroll-proportion="0.2606952">
+        <state line="13" column="27" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="14" selection-start="2278" selection-end="2342" vertical-scroll-proportion="0.67346936">
           <folding />
         </state>
       </provider>
