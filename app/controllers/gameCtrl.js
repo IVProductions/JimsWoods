@@ -64,13 +64,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
             // add our player entity in the entity pool
             me.entityPool.add("mainPlayer", this.PlayerEntity);
-
-            // enable the keyboard
-            me.input.bindKey(me.input.KEY.LEFT, "left");
-            me.input.bindKey(me.input.KEY.RIGHT, "right");
-            me.input.bindKey(me.input.KEY.UP, "up");
-            me.input.bindKey(me.input.KEY.DOWN, "down");
-
+            me.entityPool.add("animalTrack", this.TrackEntity);
             // Start the game.
             me.state.change(me.state.PLAY);
         }
@@ -142,12 +136,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.renderable.setCurrentAnimation("still");
 
             this.updateColRect(4, 20, 10, 38); //*
-
-            $scope.x_coord = 0;
-            $scope.y_coord = 0;
-            $scope.playerX_coord = this.pos.x;
-            $scope.playerY_coord = this.pos.y;
-            $scope.move = false;
             // set the display to follow our position on both axis
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
             //initialize list of unwalkable tiles
@@ -187,6 +175,8 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 me.event.publish("mousedown", [ event ]);
             });
             this.mouseDown = me.event.subscribe("mousedown", function (event) {
+                //alert(me.game.viewport.screenToWorld(52,52));
+                //me.game.viewport.shake(10, 5000, me.game.viewport.AXIS.BOTH);
                 $scope.listOfWalkingDir=[];
                 //$scope.walkIncrement=0;
                 //var xSource=mouse.pos.x+26;
@@ -291,6 +281,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
          ------ */
         update: function() {
+            //me.game.viewport.move(this.pos.x-500,this.pos.y-500);
             $scope.walkIncrement++;
             //console.log(me.video.getHeight());
             //if ($scope.path.length>0) {            //if path exists
