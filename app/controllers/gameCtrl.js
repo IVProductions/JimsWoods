@@ -578,6 +578,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
          ------ */
         update: function() {
+            var isInWoods=false;
             var currentTileX=""+((this.pos.x+26)/52);               //fiks slik at det blir 0-indeksert
             var currentTileY=""+((this.pos.y+26)/52);
             if (currentTileX.indexOf(".")!=-1) {
@@ -588,6 +589,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             }
             //console.log(currentTileX+" , "+currentTileY);
             if ($scope.unwalkableTiles.indexOf("["+currentTileX+","+currentTileY+"]")>-1) {
+                isInWoods=true;
                 console.log("in woods");
             }
             $scope.walkNumber++;
@@ -626,8 +628,12 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             // check & update player movement
             this.updateMovement();
             // update animation if necessary
+
             if (this.vel.x>0 && this.vel.y==0) {
-                this.renderable.setCurrentAnimation("walkRight");
+                if (isInWoods) {
+                    this.renderable.setCurrentAnimation("walkInvisible");
+                }
+                else {this.renderable.setCurrentAnimation("walkRight");}
                 this.parent();
                 return true;
             }
@@ -643,26 +649,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             }
             else if (this.vel.x==0 && this.vel.y<0) {
                 this.renderable.setCurrentAnimation("walkUp");
-                this.parent();
-                return true;
-            }
-            else if (this.vel.x>0 && this.vel.y>0) {
-                this.renderable.setCurrentAnimation("walkRightDown");
-                this.parent();
-                return true;
-            }
-            else if (this.vel.x<0 && this.vel.y>0) {
-                this.renderable.setCurrentAnimation("walkLeftDown");
-                this.parent();
-                return true;
-            }
-            else if (this.vel.x>0 && this.vel.y<0) {
-                this.renderable.setCurrentAnimation("walkRightUp");
-                this.parent();
-                return true;
-            }
-            else if (this.vel.x<0 && this.vel.y<0) {
-                this.renderable.setCurrentAnimation("walkLeftUp");
                 this.parent();
                 return true;
             }
