@@ -64,13 +64,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
             // add our player entity in the entity pool
             me.entityPool.add("mainPlayer", this.PlayerEntity);
-
-            // enable the keyboard
-            me.input.bindKey(me.input.KEY.LEFT, "left");
-            me.input.bindKey(me.input.KEY.RIGHT, "right");
-            me.input.bindKey(me.input.KEY.UP, "up");
-            me.input.bindKey(me.input.KEY.DOWN, "down");
-
+            me.entityPool.add("animal", this.TrackEntity);
             // Start the game.
             me.state.change(me.state.PLAY);
         }
@@ -142,12 +136,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.renderable.setCurrentAnimation("still");
 
             this.updateColRect(4, 20, 10, 38); //*
-
-            $scope.x_coord = 0;
-            $scope.y_coord = 0;
-            $scope.playerX_coord = this.pos.x;
-            $scope.playerY_coord = this.pos.y;
-            $scope.move = false;
             // set the display to follow our position on both axis
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
             //initialize list of unwalkable tiles
@@ -155,29 +143,17 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             var layer = me.game.currentLevel.getLayerByName("Tile Layer 1");  //get layer from 'Tiled'
             //layer.getTile(event.gameX, event.gameY);
             var tile=layer.layerData[~~(0)][~~(1)];
-            var unwalkableTiles=[];
+            $scope.unwalkableTiles=[];
             for (var i=0;i<150;i++) {
                 for (var j=0;j<150;j++) {
                     var tile=layer.layerData[~~(i)][~~(j)];
                     if (tile.tileId=='1' || tile.tileId=='2') {
                       //if (tile.tileId=='20'){
-                        unwalkableTiles.push("["+i+","+j+"]");
+                        $scope.unwalkableTiles.push("["+i+","+j+"]");
                         grid.setWalkableAt(i,j,false);
                     }
                 }
             }
-            console.log("cockcheese");
-            console.log(unwalkableTiles.length);
-            //console.log(tile.tileId);
-            //var unwalkableTiles=[[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[2,4],[2,5],[2,6],[2,7],[2,8],[2,9],[3,5],[3,6],[3,7],[3,8],[3,9],[4,6],[4,7],[4,8],[4,9],[5,6],[5,7],[5,8],[5,9]];
-            //var grid = new PF.Grid(150,150);
-            //for(var i=0; i<unwalkableTiles.length;i++) {
-            //    var tile=unwalkableTiles[i];
-            //    var x=tile[0];
-            //    var y=tile[1];
-            //    grid.setWalkableAt(x,y,false);
-            //}
-
             var finder = new PF.AStarFinder({heuristic: PF.Heuristic.euclidean,allowDiagonal: true,dontCrossCorners: true});
             $scope.listOfWalkingDir=[];
             var path=[];
@@ -188,9 +164,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             });
             this.mouseDown = me.event.subscribe("mousedown", function (event) {
                 $scope.listOfWalkingDir=[];
-                //$scope.walkIncrement=0;
-                //var xSource=mouse.pos.x+26;
-                //var ySource=mouse.pos.y+26;
                 var sourceTileX=""+((mouse.pos.x+26)/52);               //fiks slik at det blir 0-indeksert
                 var sourceTileY=""+((mouse.pos.y+26)/52);
                 if (sourceTileX.indexOf(".")!=-1) {
@@ -206,7 +179,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 console.log(mouse.pos.y);
                 console.log("infoEnd");
 
-
                 var xTarget=event.gameX;
                 var yTarget=event.gameY;
                 var targetTileX=""+xTarget/52;
@@ -217,16 +189,13 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 if (targetTileY.indexOf(".")!=-1) {
                     targetTileY=parseInt(targetTileY);
                 }
-                //alert(yTarget-ySource);
-                //right dir
-                //alert(targetTileX+", "+targetTileY);
                 console.log("info2");
                 console.log(event.gameX+", "+targetTileX);
                 console.log(event.gameY+", "+targetTileY);
                 console.log("infoEnd2");
 
                 gridBackup = grid.clone();
-                if (unwalkableTiles.indexOf("["+targetTileX+","+targetTileY+"]")==-1) {
+                if ($scope.unwalkableTiles.indexOf("["+targetTileX+","+targetTileY+"]")==-1) {
                 console.log("sofa");
                 //console.log(finder.findPath(sourceTileX, sourceTileY, targetTileX, targetTileY, gridBackup));
                 path = finder.findPath(sourceTileX, sourceTileY, targetTileX, targetTileY, gridBackup);
@@ -292,26 +261,11 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
          ------ */
         update: function() {
             $scope.walkIncrement++;
-            //console.log(me.video.getHeight());
-            //if ($scope.path.length>0) {            //if path exists
-            //    var source=$scope.path[0];
-            //    var sourceX=source[0];
-            //    var sourceY=source[1];
-            //}
-            //if ($scope.path.length>1) {            //if not last coordinate
-            //    var dest = $scope.path[1];
-            //    var destX=dest[0];
-            //    var destY=dest[1];
-            //}
-            //$scope.path.splice(0,1);
             if ($scope.walkIncrement>25) {
                 $scope.walkIncrement=0;
                 $scope.listOfWalkingDir.splice(0,1);
             }
-            //var currentWalkingDir=walkFromAtoB(sourceX,sourceY,destX,destY);
             var currentWalkingDir=$scope.listOfWalkingDir[0];
-            //if (currentWalkingDir=="left" || currentWalkingDir=="right" || currentWalkingDir=="up" || currentWalkingDir=="down"){
-            //for (var i=0;i<53;i++){
             if (currentWalkingDir=="left") {             // 2 6 10 14
                     this.renderable.addAnimation("still",[1]);
                     this.vel.x -= this.accel.x * me.timer.tick;
@@ -412,6 +366,171 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
     });
 
+    $scope.game.TrackEntity = me.ObjectEntity.extend({
+        init: function(x, y, settings) {
+            // call the constructor
+            this.parent(x, y, settings);
+            // set the default horizontal & vertical speed (accel vector)
+            this.setVelocity(0.8, 0.8);
+
+            this.setFriction(0.01,0.01);                     //*
+            this.animationspeed = 1;
+            //me.video.getScreenCanvas().addEventListener("touchstart", this.touchstart, false);
+
+            // stand animation
+            this.renderable.addAnimation("still", [3]);
+            // walking animation
+            this.renderable.addAnimation ("walkLeft", [1]);
+            this.renderable.addAnimation ("walkRight", [2]); //2
+            this.renderable.addAnimation ("walkUp", [0]); //2
+            this.renderable.addAnimation ("walkDown", [3]); //2
+            this.renderable.addAnimation("walkInvisible", [4])
+
+            this.renderable.setCurrentAnimation("still");
+
+            $scope.trackList=["down","down","down","down","down","down","down","down","down","down","down","down","down","down","down","right","right","right","right","right","right","right","right","right","right","right","right","right","right","up","up","up","up","up","up","up","up","up","up","up","up","up","up","up","left","left","left","left","left","left","left","left","left","left","left","left","left","left"];
+            $scope.walkNumber=0;
+            $scope.first = true;
+        },
+        /* -----
+
+         update the player pos
+
+         ------ */
+        update: function() {
+            var isInWoods=false;
+            var currentTileX=""+((this.pos.x+26)/52);
+            var currentTileY=""+((this.pos.y+26)/52);
+            if (currentTileX.indexOf(".")!=-1) {
+                currentTileX=parseInt(currentTileX);
+            }
+            if (currentTileY.indexOf(".")!=-1) {
+                currentTileY=parseInt(currentTileY);
+            }
+            if ($scope.unwalkableTiles.indexOf("["+currentTileX+","+currentTileY+"]")>-1) {
+                isInWoods=true;
+            }
+            $scope.walkNumber++;
+            if ($scope.walkNumber>150) {
+                $scope.walkNumber=0;
+                $scope.trackList.splice(0,1);
+                if ($scope.first) {
+                    $scope.first=false;
+                }
+                else {$scope.first=true;}
+
+                if ($scope.trackList.length<1) {
+                    $scope.trackList= ["down","down","down","down","down","down","down","down","down","down","down","down","down","down","down","right","right","right","right","right","right","right","right","right","right","right","right","right","right","right","up","up","up","up","up","up","up","up","up","up","up","up","up","up","up","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left"];
+                }
+            }
+            var currentWalkingDir=$scope.trackList[0];
+            if (currentWalkingDir=="left") {             // 2 6 10 14
+                this.renderable.addAnimation("still",[1]);
+                this.vel.x -= this.accel.x * me.timer.tick;
+                this.vel.y = 0;
+            } else if (currentWalkingDir=="right") {
+                this.renderable.addAnimation("still",[3]);
+                this.vel.y = 0;
+                this.vel.x += this.accel.x * me.timer.tick;
+            }
+            else if (currentWalkingDir=="up") {          // 3 7 11 15
+                this.renderable.addAnimation("still",[2]);
+                this.vel.y -= this.accel.y * me.timer.tick;
+                this.vel.x = 0;
+            }
+            else if (currentWalkingDir=="down") {        // 1 5 9 13
+                this.renderable.addAnimation("still",[0]);
+                this.vel.y += this.accel.y * me.timer.tick;
+                this.vel.x = 0;
+            }
+            else {
+                this.vel.x = 0;
+                this.vel.y = 0;
+            }
+            // check & update player movement
+            if ($scope.walkNumber<45) {
+                this.updateMovement();
+            }
+            // update animation if necessary
+
+            if (this.vel.x>0 && this.vel.y==0) {
+                if ($scope.first==false) {
+                    this.renderable.addAnimation ("walkRight", [7]);
+                }
+                else {this.renderable.addAnimation ("walkRight", [2]);}
+                if (isInWoods) {
+                    this.renderable.setCurrentAnimation("walkInvisible");
+                }
+                else {
+                    if ($scope.walkNumber>45) {
+                        this.renderable.setCurrentAnimation("walkRight");
+                    }
+                    else {this.renderable.setCurrentAnimation("walkInvisible");}
+                }
+                this.parent();
+                return true;
+            }
+            else if (this.vel.x<0 && this.vel.y==0) {
+                if ($scope.first==false) {
+                    this.renderable.addAnimation ("walkLeft", [6]);
+                }
+                else {this.renderable.addAnimation ("walkLeft", [1]);}
+                if (isInWoods) {
+                    this.renderable.setCurrentAnimation("walkInvisible");
+                }
+                else {
+                    if ($scope.walkNumber>45) {
+                        this.renderable.setCurrentAnimation("walkLeft");
+                    }
+                    else {this.renderable.setCurrentAnimation("walkInvisible");}
+                }
+                this.parent();
+                return true;
+            }
+            else if (this.vel.x==0 && this.vel.y>0) {
+                if ($scope.first==false) {
+                    this.renderable.addAnimation ("walkDown", [8]);
+                }
+                else {this.renderable.addAnimation ("walkDown", [3]);}
+                if (isInWoods) {
+                    this.renderable.setCurrentAnimation("walkInvisible");
+                }
+                else {
+                    if ($scope.walkNumber>45) {
+                        this.renderable.setCurrentAnimation("walkDown");
+                    }
+                    else {this.renderable.setCurrentAnimation("walkInvisible");}
+                }
+                this.parent();
+                return true;
+            }
+            else if (this.vel.x==0 && this.vel.y<0) {
+                if ($scope.first==false) {
+                    this.renderable.addAnimation ("walkUp", [5]);
+                }
+                else {this.renderable.addAnimation ("walkUp", [0]);}
+                if (isInWoods) {
+                    this.renderable.setCurrentAnimation("walkInvisible");
+                }
+                else {
+                    if ($scope.walkNumber>45) {
+                        this.renderable.setCurrentAnimation("walkUp");
+                    }
+                    else {this.renderable.setCurrentAnimation("walkInvisible");}
+                }
+                this.parent();
+                return true;
+            }
+            else {
+                this.renderable.setCurrentAnimation("still");
+                this.parent();
+                return true;
+            }
+            //if no updates are needed
+            return false;
+        }
+    });
+
     // Animal List //
     $scope.stateService = stateService;
     $scope.animal = $scope.stateService.functions.getCurrentAnimal();
@@ -451,8 +570,10 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
         $scope.animals = $scope.stateService.functions.getCurrentAnimalFactory();
     }
     $scope.getAnimalDetails=function(animal){
+        console.log(animal);
         //alert(animal.name);
         $scope.stateService.functions.setCurrentAnimal(animal);
+        $scope.animal = $scope.stateService.functions.getCurrentAnimal();
     }
 
 }

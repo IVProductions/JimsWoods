@@ -8,7 +8,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 75,
             "speed": 50,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 2,
@@ -18,7 +18,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 75,
             "speed": 50,
             "description": "Cats are stuck up and really lame. All they care about is food and naps.",
-            "imageURL": "Content/img/cat.png"
+            "imageURL": "Content/img/animals/cat.png"
         },
         {
             "id": 3,
@@ -28,7 +28,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 45,
             "speed": 55,
             "description": "Parrots are fucking useless!",
-            "imageURL": "Content/img/parrot.png"
+            "imageURL": "Content/img/animals/parrot.png"
         },
         {
             "id": 4,
@@ -38,7 +38,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 5,
             "speed": 5,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/cow.png"
         },
         {
             "id": 5,
@@ -48,7 +48,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 15,
             "speed": 15,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/rabbit.png"
         },
         {
             "id": 6,
@@ -58,7 +58,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 10,
             "speed": 10,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 7,
@@ -68,7 +68,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 10,
             "speed": 20,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/pigeon.png"
         },
         {
             "id": 8,
@@ -78,7 +78,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 20,
             "speed": 10,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 9,
@@ -88,7 +88,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 10,
             "speed": 5,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/duck.png"
         },
         {
             "id": 10,
@@ -98,7 +98,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 15,
             "speed": 3,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/snail.png"
         },
         {
             "id": 11,
@@ -108,7 +108,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 10,
             "speed": 10,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 12,
@@ -118,7 +118,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 10,
             "speed": 20,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 13,
@@ -128,7 +128,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 10,
             "speed": 10,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/guineapig.png"
         },
         {
             "id": 14,
@@ -138,7 +138,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 20,
             "speed": 20,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 15,
@@ -148,7 +148,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 25,
             "speed": 25,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 16,
@@ -158,7 +158,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 20,
             "speed": 25,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 17,
@@ -168,7 +168,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 40,
             "speed": 10,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/pig.png"
         },
         {
             "id": 18,
@@ -178,7 +178,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 40,
             "speed": 20,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 19,
@@ -188,7 +188,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 20,
             "speed": 15,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/swan.png"
         },
         {
             "id": 20,
@@ -198,7 +198,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 35,
             "speed": 20,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/porcupine.png"
         },
         {
             "id": 21,
@@ -208,7 +208,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 20,
             "speed": 50,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 22,
@@ -218,7 +218,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 15,
             "speed": 35,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/viper.png"
         },
         {
             "id": 23,
@@ -228,7 +228,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 40,
             "speed": 15,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/skunk.png"
         },
         {
             "id": 24,
@@ -238,7 +238,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 10,
             "speed": 50,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 25,
@@ -248,7 +248,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 50,
             "speed": 40,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/lynx.png"
         },
         {
             "id": 26,
@@ -258,7 +258,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 40,
             "speed": 50,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 27,
@@ -268,7 +268,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 60,
             "speed": 35,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/moose.png"
         },
         {
             "id": 28,
@@ -278,7 +278,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 40,
             "speed": 50,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/dog.png"
         },
         {
             "id": 29,
@@ -288,7 +288,7 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 70,
             "speed": 70,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/wolf.png"
         },
         {
             "id": 30,
@@ -298,7 +298,8 @@ JimsWoods.factory('woodAnimalFactory',function() {
             "defence": 75,
             "speed": 55,
             "description": "The dog is man's best friends. Always loyal to their owner, unlike cats.",
-            "imageURL": "Content/img/dog.png"
+            "imageURL": "Content/img/animals/brownbear.png"
+
         }
     ]
     return {animals:animals};
