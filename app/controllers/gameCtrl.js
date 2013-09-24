@@ -411,7 +411,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 isInWoods=true;
             }
             $scope.walkNumber++;
-            if ($scope.walkNumber>65) {
+            if ($scope.walkNumber>150) {
                 $scope.walkNumber=0;
                 $scope.trackList.splice(0,1);
                 if ($scope.first) {
@@ -420,7 +420,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 else {$scope.first=true;}
 
                 if ($scope.trackList.length<1) {
-                    $scope.trackList= ["down","down","down","down","down","down","down","down","down","down","down","down","down","down","down","right","right","right","right","right","right","right","right","right","right","right","right","right","right","up","up","up","up","up","up","up","up","up","up","up","up","up","up","up","left","left","left","left","left","left","left","left","left","left","left","left","left","left"];
+                    $scope.trackList= ["down","down","down","down","down","down","down","down","down","down","down","down","down","down","down","right","right","right","right","right","right","right","right","right","right","right","right","right","right","right","up","up","up","up","up","up","up","up","up","up","up","up","up","up","up","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left"];
                 }
             }
             var currentWalkingDir=$scope.trackList[0];
@@ -448,7 +448,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 this.vel.y = 0;
             }
             // check & update player movement
-            if ($scope.walkNumber<35) {
+            if ($scope.walkNumber<45) {
                 this.updateMovement();
             }
             // update animation if necessary
@@ -462,7 +462,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     this.renderable.setCurrentAnimation("walkInvisible");
                 }
                 else {
-                    if ($scope.walkNumber>55) {
+                    if ($scope.walkNumber>45) {
                         this.renderable.setCurrentAnimation("walkRight");
                     }
                     else {this.renderable.setCurrentAnimation("walkInvisible");}
@@ -479,7 +479,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     this.renderable.setCurrentAnimation("walkInvisible");
                 }
                 else {
-                    if ($scope.walkNumber>55) {
+                    if ($scope.walkNumber>45) {
                         this.renderable.setCurrentAnimation("walkLeft");
                     }
                     else {this.renderable.setCurrentAnimation("walkInvisible");}
@@ -496,7 +496,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     this.renderable.setCurrentAnimation("walkInvisible");
                 }
                 else {
-                    if ($scope.walkNumber>35) {
+                    if ($scope.walkNumber>45) {
                         this.renderable.setCurrentAnimation("walkDown");
                     }
                     else {this.renderable.setCurrentAnimation("walkInvisible");}
@@ -513,7 +513,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     this.renderable.setCurrentAnimation("walkInvisible");
                 }
                 else {
-                    if ($scope.walkNumber>55) {
+                    if ($scope.walkNumber>45) {
                         this.renderable.setCurrentAnimation("walkUp");
                     }
                     else {this.renderable.setCurrentAnimation("walkInvisible");}
