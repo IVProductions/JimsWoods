@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/img/woods_tiles.png" afterPath="$PROJECT_DIR$/Content/img/woods_tiles.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/map/woods.tmx" afterPath="$PROJECT_DIR$/Content/map/woods.tmx" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
