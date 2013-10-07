@@ -1,1 +1,125 @@
 <div ng-init="game.init()" id="screen"></div>
+
+<div class="menuBtn" ng-click="menu = true; pauseGame()"></div>
+<div id="showFS" ng-click="showFightScreen = true; pauseGame();chooseWorldList('woods');"></div>
+
+<div class="mainMenu" ng-show="menu">
+    <div class="row">
+        <div class="col-xs-6 hiddenBack"></div>
+        <div class="col-xs-6 exit" ng-click="menu = false ;resumeGame()"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 menuButton map" ng-click="menu = true">Map</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 menuButton shop">Shop</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 menuButton wiki" ng-click="wiki = true; menu = false">Wikipedia</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 menuButton myanimals">My Animals</div>
+    </div>
+</div>
+
+<div class="mainMenu" ng-show="wiki">
+    <div class="row">
+        <div class="col-xs-6 back" ng-click="menu = true; wiki = false"></div>
+        <div class="col-xs-6 exit" ng-click="wiki = false; resumeGame()"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn woodsBtn" ng-click="chooseWorldList('woods'); animallist = true; wiki = false">Woods</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn desertBtn" ng-click="chooseWorldList('desert'); animallist = true; wiki = false">Desert</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn seaBtn" ng-click="chooseWorldList('sea'); animallist = true; wiki = false">Sea World</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn fableBtn" ng-click="chooseWorldList('mountain'); animallist = true; wiki = false">Mountains</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn jungleBtn" ng-click="chooseWorldList('jungle'); animallist = true; wiki = false">Jungle</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn articBtn" ng-click="chooseWorldList('arctic'); animallist = true; wiki = false">Arctic</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn fableBtn" ng-click="chooseWorldList('lostworld'); animallist = true; wiki = false">Lost World</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 areaBtn fableBtn" ng-click="chooseWorldList('fable'); animallist = true; wiki = false">Fable World</div>
+    </div>
+</div>
+
+<div class="mainMenu" ng-show="animallist">
+    <div class="row">
+        <div class="col-xs-6 back" ng-click="wiki = true; animallist = false"></div>
+        <div class="col-xs-6 exit" ng-click="animallist = false; resumeGame()"></div>
+    </div>
+    <div class="row" ng-repeat="animal in animals">
+        <div class="col-xs-12 menuButton iconBtn {{animal.name}}" ng-click="$parent.details = true; $parent.animallist = false; getAnimalDetails(animal)">{{animal.name}}</div>
+    </div>
+</div>
+
+<div class="mainMenu" ng-show="details">
+    <div class="row">
+        <div class="col-xs-6 back" ng-click="animallist = true; details = false"></div>
+        <div class="col-xs-6 exit" ng-click="details = false; resumeGame()"></div>
+    </div>
+    <div class="animalDetails">
+        <div class="row">
+            <div class="col-xs-5">
+                <img ng-src="{{animal.imageURL}}" alt="img">
+            </div>
+            <div class="col-xs-3">
+                <div class="row">
+                    <img class="statsIcon" ng-src="Content/img/health_icon.png" alt="img">
+                    {{ animal.health }}
+                </div>
+                <div class="row">
+                    <img class="statsIcon" ng-src="Content/img/attack_icon.png" alt="img">
+                    {{ animal.attack }}
+                </div>
+                <div class="row">
+                    <img class="statsIcon" ng-src="Content/img/defence_icon.png" alt="img">
+                    {{ animal.defence }}
+                </div>
+                <div class="row">
+                    <img class="statsIcon" ng-src="Content/img/speed_icon.png" alt="img">
+                    {{ animal.speed }}
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="row">
+                    <strong>Attack 1</strong> <br>
+                    This attack does something
+                </div>
+                <div class="row">
+                    <strong>Attack 2</strong> <br>
+                    This attack does something
+                </div>
+                <div class="row">
+                    <strong>Attack 3</strong> <br>
+                    This attack does something
+                </div>
+            </div>
+        </div>
+        <div class="row description">
+            {{animal.description}}
+        </div>
+    </div>
+</div>
+
+<div class="mainMenu" ng-show="showFightScreen">
+    <div class="row">
+        <div class="col-xs-6 hiddenBack">Flee!</div>
+        <div class="col-xs-6 exit" ng-click="showFightScreen = false; resumeGame()"></div>
+    </div>
+
+    <div>
+        {{animals[0].name}}
+        <img ng-src="{{animals[0].imageURL}}" alt="img">
+    </div>
+</div>
