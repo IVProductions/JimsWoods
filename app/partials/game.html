@@ -1,11 +1,12 @@
 <div ng-init="game.init()" id="screen"></div>
 
-<div class="menuBtn" ng-click="menu = true"></div>
+<div class="menuBtn" ng-click="menu = true; pauseGame()"></div>
+<div id="showFS" ng-click="showFightScreen = true; pauseGame();chooseWorldList('woods');"></div>
 
 <div class="mainMenu" ng-show="menu">
     <div class="row">
         <div class="col-xs-6 hiddenBack"></div>
-        <div class="col-xs-6 exit" ng-click="menu = false"></div>
+        <div class="col-xs-6 exit" ng-click="menu = false ;resumeGame()"></div>
     </div>
     <div class="row">
         <div class="col-xs-12 menuButton map" ng-click="menu = true">Map</div>
@@ -24,7 +25,7 @@
 <div class="mainMenu" ng-show="wiki">
     <div class="row">
         <div class="col-xs-6 back" ng-click="menu = true; wiki = false"></div>
-        <div class="col-xs-6 exit" ng-click="wiki = false"></div>
+        <div class="col-xs-6 exit" ng-click="wiki = false; resumeGame()"></div>
     </div>
     <div class="row">
         <div class="col-xs-12 areaBtn woodsBtn" ng-click="chooseWorldList('woods'); animallist = true; wiki = false">Woods</div>
@@ -55,7 +56,7 @@
 <div class="mainMenu" ng-show="animallist">
     <div class="row">
         <div class="col-xs-6 back" ng-click="wiki = true; animallist = false"></div>
-        <div class="col-xs-6 exit" ng-click="animallist = false"></div>
+        <div class="col-xs-6 exit" ng-click="animallist = false; resumeGame()"></div>
     </div>
     <div class="row" ng-repeat="animal in animals">
         <div class="col-xs-12 menuButton iconBtn {{animal.name}}" ng-click="$parent.details = true; $parent.animallist = false; getAnimalDetails(animal)">{{animal.name}}</div>
@@ -65,7 +66,7 @@
 <div class="mainMenu" ng-show="details">
     <div class="row">
         <div class="col-xs-6 back" ng-click="animallist = true; details = false"></div>
-        <div class="col-xs-6 exit" ng-click="details = false"></div>
+        <div class="col-xs-6 exit" ng-click="details = false; resumeGame()"></div>
     </div>
     <div class="animalDetails">
         <div class="row">
@@ -109,5 +110,16 @@
             {{animal.description}}
         </div>
     </div>
+</div>
 
+<div class="mainMenu" ng-show="showFightScreen">
+    <div class="row">
+        <div class="col-xs-6 hiddenBack">Flee!</div>
+        <div class="col-xs-6 exit" ng-click="showFightScreen = false; resumeGame()"></div>
+    </div>
+
+    <div>
+        {{animals[0].name}}
+        <img ng-src="{{animals[0].imageURL}}" alt="img">
+    </div>
 </div>

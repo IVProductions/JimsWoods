@@ -4,20 +4,18 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
     $scope.mapResources = mapResourceFactory.maps;
 
     $scope.showMenu = function(){
-        console.log($scope.menu)
     }
 
     $scope.showMap = function(){
         me.state.change(me.state.PLAY);
     }
+
     $scope.game = {
         init : function(){
             // Create Canvas
             var thing= me.video.init("screen", window.innerWidth, window.innerHeight);
             $scope.thing=thing;
             me.sys.gravity = 0;
-
-
             // Initialize the audio.
             //me.audio.init("ogg");
             // Set a callback to run when loading is complete.
@@ -64,7 +62,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
             // add our player entity in the entity pool
             me.entityPool.add("mainPlayer", this.PlayerEntity);
-            me.entityPool.add("animal", this.TrackEntity);
+            me.entityPool.add("animal", this.TrackEntity,true);
             // Start the game.
             me.state.change(me.state.PLAY);
         }
@@ -142,7 +140,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             var grid = new PF.Grid(150,150);
             var layer = me.game.currentLevel.getLayerByName("Tile Layer 1");  //get layer from 'Tiled'
             //layer.getTile(event.gameX, event.gameY);
-            var tile=layer.layerData[~~(0)][~~(1)];
             $scope.unwalkableTiles=[];
             for (var i=0;i<150;i++) {
                 for (var j=0;j<150;j++) {
@@ -197,9 +194,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 gridBackup = grid.clone();
                 if ($scope.unwalkableTiles.indexOf("["+targetTileX+","+targetTileY+"]")==-1) {
                 console.log("sofa");
-                //console.log(finder.findPath(sourceTileX, sourceTileY, targetTileX, targetTileY, gridBackup));
                 path = finder.findPath(sourceTileX, sourceTileY, targetTileX, targetTileY, gridBackup);
-
                 for (var i=0;i<path.length-1;i++) {
                     var source=path[i];
                     var sourceX=source[0];
@@ -250,7 +245,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 }
                 else {console.log("homse1");alert("clicked in woods!"+targetTileX+" , "+targetTileY);}
                 console.log("homse2");
-
             });
 
         },
@@ -312,6 +306,17 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
                 // check & update player movement
                 this.updateMovement();
+
+                // check for collision with other objects
+                 var res = this.collide();
+                // check if we collide with another entity :
+                if (res) {
+                    var x = 57;
+                    var ran=Math.floor((Math.random()*100)+1);
+                    if (ran==x) {
+                        $scope.setFSTrue();
+                    }
+                }
                 // update animation if necessary
                 if (this.vel.x>0 && this.vel.y==0) {
                     this.renderable.setCurrentAnimation("walkRight");
@@ -360,8 +365,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 }
                 //if no updates are needed
                 return false;
-            //}}
-
         }
 
     });
@@ -387,16 +390,28 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             this.renderable.addAnimation("walkInvisible", [4])
 
             this.renderable.setCurrentAnimation("still");
+            $scope.trackList=[];
+            $scope.right = (settings.right-1)*2;
+            $scope.left = (settings.left-1)*2;
+            $scope.down = (settings.down-1)*2;
+            $scope.up = (settings.up-1)*2;
+            for (var i=0; i<$scope.down;i++) {
+                $scope.trackList.push("down");
+            }
+            for (var i=0; i<$scope.right;i++) {
+                $scope.trackList.push("right");
+            }
+            for (var i=0; i<$scope.up;i++) {
+                $scope.trackList.push("up");
+            }
+            for (var i=0; i<$scope.left;i++) {
+                $scope.trackList.push("left");
+            }
 
-            $scope.trackList=["down","down","down","down","down","down","down","down","down","down","down","down","down","down","down","right","right","right","right","right","right","right","right","right","right","right","right","right","right","up","up","up","up","up","up","up","up","up","up","up","up","up","up","up","left","left","left","left","left","left","left","left","left","left","left","left","left","left"];
             $scope.walkNumber=0;
             $scope.first = true;
         },
-        /* -----
 
-         update the player pos
-
-         ------ */
         update: function() {
             var isInWoods=false;
             var currentTileX=""+((this.pos.x+26)/52);
@@ -411,7 +426,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 isInWoods=true;
             }
             $scope.walkNumber++;
-            if ($scope.walkNumber>150) {
+            if ($scope.walkNumber>95) {
                 $scope.walkNumber=0;
                 $scope.trackList.splice(0,1);
                 if ($scope.first) {
@@ -420,7 +435,18 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 else {$scope.first=true;}
 
                 if ($scope.trackList.length<1) {
-                    $scope.trackList= ["down","down","down","down","down","down","down","down","down","down","down","down","down","down","down","right","right","right","right","right","right","right","right","right","right","right","right","right","right","right","up","up","up","up","up","up","up","up","up","up","up","up","up","up","up","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left"];
+                    for (var i=0; i<$scope.down;i++) {
+                        $scope.trackList.push("down");
+                    }
+                    for (var i=0; i<$scope.right;i++) {
+                        $scope.trackList.push("right");
+                    }
+                    for (var i=0; i<$scope.up;i++) {
+                        $scope.trackList.push("up");
+                    }
+                    for (var i=0; i<$scope.left;i++) {
+                        $scope.trackList.push("left");
+                    }
                 }
             }
             var currentWalkingDir=$scope.trackList[0];
@@ -574,6 +600,18 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
         //alert(animal.name);
         $scope.stateService.functions.setCurrentAnimal(animal);
         $scope.animal = $scope.stateService.functions.getCurrentAnimal();
+    }
+    $scope.pauseGame=function(){
+        me.state.pause(true);
+    }
+    $scope.resumeGame=function(){
+        me.state.resume(true);
+    }
+    $scope.setFSTrue=function() {
+        //me.entityPool.newInstanceOf("animal",30, 30, "left");
+        //me.game.remove(me.game.TrackEntity);
+        document.getElementById("showFS").click();
+
     }
 
 }
