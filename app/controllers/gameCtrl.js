@@ -175,7 +175,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                 if (sourceTileX.indexOf(".")!=-1) {
                     sourceTileX=parseInt(sourceTileX);
                 }
-                if (sourceTileY.indexOf(".")!=-1) {
+                if (sourceTileY.indexOf(".")!=-1)  {
                     sourceTileY=parseInt(sourceTileY);
                 }
                 console.log("info");
