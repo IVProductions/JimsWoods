@@ -112,14 +112,34 @@
     </div>
 </div>
 
-<div class="mainMenu" ng-show="showFightScreen">
+<div class="fight" ng-show="showFightScreen">
     <div class="row">
-        <div class="col-xs-6 hiddenBack">Flee!</div>
-        <div class="col-xs-6 exit" ng-click="showFightScreen = false; resumeGame()"></div>
-    </div>
-
-    <div>
-        {{animals[0].name}}
         <img ng-src="{{animals[0].imageURL}}" alt="img">
+    </div>
+    <div class="row">
+        <button ng-click="showFightScreen = false; resumeGame()">Flee</button>
+        <button ng-click="fightview = true; showFightScreen = false;">Fight</button>
+    </div>
+</div>
+
+<div class="fightview" ng-show="fightview">
+    <div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+            <img ng-src="{{animals[0].imageURL}}" alt="img">
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+    <div class="actionbar">
+        <div class="fightBtn"></div>
+        <div class="actionBtns">
+            <button>Attack1</button>
+            <button>Attack2</button>
+            <button>Attack3</button>
+            <button>Attack4</button>
+            <button>Attack4</button>
+            <button>Attack4</button>
+        </div>
+        <div class="inventoryBtn"></div>
     </div>
 </div>

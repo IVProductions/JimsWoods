@@ -153,10 +153,10 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             }
 
             // set the player position if in local storage
-            if(isPositionSet()){
-                this.pos.x = window.localStorage.getItem("pos_x");
-                this.pos.y = window.localStorage.getItem("pos_y");
-            }
+            //if(isPositionSet()){
+            //    this.pos.x = window.localStorage.getItem("pos_x");
+            //    this.pos.y = window.localStorage.getItem("pos_y");
+            //}
 
             var finder = new PF.AStarFinder({heuristic: PF.Heuristic.euclidean,allowDiagonal: true,dontCrossCorners: true});
             $scope.listOfWalkingDir=[];

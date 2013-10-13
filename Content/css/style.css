@@ -346,3 +346,60 @@ h1 {
     overflow-y:auto;
     height:100%;
 }
+
+.fight {
+    padding-top: 50px;
+    text-align: center;
+    position: absolute;
+    height:100%;
+    top: 0; left: 0; right: 0; left: 0;
+}
+
+.fightview {
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    top: 0; left: 0; right: 0; left: 0;
+    background-color: #38b449;
+}
+
+.actionbar {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    height: 52px;
+    width: 100%;
+    background-color: white;
+}
+
+.fightBtn {
+    position: absolute;
+    bottom: 0; left: 0;
+    background: url('../img/attack_icon.png') no-repeat;
+    background-size: 52px 52px;
+    width: 52px;
+    height: 52px;
+}
+
+.actionBtns {
+    height: 52px;
+    border: solid 2px black;
+    position: absolute;
+    bottom: 0; left: 52px; right: 52px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.actionBtns button {
+    height: 52px;
+    width: 150px;
+}
+
+.inventoryBtn {
+    position: absolute;
+    bottom: 0; right: 0;
+    background: url('../img/inv_icon.png') no-repeat;
+    background-size: 52px 52px;
+    height: 52px;
+    width: 52px;
+}
