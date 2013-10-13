@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="" />
+    <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/gameCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/gameCtrl.js" />
+    </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1381626242091" ignored="false" />
@@ -90,7 +92,7 @@
       <file leaf-file-name="gameCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.65318817">
+            <state line="144" column="48" selection-start="5103" selection-end="5103" vertical-scroll-proportion="0.39657855">
               <folding />
             </state>
           </provider>
@@ -604,7 +606,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/gameCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.65318817">
+        <state line="144" column="48" selection-start="5103" selection-end="5103" vertical-scroll-proportion="0.39657855">
           <folding />
         </state>
       </provider>
