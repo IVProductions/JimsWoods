@@ -138,7 +138,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
             //initialize list of unwalkable tiles
             var grid = new PF.Grid(150,150);
-            var layer = me.game.currentLevel.getLayerByName("Tile Layer 1");  //get layer from 'Tiled'
+            var layer = me.game.currentLevel.getLayerByName("backTrees");  //get layer from 'Tiled'
             //layer.getTile(event.gameX, event.gameY);
             $scope.unwalkableTiles=[];
             for (var i=0;i<150;i++) {
