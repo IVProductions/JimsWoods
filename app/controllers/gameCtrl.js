@@ -151,6 +151,13 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
                     }
                 }
             }
+
+            // set the player position if in local storage
+            if(isPositionSet()){
+                this.pos.x = window.localStorage.getItem("pos_x");
+                this.pos.y = window.localStorage.getItem("pos_y");
+            }
+
             var finder = new PF.AStarFinder({heuristic: PF.Heuristic.euclidean,allowDiagonal: true,dontCrossCorners: true});
             $scope.listOfWalkingDir=[];
             var path=[];
@@ -255,7 +262,7 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
          ------ */
         update: function() {
 
-            savePosition(this.vel);
+            savePosition(this.pos);
 
             $scope.walkIncrement++;
             if ($scope.walkIncrement>25) {
@@ -373,13 +380,27 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
     });
 
     /**
-     * save current velocity to local storage
-     * @type me.Vector2d
+     * save current pos to local storage
+     * @type pos
      * @param pos
      */
     function savePosition(pos){
-        window.localStorage.setItem("vel_x", pos.x);
-        window.localStorage.setItem("vel_y", pos.y);
+        window.localStorage.setItem("pos_x", pos.x);
+        window.localStorage.setItem("pos_y", pos.y);
+    }
+
+    /**
+     * check if position is set in local storage
+     * @return true|false
+     */
+    function isPositionSet(){
+        var x = window.localStorage.getItem("pos_x");
+        var y = window.localStorage.getItem("pos_y");
+        if(x !== null && y !== null){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     $scope.game.TrackEntity = me.ObjectEntity.extend({
