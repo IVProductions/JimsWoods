@@ -254,6 +254,9 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
          ------ */
         update: function() {
+
+            savePosition(this.vel);
+
             $scope.walkIncrement++;
             if ($scope.walkIncrement>25) {
                 $scope.walkIncrement=0;
@@ -368,6 +371,16 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
         }
 
     });
+
+    /**
+     * save current velocity to local storage
+     * @type me.Vector2d
+     * @param pos
+     */
+    function savePosition(pos){
+        window.localStorage.setItem("vel_x", pos.x);
+        window.localStorage.setItem("vel_y", pos.y);
+    }
 
     $scope.game.TrackEntity = me.ObjectEntity.extend({
         init: function(x, y, settings) {
