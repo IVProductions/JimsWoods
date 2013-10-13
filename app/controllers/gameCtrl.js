@@ -144,8 +144,8 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             for (var i=0;i<150;i++) {
                 for (var j=0;j<150;j++) {
                     var tile=layer.layerData[~~(i)][~~(j)];
-                    if (tile.tileId=='1' || tile.tileId=='2') {
-                      //if (tile.tileId=='20'){
+                    //if (tile.tileId=='1' || tile.tileId=='2') {
+                    if (tile != null){
                         $scope.unwalkableTiles.push("["+i+","+j+"]");
                         grid.setWalkableAt(i,j,false);
                     }
