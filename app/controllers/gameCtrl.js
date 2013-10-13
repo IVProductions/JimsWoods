@@ -144,13 +144,20 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
             for (var i=0;i<150;i++) {
                 for (var j=0;j<150;j++) {
                     var tile=layer.layerData[~~(i)][~~(j)];
-                    if (tile.tileId=='1' || tile.tileId=='2') {
-                      //if (tile.tileId=='20'){
+                    //if (tile.tileId=='1' || tile.tileId=='2') {
+                    if (tile != null){
                         $scope.unwalkableTiles.push("["+i+","+j+"]");
                         grid.setWalkableAt(i,j,false);
                     }
                 }
             }
+
+            // set the player position if in local storage
+            if(isPositionSet()){
+                this.pos.x = window.localStorage.getItem("pos_x");
+                this.pos.y = window.localStorage.getItem("pos_y");
+            }
+
             var finder = new PF.AStarFinder({heuristic: PF.Heuristic.euclidean,allowDiagonal: true,dontCrossCorners: true});
             $scope.listOfWalkingDir=[];
             var path=[];
@@ -254,6 +261,9 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
          ------ */
         update: function() {
+
+            savePosition(this.pos);
+
             $scope.walkIncrement++;
             if ($scope.walkIncrement>25) {
                 $scope.walkIncrement=0;
@@ -368,6 +378,30 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
         }
 
     });
+
+    /**
+     * save current pos to local storage
+     * @type pos
+     * @param pos
+     */
+    function savePosition(pos){
+        window.localStorage.setItem("pos_x", pos.x);
+        window.localStorage.setItem("pos_y", pos.y);
+    }
+
+    /**
+     * check if position is set in local storage
+     * @return true|false
+     */
+    function isPositionSet(){
+        var x = window.localStorage.getItem("pos_x");
+        var y = window.localStorage.getItem("pos_y");
+        if(x !== null && y !== null){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     $scope.game.TrackEntity = me.ObjectEntity.extend({
         init: function(x, y, settings) {
