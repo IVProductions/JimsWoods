@@ -4,17 +4,24 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
     $scope.mapResources = mapResourceFactory.maps;
 
     $scope.showMenu = function(){
-    }
+    };
 
     $scope.showMap = function(){
         me.state.change(me.state.PLAY);
-    }
+    };
+
+    $scope.getWindowWidth = function (){
+        return window.innerWidth;
+    };
+
+    $scope.getWindowHeight = function (){
+        return window.innerHeight;
+    };
 
     $scope.game = {
         init : function(){
             // Create Canvas
-            var thing= me.video.init("screen", window.innerWidth, window.innerHeight);
-            $scope.thing=thing;
+            me.video.init("screen", window.innerWidth, window.innerHeight);
             me.sys.gravity = 0;
             // Initialize the audio.
             //me.audio.init("ogg");
@@ -24,9 +31,6 @@ function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory
 
             // Initialize melonJS and display a loading screen.
             me.state.change(me.state.LOADING);
-
-
-
         },
 
         "loadResources" : function () {

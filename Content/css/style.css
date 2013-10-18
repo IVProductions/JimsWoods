@@ -403,3 +403,7 @@ h1 {
     height: 52px;
     width: 52px;
 }
+
+canvas {
+    display: block;
+}
