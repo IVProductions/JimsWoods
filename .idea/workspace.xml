@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209d04ca-c6e4-40e1-bd92-be47c1647245" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/game.html" afterPath="$PROJECT_DIR$/app/partials/game.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/style.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JimsWoods.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +30,7 @@
     <file path="/start.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378710695419" ignored="false" />
     <file path="/slotMenu.css" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378715584845" ignored="false" />
     <file path="/gameCtrl.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1382118661722" ignored="false" />
-    <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1382212290791" ignored="false" />
+    <file path="/game.html" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1382212453887" ignored="false" />
     <file path="/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378767812234" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Jims Woods/Neverwell_Moor_v1.0.1/js/game.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378769022115" ignored="false" />
     <file path="/resources.js" changelist="209d04ca-c6e4-40e1-bd92-be47c1647245" time="1378786051919" ignored="false" />
@@ -135,7 +131,7 @@
       <file leaf-file-name="game.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/partials/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="44" selection-start="5983" selection-end="5983" vertical-scroll-proportion="3.5037453">
+            <state line="119" column="64" selection-start="5093" selection-end="5093" vertical-scroll-proportion="0.49438202">
               <folding />
             </state>
           </provider>
@@ -547,13 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/fableAnimalService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="174" column="4" selection-start="0" selection-end="5773" vertical-scroll-proportion="0.0">
@@ -568,18 +557,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/jquery-ui.min.js">
+    <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2381" selection-start="228013" selection-end="228013" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="0" column="104" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="8" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="35" selection-start="93068" selection-end="93068" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/jquery-ui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="2381" selection-start="228013" selection-end="228013" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -593,16 +596,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="104" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="44" selection-start="5983" selection-end="5983" vertical-scroll-proportion="3.5037453">
+        <state line="119" column="64" selection-start="5093" selection-end="5093" vertical-scroll-proportion="0.49438202">
           <folding />
         </state>
       </provider>

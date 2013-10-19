@@ -117,7 +117,7 @@
         <img ng-src="{{animals[0].imageURL}}" alt="img">
     </div>
     <div class="row">
-        <button ng-click="showFightScreen = false; resumeGame()">Flee</button>
+        <button ng-click="showFightScreen = false; resumeGame();">Flee</button>
         <button ng-click="fightview = true; showFightScreen = false;">Fight</button>
     </div>
 </div>
@@ -133,7 +133,7 @@
     </div>
     <div class="inventorybar">
         <div class="space"></div>
-        <button>inv 1</button>
+        <button ng-click="fightview = false; resumeGame();">inv 1</button>
         <button>inv 2</button>
         <button>inv 3</button>
         <button>inv 4</button>
