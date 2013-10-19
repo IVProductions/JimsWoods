@@ -1,6 +1,6 @@
 <div ng-init="game.init()" id="screen"></div>
 
-<div class="menuBtn" ng-click="menu = true; pauseGame()"></div>
+<div class="menuBtn" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" jqyoui-draggable="{animate:true}" ng-click="menu = true; pauseGame()"></div>
 <div id="showFS" ng-click="showFightScreen = true; pauseGame();chooseWorldList('woods');"></div>
 
 <div class="mainMenu" ng-show="menu">
@@ -123,23 +123,68 @@
 </div>
 
 <div class="fightview" ng-show="fightview">
-    <div>
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8">
-            <img ng-src="{{animals[0].imageURL}}" alt="img">
-        </div>
-        <div class="col-xs-2"></div>
+    <div class="attackbar">
+        <div class="space"></div>
+        <div class="btn btn-primary" data-drag="true" draggable="true">A1</div>
+        <div class="btn btn-primary" data-drag="true"> A2</div>
+        <div class="btn btn-primary" data-drag="true"> A3</div>
+        <div class="btn btn-primary" data-drag="true"> A4</div>
+        <div class="space"></div>
     </div>
-    <div class="actionbar">
-        <div class="fightBtn"></div>
-        <div class="actionBtns">
-            <button>Attack1</button>
-            <button>Attack2</button>
-            <button>Attack3</button>
-            <button>Attack4</button>
-            <button>Attack4</button>
-            <button>Attack4</button>
-        </div>
-        <div class="inventoryBtn"></div>
+    <div class="inventorybar">
+        <div class="space"></div>
+        <button>inv 1</button>
+        <button>inv 2</button>
+        <button>inv 3</button>
+        <button>inv 4</button>
+        <div class="space"></div>
     </div>
+    <div class="healthbar1"></div>
+    <div class="healthbar2"></div>
+    <div class="fightanimal" data-drop="true">
+        <img ng-src="{{animals[0].imageURL}}" alt="img">
+    </div>
+    <!--
+    <div class="row">
+        <div class="col-xs-3">
+            <div class="row inventoryBtn">
+
+            </div>
+            <div class="row">
+                <button>Inv 1</button>
+            </div>
+            <div class="row">
+                <button>Inv 2</button>
+            </div>
+            <div class="row">
+                <button>Inv 3</button>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="healthbar">
+                Health Bar
+            </div>
+            <div class="fightpicture">
+
+            </div>
+            <div class="healthbar">
+                Health Bar
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="fightBtn">
+
+            </div>
+            <div class="row">
+                <button>Attack 1</button>
+            </div>
+            <div class="row">
+                <button>Attack 1</button>
+            </div>
+            <div class="row">
+                <button>Attack 1</button>
+            </div>
+        </div>
+    </div>
+    -->
 </div>

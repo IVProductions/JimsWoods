@@ -15,6 +15,10 @@ body {
     top: 0;
 }
 
+canvas {
+    display: block;
+}
+
 /* wiki.html */
 .areaBtns {
     margin-top: 60px;
@@ -363,47 +367,90 @@ h1 {
     background-color: #38b449;
 }
 
-.actionbar {
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    height: 52px;
-    width: 100%;
-    background-color: white;
-}
-
 .fightBtn {
-    position: absolute;
-    bottom: 0; left: 0;
     background: url('../img/attack_icon.png') no-repeat;
     background-size: 52px 52px;
     width: 52px;
     height: 52px;
 }
 
-.actionBtns {
-    height: 52px;
-    border: solid 2px black;
-    position: absolute;
-    bottom: 0; left: 52px; right: 52px;
-    overflow: auto;
-    overflow-y: hidden;
-}
-
-.actionBtns button {
-    height: 52px;
-    width: 150px;
-}
-
 .inventoryBtn {
-    position: absolute;
-    bottom: 0; right: 0;
     background: url('../img/inv_icon.png') no-repeat;
     background-size: 52px 52px;
     height: 52px;
     width: 52px;
 }
 
-canvas {
-    display: block;
+.healthbar {
+    background-color: white;
+    height: 10%;
+}
+
+.fightpicture {
+    background-color: red;
+    height: 80%;
+}
+
+.attackbar {
+    background-color: white;
+    position: absolute;
+    top:0;
+    right:0;
+    width: 15%;
+    height: 100%;
+}
+
+.space {
+    height: 10%;
+    width: 100%;
+}
+
+.inventorybar button,
+.attackbar .btn {
+    height: 20%;
+    width: 100%;
+}
+
+.inventorybar {
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 15%;
+    height: 100%;
+}
+
+.healthbar1 {
+    background-color: lawngreen;
+    position: absolute;
+    top:0;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    height: 10%;
+}
+
+.healthbar2 {
+    background-color: lawngreen;
+    position: absolute;
+    bottom:0;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    height: 10%;
+}
+
+.fightanimal {
+    position: absolute;
+    top:10%;
+    left: 15%;
+    bottom:10%;
+    right: 15%;
+    width: 70%;
+    height: 80%;
+    padding: 5%;
+}
+
+.fightanimal img {
+
 }
