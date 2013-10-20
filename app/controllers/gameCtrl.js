@@ -1,4 +1,20 @@
 function gameCtrl($scope, stateService, imageResourceFactory, mapResourceFactory, woodAnimalFactory, stateService, desertAnimalFactory, seaAnimalFactory, jungleAnimalFactory, arcticAnimalFactory, fableAnimalFactory, mountainAnimalFactory, lostworldAnimalFactory){
+
+
+    $(function() {
+        $('#a1').draggable({ revert: "invalid" }); $('#a2').draggable({ revert: "invalid" }); $('#a3').draggable({ revert: "invalid" }); $('#a4').draggable({ revert: "invalid" });
+
+        $('#fightanimal').droppable({
+            activeClass: "ui-state-hover",
+            hoverClass: "ui-state-active",
+            drop: function(event, ui ) {
+                $(this)
+                    .html('Animate!');
+            }
+        });
+    });
+
+
     // Get Resource Names
     $scope.imageResources = imageResourceFactory.images;
     $scope.mapResources = mapResourceFactory.maps;
